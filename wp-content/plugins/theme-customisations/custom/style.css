@@ -87,7 +87,8 @@ a:focus {
 }
 
 #breadcrumbs a {
-    color: #d9534f;
+    color: #3b88a9;
+    border-radius: 5px;
 }
 
 #breadcrumbs a:hover {
