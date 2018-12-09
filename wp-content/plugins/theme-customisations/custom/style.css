@@ -13,6 +13,10 @@ a:focus {
     color: #fff;
     background-color: #214454;
 }
+a.woocommerce-loop-product__link:hover,
+a.woocommerce-loop-product__link:focus{
+    background-color: inherit;
+}
 .theme-color{
     color: #214454;
 }
@@ -57,7 +61,7 @@ a:focus {
 }
 
 .current-menu-item {
-    background-color: #b94040;
+    background-color: #3b88a9;
 }
 
 .nav>li>a:hover,
