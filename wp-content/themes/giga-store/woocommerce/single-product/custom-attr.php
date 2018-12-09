@@ -33,7 +33,7 @@ $productfoldedheight = get_field('productfoldedheight');
 $mmtoinch = 0.03937;
 $kgtolbs = 2.20462262;
 $ltogal = 0.26417;
-$foldedheightHtml = '';
+
 if (!$productmodel) {
     $productmodel = "N/A";
 }
@@ -91,7 +91,7 @@ echo '
 	        	<span class="pull-right">in</span>
 	        </td>
 	       
-	      </tr>'.$foldedheightHtml.'
+	      </tr>'. $foldedheightHtml .'
 	      <tr>
 	        <td><h4>Weight</h4></td>
 	        <td class="internal-dimension">
