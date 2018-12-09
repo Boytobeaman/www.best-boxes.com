@@ -36,6 +36,11 @@ $ltogal = 0.26417;
 if (!$productmodel) {
     $productmodel = "N/A";
 }
+if (!$productfoldedheight) {
+    $displayFoldedHeight = "none";
+}else{
+	$displayFoldedHeight = "";
+}
 
 echo ' 
 	<table class="table table-hover table-bordered single-product-attr">
@@ -74,7 +79,7 @@ echo '
 	        </td>
 	       
 	      </tr>
-	      <tr>
+	      <tr style="display:'. $displayFoldedHeight .'">
 	      	<td><h4>Folded Height</h4></td>
 	      	<td>
 	      		<span class="folded-height pull-left value">
