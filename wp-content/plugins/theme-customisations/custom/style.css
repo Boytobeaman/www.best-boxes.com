@@ -33,12 +33,13 @@ a:focus {
 .rsrc-top-menu {
     display: none
 }
-
+.header-section{
+    background-color: #214454;
+}
 .rsrc-top-menu,
 .navbar-inverse,
-.header-section,
 .main-menu-section {
-    /*background-color: transparent;*/
+    background-color: #3b88a9;
 }
 #main-navigation{
     padding-top: 4px;
