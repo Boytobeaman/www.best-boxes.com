@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.4.15.10
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Dec 09, 2018 at 01:18 AM
+- Server version: 10.2.7-MariaDB-log
+- PHP Version: 7.1.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="nodedb" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="ZJ_ventilated_ForBestboxes">
+                CREATE TABLE `ZJ_ventilated_ForBestboxes` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `post_title` varchar(255) DEFAULT NULL,
+                  `model` varchar(255) DEFAULT NULL,
+                  `external_long` varchar(255) DEFAULT NULL,
+                  `external_width` varchar(255) DEFAULT NULL,
+                  `external_height` varchar(255) DEFAULT NULL,
+                  `internal_long` varchar(255) DEFAULT NULL,
+                  `internal_width` varchar(255) DEFAULT NULL,
+                  `internal_height` varchar(255) DEFAULT NULL,
+                  `foldedHeight` varchar(255) DEFAULT NULL,
+                  `volumn` varchar(255) DEFAULT NULL,
+                  `weight` varchar(255) DEFAULT NULL,
+                  `img_path` longtext DEFAULT NULL,
+                  `backlinks` longtext DEFAULT NULL,
+                  `product_category` varchar(255) DEFAULT NULL,
+                  `product_tag` varchar(255) DEFAULT NULL,
+                  `post_title_slug` varchar(255) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'nodedb'
+    -->
+    <database name="nodedb">
+        <!-- Table ZJ_ventilated_ForBestboxes -->
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">1</column>
+            <column name="post_title">collapsible crates storage</column>
+            <column name="model">ZJKN604022W-3</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">220</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">200</column>
+            <column name="foldedHeight">48</column>
+            <column name="volumn">40.32</column>
+            <column name="weight">2.29</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20180716151746_2031.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716151810_7968.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716151810_9062.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716151811_3906.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716151811_5156.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716151811_6406.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-crates-storage</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">2</column>
+            <column name="post_title">collapsible plastic storage crates</column>
+            <column name="model">ZJKK6040295C-1</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">295</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">280</column>
+            <column name="foldedHeight">95</column>
+            <column name="volumn">56.45</column>
+            <column name="weight">2.84</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20181117092141_9507.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181117092207_9667.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181117092208_4042.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181117092208_5292.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181117092208_9198.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181117092209_1386.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-plastic-storage-crates</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">3</column>
+            <column name="post_title">collapsible plastic crates for storage</column>
+            <column name="model">ZJKK6040285W-1</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">285</column>
+            <column name="internal_long">555</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">269</column>
+            <column name="foldedHeight">85</column>
+            <column name="volumn">53.75</column>
+            <column name="weight">2.18</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20181117091415_8669.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181117091444_9298.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181117091445_1173.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181117091445_3360.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181117091445_8517.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181117091446_1798.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-plastic-crates-for-storage</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">4</column>
+            <column name="post_title">collapsible shipping crates</column>
+            <column name="model">ZJKK604028W-3</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">280</column>
+            <column name="internal_long">555</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">262</column>
+            <column name="foldedHeight">78</column>
+            <column name="volumn">52.35</column>
+            <column name="weight">2.28</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20181103105149_6581.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181103105210_3614.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181103105210_5177.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181103105210_6896.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181103105210_9865.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181103105211_0802.jpg,http://www.znkia.com/uploadfiles/pictures/product/20181103105211_2365.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-shipping-crates</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">5</column>
+            <column name="post_title">heavy duty collapsible crates</column>
+            <column name="model">ZJKS5336295W</column>
+            <column name="external_long">530</column>
+            <column name="external_width">360</column>
+            <column name="external_height">295</column>
+            <column name="internal_long">490</column>
+            <column name="internal_width">306</column>
+            <column name="internal_height">290</column>
+            <column name="foldedHeight">65</column>
+            <column name="volumn">43.48</column>
+            <column name="weight">1.35</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20180809102604_2187.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180809102630_6250.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180809102630_8125.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180809102631_0312.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180809102631_2500.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">heavy-duty-collapsible-crates</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">6</column>
+            <column name="post_title">rolling collapsible crate</column>
+            <column name="model">ZJKS533630C</column>
+            <column name="external_long">530</column>
+            <column name="external_width">360</column>
+            <column name="external_height">300</column>
+            <column name="internal_long">490</column>
+            <column name="internal_width">306</column>
+            <column name="internal_height">290</column>
+            <column name="foldedHeight">68</column>
+            <column name="volumn">43.48</column>
+            <column name="weight">1.69</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20180809101630_4531.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180809101700_0000.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180809101700_1562.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180809101700_3750.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180809101700_5468.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180809101700_7500.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">rolling-collapsible-crate</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">7</column>
+            <column name="post_title">collapsible rolling crate</column>
+            <column name="model">ZJKN604026W-3</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">260</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">48</column>
+            <column name="volumn">48.38</column>
+            <column name="weight">2.33</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20180727145613_5312.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727145632_5781.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727145632_7187.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727145632_8437.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727145633_0156.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727145633_5000.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727145633_6250.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-rolling-crate</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">8</column>
+            <column name="post_title">schiffmayer plastics corp collapsible crates</column>
+            <column name="model">ZJKN604018W-3</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">180</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">160</column>
+            <column name="foldedHeight">48</column>
+            <column name="volumn">32.26</column>
+            <column name="weight">1.79</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20180727142424_4375.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727142446_7968.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727142446_9375.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727142447_0937.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727142447_3750.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727142447_5312.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">schiffmayer-plastics-corp-collapsible-crates</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">9</column>
+            <column name="post_title">collapsible crate for car trunk</column>
+            <column name="model">ZJKS403024W</column>
+            <column name="external_long">400</column>
+            <column name="external_width">300</column>
+            <column name="external_height">245</column>
+            <column name="internal_long">370</column>
+            <column name="internal_width">270</column>
+            <column name="internal_height">230</column>
+            <column name="foldedHeight">70</column>
+            <column name="volumn">22.98</column>
+            <column name="weight">1.05</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20180709151858_5468.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180709151924_2031.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180709151924_5312.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180709151924_7812.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180709151924_9218.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180709151925_1250.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180709151925_8281.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-crate-for-car-trunk</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">10</column>
+            <column name="post_title">kis collapsible crate</column>
+            <column name="model">ZJKN604014W-3</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">140</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">120</column>
+            <column name="foldedHeight">48</column>
+            <column name="volumn">24.19</column>
+            <column name="weight">1.59</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20180727143655_3593.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727143714_7343.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727143714_9062.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727143715_1406.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727143715_3125.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180727143715_3906.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">kis-collapsible-crate</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">11</column>
+            <column name="post_title">collapsible crates australia</column>
+            <column name="model">ZJKN604022W-1</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">220</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">200</column>
+            <column name="foldedHeight">48</column>
+            <column name="volumn">40.32</column>
+            <column name="weight">2.32</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20180716150349_0156.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716150415_8437.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716150416_0156.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716150416_2031.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716150416_3125.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716150416_5000.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716150416_6875.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-crates-australia</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">12</column>
+            <column name="post_title">plastic storage crates</column>
+            <column name="model">ZJKS4030255C</column>
+            <column name="external_long">400</column>
+            <column name="external_width">300</column>
+            <column name="external_height">255</column>
+            <column name="internal_long">370</column>
+            <column name="internal_width">270</column>
+            <column name="internal_height">230</column>
+            <column name="foldedHeight">85</column>
+            <column name="volumn">22.98</column>
+            <column name="weight">1.32</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20180716145415_1718.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716145458_8593.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716145458_9843.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716145459_2968.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716145459_5625.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716145459_6406.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180716145459_9062.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">plastic-storage-crates</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">13</column>
+            <column name="post_title">storage crates plastic</column>
+            <column name="model">ZJKS604024W-3</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">240</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">225</column>
+            <column name="foldedHeight">70</column>
+            <column name="volumn">45.36</column>
+            <column name="weight">2.33</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161011151142_2391.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011151202_7393.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011151202_8643.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011151203_2236.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011151203_4580.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">storage-crates-plastic</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">14</column>
+            <column name="post_title">crates plastic storage</column>
+            <column name="model">ZJKS604034C-1</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">340</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">315</column>
+            <column name="foldedHeight">95</column>
+            <column name="volumn">63.50</column>
+            <column name="weight">3.14</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161011145406_3730.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011145429_8106.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011145429_9200.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011145430_4044.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011145430_8419.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">crates-plastic-storage</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">15</column>
+            <column name="post_title">plastic crates for storage</column>
+            <column name="model">ZJKS604033W-1</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">330</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">315</column>
+            <column name="foldedHeight">83</column>
+            <column name="volumn">63.50</column>
+            <column name="weight">2.49</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161011144000_8040.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011144024_4449.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011144024_5699.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011144025_3199.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011144025_4918.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">plastic-crates-for-storage</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">16</column>
+            <column name="post_title">collapsible boxes plastic</column>
+            <column name="model">ZJKS6040255W-1</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">255</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">83</column>
+            <column name="volumn">48.38</column>
+            <column name="weight">2.25</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161011142747_0914.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011143107_1096.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011143107_5159.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011143107_9378.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-boxes-plastic</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">17</column>
+            <column name="post_title">collapsible plastic storage boxes</column>
+            <column name="model">ZJKK4835255W</column>
+            <column name="external_long">480</column>
+            <column name="external_width">350</column>
+            <column name="external_height">255</column>
+            <column name="internal_long">450</column>
+            <column name="internal_width">325</column>
+            <column name="internal_height">235</column>
+            <column name="foldedHeight">58</column>
+            <column name="volumn">34.37</column>
+            <column name="weight">1.28</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160919113203_1974.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160723201155_4999.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011140840_6080.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011140840_8423.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011140841_1236.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-plastic-storage-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">18</column>
+            <column name="post_title">vented plastic crates </column>
+            <column name="model">ZJKK805850W</column>
+            <column name="external_long">800</column>
+            <column name="external_width">580</column>
+            <column name="external_height">500</column>
+            <column name="internal_long">750</column>
+            <column name="internal_width">525</column>
+            <column name="internal_height">485</column>
+            <column name="foldedHeight">115</column>
+            <column name="volumn">190.97</column>
+            <column name="weight">6.2</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160908194044_5312.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160908194045_0625.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160908194045_2187.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">vented-plastic-crates-</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">19</column>
+            <column name="post_title">folding collapsible storage box</column>
+            <column name="model">ZJKS4835255W</column>
+            <column name="external_long">480</column>
+            <column name="external_width">350</column>
+            <column name="external_height">255</column>
+            <column name="internal_long">450</column>
+            <column name="internal_width">325</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">58</column>
+            <column name="volumn">35.10</column>
+            <column name="weight">1.32</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161011123616_3105.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011123719_0633.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011123719_5946.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011123719_7196.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011123720_3134.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">folding-collapsible-storage-box</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">20</column>
+            <column name="post_title">collapsible pallet boxes plastic</column>
+            <column name="model">ZJKS604032W-3</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">320</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">300</column>
+            <column name="foldedHeight">70</column>
+            <column name="volumn">60.48</column>
+            <column name="weight">2.57</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161011140428_9469.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011140448_0566.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011140448_2285.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011140448_7910.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161011140448_8691.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-pallet-boxes-plastic</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">21</column>
+            <column name="post_title">white collapsible storage box</column>
+            <column name="model">ZJKK4835265C</column>
+            <column name="external_long">480</column>
+            <column name="external_width">350</column>
+            <column name="external_height">265</column>
+            <column name="internal_long">450</column>
+            <column name="internal_width">325</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">68</column>
+            <column name="volumn">35.10</column>
+            <column name="weight">1.68</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160723194412_4063.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160723194412_4573.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160723194412_5153.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160919124327_1460.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">white-collapsible-storage-box</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">22</column>
+            <column name="post_title">collapsable box folding storage bin</column>
+            <column name="model">ZJKS6040265C-1</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">265</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">95</column>
+            <column name="volumn">48.38</column>
+            <column name="weight">2.9</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161006145036_1276.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161006145314_2068.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161006145314_3161.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161006145314_5818.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsable-box-folding-storage-bin</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">23</column>
+            <column name="post_title">collapsible plastic boxes</column>
+            <column name="model">ZJKS604035C</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">350</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">330</column>
+            <column name="foldedHeight">105</column>
+            <column name="volumn">66.53</column>
+            <column name="weight">3.08</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161005164606_9608.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005164607_3514.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005164607_4452.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005164607_9295.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-plastic-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">24</column>
+            <column name="post_title">collapsible storage boxes</column>
+            <column name="model">ZJKK604034C</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">340</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">313</column>
+            <column name="foldedHeight">95</column>
+            <column name="volumn">63.10</column>
+            <column name="weight">2.89</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161005155001_2194.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005155019_4383.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005155019_5633.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005155020_0320.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005155020_1570.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-storage-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">25</column>
+            <column name="post_title">plastic collapsible boxes</column>
+            <column name="model">ZJKK604033W</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">300</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">313</column>
+            <column name="foldedHeight">85</column>
+            <column name="volumn">63.10</column>
+            <column name="weight">2.24</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160918161945_8437.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005154117_8879.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005154117_9973.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005154118_5598.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005154118_6692.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">plastic-collapsible-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">26</column>
+            <column name="post_title">plastic collapsible storage boxes</column>
+            <column name="model">ZJKK604032W</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">320</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">305</column>
+            <column name="foldedHeight">70</column>
+            <column name="volumn">61.49</column>
+            <column name="weight">2.33</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161005144412_4910.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005144546_8354.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005144547_3822.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005144547_5072.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">plastic-collapsible-storage-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">27</column>
+            <column name="post_title">foldable plastic crates</column>
+            <column name="model">ZJKS604016W</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">160</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">145</column>
+            <column name="foldedHeight">77</column>
+            <column name="volumn">29.23</column>
+            <column name="weight">2.16</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161005140033_6579.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005140100_5334.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005140101_1584.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005140101_3147.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005140100_6584.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">foldable-plastic-crates</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">28</column>
+            <column name="post_title">collapsible storage baskets</column>
+            <column name="model">ZJKL604032C</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">320</column>
+            <column name="internal_long">555</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">290</column>
+            <column name="foldedHeight">95</column>
+            <column name="volumn">57.94</column>
+            <column name="weight">2.95</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161005133009_4180.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005133009_6993.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005133009_8399.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005133010_1056.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-storage-baskets</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">29</column>
+            <column name="post_title">collapsible storage tote</column>
+            <column name="model">ZJKL6040305W</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">305</column>
+            <column name="internal_long">555</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">290</column>
+            <column name="foldedHeight">85</column>
+            <column name="volumn">57.94</column>
+            <column name="weight">2.31</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161005130742_0985.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005130742_5048.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005130742_6454.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005130742_9579.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161005130743_2548.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-storage-tote</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">30</column>
+            <column name="post_title">polymer logistics collapsible storage</column>
+            <column name="model">ZJKK6040265C-8</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">265</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">95</column>
+            <column name="volumn">48.38</column>
+            <column name="weight"></column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161004130925_4767.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004142011_9261.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004142012_0667.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004142012_2229.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004142012_6448.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">polymer-logistics-collapsible-storage</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">31</column>
+            <column name="post_title">folding storage bins</column>
+            <column name="model">ZJKK6040265C</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">265</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">95</column>
+            <column name="volumn">48.38</column>
+            <column name="weight">2.65</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161004130925_4767.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004130925_8986.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004130926_0080.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004130926_4455.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">folding-storage-bins</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">32</column>
+            <column name="post_title">folding storage boxes plastic</column>
+            <column name="model">ZJKS6040278C</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">278</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">255</column>
+            <column name="foldedHeight">105</column>
+            <column name="volumn">51.41</column>
+            <column name="weight">2.84</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160912190532_2812.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004132205_9993.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004132206_1087.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004132206_4212.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004132206_6399.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">folding-storage-boxes-plastic</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">33</column>
+            <column name="post_title">folding plastic storage boxes</column>
+            <column name="model">ZJKL604030W</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">300</column>
+            <column name="internal_long">555</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">290</column>
+            <column name="foldedHeight">75</column>
+            <column name="volumn">57.94</column>
+            <column name="weight">2.39</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20161004152404_0218.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004152444_9283.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004152445_5377.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004152445_6940.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004152446_3033.jpg,http://www.znkia.com/uploadfiles/pictures/product/20161004152446_4440.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">folding-plastic-storage-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">34</column>
+            <column name="post_title">plastic folding storage boxes</column>
+            <column name="model">ZJKS6333257W</column>
+            <column name="external_long">630</column>
+            <column name="external_width">330</column>
+            <column name="external_height">257</column>
+            <column name="internal_long">605</column>
+            <column name="internal_width">305</column>
+            <column name="internal_height">237</column>
+            <column name="foldedHeight">58</column>
+            <column name="volumn">43.73</column>
+            <column name="weight">1.99</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160918171337_6406.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930124948_2732.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930124948_8513.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930124948_9763.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930124949_5388.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930124949_9764.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930145110_2850.gif,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">plastic-folding-storage-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">35</column>
+            <column name="post_title">fold up storage boxes</column>
+            <column name="model">ZJKK6040255W</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">255</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">85</column>
+            <column name="volumn">48.38</column>
+            <column name="weight">2</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160918161035_1875.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930162841_0802.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930162841_5958.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930162841_6896.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">fold-up-storage-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">36</column>
+            <column name="post_title">fold flat storage boxes</column>
+            <column name="model">ZJKK604024W-10</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">240</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">225</column>
+            <column name="foldedHeight">75</column>
+            <column name="volumn">45.36</column>
+            <column name="weight">2.24</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160918160219_4375.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930143511_0883.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930143511_2602.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930143511_5258.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930143512_0727.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">fold-flat-storage-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">37</column>
+            <column name="post_title">plastic storage boxes with folding lids</column>
+            <column name="model">ZJKK604024W</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">240</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">225</column>
+            <column name="foldedHeight">70</column>
+            <column name="volumn">45.36</column>
+            <column name="weight">1.88</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160919135709_7837.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160902190309_6093.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930135229_2055.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930135229_4399.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930135229_9399.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930135229_7680.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160930135229_6430.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">plastic-storage-boxes-with-folding-lids</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">38</column>
+            <column name="post_title">fold down storage boxes</column>
+            <column name="model">ZJKT6040265C</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">265</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">95</column>
+            <column name="volumn">48.38</column>
+            <column name="weight">3.4</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160919165257_3673.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160918165338_1093.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160929162344_9929.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160929162345_1179.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160929162345_3991.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">fold-down-storage-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">39</column>
+            <column name="post_title">fold away storage boxes</column>
+            <column name="model">ZJKT6040255W</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">255</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">85</column>
+            <column name="volumn">48.38</column>
+            <column name="weight">2.76</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160918164802_1875.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160929163404_6804.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160929163404_7898.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160929163405_3835.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160929163405_4929.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160929163405_6335.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">fold-away-storage-boxes</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">40</column>
+            <column name="post_title">folding storage basket</column>
+            <column name="model">ZJKN604024W</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">240</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">225</column>
+            <column name="foldedHeight">75</column>
+            <column name="volumn">45.36</column>
+            <column name="weight">2.86</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160918164233_3750.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160929152435_9605.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160929152436_0855.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160918164311_6406.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">folding-storage-basket</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">41</column>
+            <column name="post_title">folding storage boxes uk</column>
+            <column name="model">ZJKN604024W-1</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">240</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">225</column>
+            <column name="foldedHeight">75</column>
+            <column name="volumn">45.36</column>
+            <column name="weight">2.86</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160918160255_6875.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160918160219_4375.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">folding-storage-boxes-uk</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">42</column>
+            <column name="post_title">folding crate on wheels</column>
+            <column name="model">ZJKS6040265C</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">265</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">95</column>
+            <column name="volumn">48.38</column>
+            <column name="weight">2.84</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20160912190919_3437.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160919173925_5548.jpg,http://www.znkia.com/uploadfiles/pictures/product/20160919173926_1017.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">folding-crate-on-wheels</column>
+        </table>
+        <table name="ZJ_ventilated_ForBestboxes">
+            <column name="id">43</column>
+            <column name="post_title">collapsible crate with wheels</column>
+            <column name="model">ZJKN604022W-Q</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">220</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">200</column>
+            <column name="foldedHeight">48</column>
+            <column name="volumn">40.32</column>
+            <column name="weight">1.51</column>
+            <column name="img_path">http://www.znkia.com/uploadfiles/pictures/product/20180919095748_1875.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180919095808_4062.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180919095808_5312.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180919095808_7500.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180919095808_9843.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180919095809_2656.jpg,http://www.znkia.com/uploadfiles/pictures/product/20180919095809_4687.jpg,</column>
+            <column name="backlinks"></column>
+            <column name="product_category">folding-crate</column>
+            <column name="product_tag">folding-plastic-basket</column>
+            <column name="post_title_slug">collapsible-crate-with-wheels</column>
+        </table>
+    </database>
+</pma_xml_export>
