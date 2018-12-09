@@ -29,14 +29,31 @@ $productinnerheight = get_field('productinnerheight');
 $productweight = get_field('productweight');
 $productvolumn = get_field('productvolumn');
 $productmodel = get_field('productmodel');
+$productfoldedheight = get_field('productfoldedheight');
 $mmtoinch = 0.03937;
 $kgtolbs = 2.20462262;
 $ltogal = 0.26417;
-
+$foldedheightHtml = '';
 if (!$productmodel) {
     $productmodel = "N/A";
 }
-
+if ($productfoldedheight) {
+	$foldedheightHtml = '
+				<tr>
+	        <td><h4>Weight</h4></td>
+	        <td class="internal-dimension">
+	        	<span class="folded-height pull-left value">
+	        		'. $productfoldedheight .'
+	        	</span>
+	        	<span class="pull-right">kg</span>
+	        	<hr>	        
+	        	<span class="in pull-left value">
+	        		'. round($productfoldedheight*$mmtoinch,2) .'
+	        	</span>
+	        	<span class="pull-right">in</span>
+	        </td>
+	      </tr>'
+}
 
 echo ' 
 	<table class="table table-hover table-bordered single-product-attr">
@@ -74,7 +91,7 @@ echo '
 	        	<span class="pull-right">in</span>
 	        </td>
 	       
-	      </tr>
+	      </tr>'.$foldedheightHtml.'
 	      <tr>
 	        <td><h4>Weight</h4></td>
 	        <td class="internal-dimension">
