@@ -11,10 +11,10 @@ a {
 a:hover,
 a:focus {
     color: #fff;
-    background-color: #d9534f;
+    background-color: #214454;
 }
 .theme-color{
-    color: #b94040;
+    color: #214454;
 }
 .mb-0{
     margin-bottom: 0!important;
