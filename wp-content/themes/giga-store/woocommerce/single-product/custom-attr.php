@@ -37,11 +37,6 @@ $ltogal = 0.26417;
 if (!$productmodel) {
     $productmodel = "N/A";
 }
-if (!$productfoldedheight) {
-	$displayFoldedHeight = "none"
-}else{
-	$displayFoldedHeight = ""
-}
 
 echo ' 
 	<table class="table table-hover table-bordered single-product-attr">
@@ -79,21 +74,25 @@ echo '
 	        	<span class="pull-right">in</span>
 	        </td>
 	       
-	      </tr>
-	      <tr style="display:$displayFoldedHeight">
-	        <td><h4>Folded Height</h4></td>
-	        <td class="internal-dimension">
-	        	<span class="folded-height pull-left value">
-	        		'. $productfoldedheight .'
-	        	</span>
-	        	<span class="pull-right">kg</span>
-	        	<hr>	        
-	        	<span class="in pull-left value">
-	        		'. round($productfoldedheight*$mmtoinch,2) .'
-	        	</span>
-	        	<span class="pull-right">in</span>
-	        </td>
-	      </tr>
+	      </tr>'
+	      if ($productfoldedheight) {
+	      	echo 
+	      	'<tr>
+		        <td><h4>Folded Height</h4></td>
+		        <td class="internal-dimension">
+		        	<span class="folded-height pull-left value">
+		        		'. $productfoldedheight .'
+		        	</span>
+		        	<span class="pull-right">kg</span>
+		        	<hr>	        
+		        	<span class="in pull-left value">
+		        		'. round($productfoldedheight*$mmtoinch,2) .'
+		        	</span>
+		        	<span class="pull-right">in</span>
+		        </td>
+	      	</tr>'
+	      }
+			echo'
 	      <tr>
 	        <td><h4>Weight</h4></td>
 	        <td class="internal-dimension">
