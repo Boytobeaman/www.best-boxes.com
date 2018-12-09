@@ -1,5 +1,5 @@
 body {
-    background: #FFFFFF url(/img/public/bg-body.png) repeat-x top left;
+    /*background: #FFFFFF url(/img/public/bg-body.png) repeat-x top left;*/
     height: 100%;
 }
 
@@ -38,9 +38,11 @@ a:focus {
 .navbar-inverse,
 .header-section,
 .main-menu-section {
-    background-color: transparent;
+    /*background-color: transparent;*/
 }
-
+#main-navigation{
+    padding-top: 4px;
+}
 .header-search-form input {
     background-color: #fff;
     color: #000;
@@ -58,7 +60,7 @@ a:focus {
 
 .nav>li>a:hover,
 .nav>li>a:focus {
-    background-color: #b94040;
+    background-color: #333;
 }
 
 #main-navigation .navbar-nav li {
