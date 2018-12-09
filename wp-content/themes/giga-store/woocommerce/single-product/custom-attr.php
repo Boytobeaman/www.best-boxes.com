@@ -38,6 +38,7 @@ if (!$productmodel) {
     $productmodel = "N/A";
 }
 if ($productfoldedheight) {
+	global $foldedheightHtml;
 	$foldedheightHtml = '
 				<tr>
 	        <td><h4>Weight</h4></td>
