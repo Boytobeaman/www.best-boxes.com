@@ -92,7 +92,7 @@ echo '
 	        	<span class="pull-right">in</span>
 	        </td>
 	       
-	      </tr>'. $foldedheightHtml .'
+	      </tr>$foldedheightHtml
 	      <tr>
 	        <td><h4>Weight</h4></td>
 	        <td class="internal-dimension">
