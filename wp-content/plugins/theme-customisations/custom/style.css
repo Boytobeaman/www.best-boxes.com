@@ -27,7 +27,7 @@ a:focus {
 }
 .woocommerce div.product div.summary .product_title {
     font-size: 24px;
-    color: #852321;
+    color: #214454;
     text-transform: capitalize;
 }
 
@@ -233,15 +233,20 @@ a:focus {
 }
 
 .single-product-attr .value {
-    color: #d9534f;
+    color: #214454;
+    font-size: 18px;
 }
 
 .single-product-attr hr {
     margin-bottom: 0;
+    clear: both;
 }
 
 .single-product-attr .product-inquiry {
     margin-top: 20px
+}
+.single-product-attr td>h4{
+    font-size: 16px;
 }
 
 #footerLink {
