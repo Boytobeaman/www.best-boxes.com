@@ -33,7 +33,7 @@ $productfoldedheight = get_field('productfoldedheight');
 $mmtoinch = 0.03937;
 $kgtolbs = 2.20462262;
 $ltogal = 0.26417;
-
+echo 'productfoldedheight:$productfoldedheight'
 if (!$productmodel) {
     $productmodel = "N/A";
 }
@@ -75,23 +75,7 @@ echo '
 	        </td>
 	       
 	      </tr>'
-	      if ($productfoldedheight) {
-	      	echo 
-	      	'<tr>
-		        <td><h4>Folded Height</h4></td>
-		        <td class="internal-dimension">
-		        	<span class="folded-height pull-left value">
-		        		'. $productfoldedheight .'
-		        	</span>
-		        	<span class="pull-right">kg</span>
-		        	<hr>	        
-		        	<span class="in pull-left value">
-		        		'. round($productfoldedheight*$mmtoinch,2) .'
-		        	</span>
-		        	<span class="pull-right">in</span>
-		        </td>
-	      	</tr>'
-	      }
+	      
 			echo'
 	      <tr>
 	        <td><h4>Weight</h4></td>
