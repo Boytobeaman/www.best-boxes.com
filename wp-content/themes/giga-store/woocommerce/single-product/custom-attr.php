@@ -75,8 +75,18 @@ echo '
 	       
 	      </tr>
 	      <tr>
-	      	<td><h4>productfoldedheight</h4></td>
-	      	<td>'.$productfoldedheight.'</td>
+	      	<td><h4>Folded Height</h4></td>
+	      	<td>
+	      		<span class="folded-height pull-left value">
+		        		'. $productfoldedheight .'
+	        	</span>
+	        	<span class="pull-right">mm</span>
+	        	<hr>	        
+	        	<span class="in pull-left value">
+	        		'. round($productfoldedheight*$mmtoinch,2) .'
+	        	</span>
+	        	<span class="pull-right">in</span>
+        	</td>
 	      </tr>
 	      <tr>
 	        <td><h4>Weight</h4></td>
