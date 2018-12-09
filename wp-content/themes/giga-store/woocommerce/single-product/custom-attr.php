@@ -75,6 +75,11 @@ echo '
 	       
 	      </tr>
 	      <tr>
+	      	<td><h4>productfoldedheight</h4></td>
+	      	<td>$productfoldedheight</td>
+	      </tr>
+	       $productfoldedheight
+	      <tr>
 	        <td><h4>Weight</h4></td>
 	        <td class="internal-dimension">
 	        	<span class="kg pull-left value">
