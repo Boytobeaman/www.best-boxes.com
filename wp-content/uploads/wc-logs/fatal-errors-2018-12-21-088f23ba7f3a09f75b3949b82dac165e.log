@@ -1,0 +1,22 @@
+2018-12-21T09:06:17+00:00 CRITICAL Uncaught Exception: Undefined field name. in /data/wwwroot/www.best-boxes.com/wp-content/plugins/wp-all-import/models/model/record.php:148
+Stack trace:
+#0 /data/wwwroot/www.best-boxes.com/wp-content/plugins/wp-all-import/controllers/admin/import.php(2285): PMXI_Model_Record->__get('name')
+#1 /data/wwwroot/www.best-boxes.com/wp-content/plugins/wp-all-import/plugin.php(643): PMXI_Admin_Import->process()
+#2 /data/wwwroot/www.best-boxes.com/wp-includes/class-wp-hook.php(286): PMXI_Plugin->adminDispatcher('')
+#3 /data/wwwroot/www.best-boxes.com/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /data/wwwroot/www.best-boxes.com/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /data/wwwroot/www.best-boxes.com/wp-admin/admin.php(224): do_action('all-import_page...')
+#6 {main}
+  thrown in /data/wwwroot/www.best-boxes.com/wp-content/plugins/wp-all-import/models/model/record.php on line 148
+
+2018-12-21T13:36:34+00:00 CRITICAL Uncaught Exception: Undefined field name. in /data/wwwroot/www.best-boxes.com/wp-content/plugins/wp-all-import/models/model/record.php:148
+Stack trace:
+#0 /data/wwwroot/www.best-boxes.com/wp-content/plugins/wp-all-import/controllers/admin/import.php(2285): PMXI_Model_Record->__get('name')
+#1 /data/wwwroot/www.best-boxes.com/wp-content/plugins/wp-all-import/plugin.php(643): PMXI_Admin_Import->process()
+#2 /data/wwwroot/www.best-boxes.com/wp-includes/class-wp-hook.php(286): PMXI_Plugin->adminDispatcher('')
+#3 /data/wwwroot/www.best-boxes.com/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /data/wwwroot/www.best-boxes.com/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /data/wwwroot/www.best-boxes.com/wp-admin/admin.php(224): do_action('all-import_page...')
+#6 {main}
+  thrown in /data/wwwroot/www.best-boxes.com/wp-content/plugins/wp-all-import/models/model/record.php on line 148
+

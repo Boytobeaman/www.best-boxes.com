@@ -1,0 +1,22 @@
+2018-12-09T04:54:35+00:00 CRITICAL syntax error, unexpected '}' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 56
+
+2018-12-09T04:58:59+00:00 CRITICAL syntax error, unexpected '}' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 56
+
+2018-12-09T05:06:56+00:00 CRITICAL syntax error, unexpected '}' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 57
+
+2018-12-09T05:11:08+00:00 CRITICAL syntax error, unexpected '}' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 57
+
+2018-12-09T05:18:52+00:00 CRITICAL syntax error, unexpected '}' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 42
+
+2018-12-09T05:25:38+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 78
+
+2018-12-09T05:25:41+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 78
+
+2018-12-09T05:25:50+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 78
+
+2018-12-09T05:28:24+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 37
+
+2018-12-09T05:28:29+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 37
+
+2018-12-09T05:28:35+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /data/wwwroot/www.best-boxes.com/wp-content/themes/giga-store/woocommerce/single-product/custom-attr.php on line 37
+

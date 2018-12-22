@@ -1,0 +1,4 @@
+<?php $x0 = $this->xml;
+$v8_0 = $x0->xpath("column[2]");
+$v8_1 = $x0->xpath("column[3]");
+echo $this->getValue($v8_0);?> <?php echo $this->getValue($v8_1);
