@@ -115,7 +115,7 @@ echo '
 	      		<span class="folded-height pull-left value">
 		        		'. $staticload .'
 	        	</span>
-	        	<span class="pull-right"></span>
+	        	<span class="pull-right">T</span>
         	</td>
 	      </tr>
 	      <tr style="display:'. $displayDynamicload .'">
@@ -124,7 +124,7 @@ echo '
 	      		<span class="folded-height pull-left value">
 		        		'. $dynamicload .'
 	        	</span>
-	        	<span class="pull-right"></span>
+	        	<span class="pull-right">T</span>
         	</td>
 	      </tr>
 	      <tr>
