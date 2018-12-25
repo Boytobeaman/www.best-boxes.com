@@ -1,0 +1,63 @@
+0000.005 () Opened log file at time: Sun, 23 Dec 2018 05:49:47 +0000 on https://www.best-boxes.com
+0000.005 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.0 WP: 5.0 PHP: 7.2.10 (apache2handler, Linux iz0xidtic2d71tris2ak53z 3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017 x86_64) MySQL: 5.7.23-log WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 11.6M | 6M) multisite: N openssl: OpenSSL 1.0.2p  14 Aug 2018 mcrypt: N LANG: en_US.UTF-8 ZipArchive::addFile: Y
+0000.005 () Free space on disk containing Updraft's temporary directory: 27023.7 MB
+0000.007 () Restore job started. Entities to restore: db. Restore options: {"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.035 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.042 () Entity: db
+0000.042 () restore_backup(backup_file=backup_2018-12-23-0511_Crates_supplier_4e3f56f02a43-db.gz, type=db, info=a:0:{}, last_one=1)
+0000.042 () Unpacking backup... (backup_2018-12-23-0511_Crates_supplier_4e3f56f02a43-db.gz, 0.3 Mb)
+0000.042 () Database successfully unpacked
+0000.042 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.042 () Using direct MySQL access; value of use_mysqli is: 1
+0000.075 () Max packet size: 500 MB
+0000.075 () Entering maintenance mode
+0000.075 () Enabling Maintenance mode&#8230;
+0000.076 () Backup of: https://www.best-boxes.com
+0000.076 () Content URL: https://www.best-boxes.com/wp-content
+0000.076 () Uploads URL: https://www.best-boxes.com/wp-content/uploads
+0000.076 () Old table prefix: wp_
+0000.076 () Site information: multisite=0
+0000.079 () New table prefix: wp_
+0000.089 () Processing table (InnoDB): wp_options
+0000.382 () Restoring prior UD configuration (table: wp_options; keys: 3)
+0000.396 () Processing table (InnoDB): wp_users
+0000.425 () Processing table (InnoDB): wp_usermeta
+0000.451 () Processing table (InnoDB): wp_commentmeta
+0000.474 () Processing table (InnoDB): wp_comments
+0000.507 () Processing table (InnoDB): wp_links
+0000.525 () Processing table (InnoDB): wp_postmeta
+0001.129 () Processing table (InnoDB): wp_posts
+0001.243 () Processing table (InnoDB): wp_term_relationships
+0001.269 () Processing table (InnoDB): wp_term_taxonomy
+0001.293 () Processing table (InnoDB): wp_termmeta
+0001.320 () Processing table (InnoDB): wp_terms
+0001.365 () Processing table (InnoDB): wp_woocommerce_order_itemmeta
+0001.384 () Database queries processed: 50 in 1.34 seconds
+0001.384 () Processing table (InnoDB): wp_woocommerce_payment_tokenmeta
+0001.407 () Processing table (InnoDB): wp_pmxi_files
+0001.428 () Processing table (InnoDB): wp_pmxi_history
+0001.444 () Processing table (InnoDB): wp_pmxi_images
+0001.479 () Processing table (InnoDB): wp_pmxi_imports
+0001.508 () Processing table (InnoDB): wp_pmxi_posts
+0001.529 () Processing table (InnoDB): wp_pmxi_templates
+0001.549 () Processing table (InnoDB): wp_wc_download_log
+0001.579 () Processing table (InnoDB): wp_wc_webhooks
+0001.599 () Processing table (InnoDB): wp_woocommerce_api_keys
+0001.619 () Processing table (InnoDB): wp_woocommerce_attribute_taxonomies
+0001.649 () Processing table (InnoDB): wp_woocommerce_downloadable_product_permissions
+0001.672 () Processing table (InnoDB): wp_woocommerce_log
+0001.690 () Processing table (InnoDB): wp_woocommerce_order_items
+0001.706 () Processing table (InnoDB): wp_woocommerce_payment_tokens
+0001.723 () Processing table (InnoDB): wp_woocommerce_sessions
+0001.742 () Processing table (InnoDB): wp_woocommerce_shipping_zone_locations
+0001.761 () Processing table (InnoDB): wp_woocommerce_shipping_zone_methods
+0001.779 () Processing table (InnoDB): wp_woocommerce_shipping_zones
+0001.794 () Processing table (InnoDB): wp_woocommerce_tax_rate_locations
+0001.812 () Processing table (InnoDB): wp_woocommerce_tax_rates
+0001.829 () Database queries processed: 100 in 1.78 seconds
+0001.856 () Unlocking database and leaving maintenance mode
+0001.856 () Disabling Maintenance mode&#8230;
+0001.856 () Finished: lines processed: 101 in 1.81 seconds
+0001.856 () Cleaning up rubbish...
+0001.911 () Restore successful!
+0001.911 () Restore successful

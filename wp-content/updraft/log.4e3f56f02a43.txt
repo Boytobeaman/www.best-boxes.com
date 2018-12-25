@@ -172,3 +172,14 @@
 0042.927 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
 0042.936 (0) No email will/can be sent - the user has not configured an email address.
 0042.939 (0) The backup apparently succeeded and is now complete
+0001.879 (1) Opened log file at time: Sun, 23 Dec 2018 05:55:14 +0000 on https://www.best-boxes.com
+0001.881 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.0 WP: 5.0 PHP: 7.2.10 (apache2handler, Linux iz0xidtic2d71tris2ak53z 3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017 x86_64) MySQL: 5.7.23-log WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 9.8M | 8M) multisite: N openssl: OpenSSL 1.0.2p  14 Aug 2018 mcrypt: N LANG: en_US.UTF-8 ZipArchive::addFile: Y
+0001.883 (1) Free space on disk containing Updraft's temporary directory: 27008.9 MB
+0001.886 (1) Terminate: check-in exists with activity within the last 30 seconds (time_mod=1545544513.6, time_now=1545544514.6, diff=1, size=n/a). This likely means that another UpdraftPlus run is at work; so we will exit.
+0001.888 (1) Rescheduling resumption 2: moving to 420 seconds from now (1545544934)
+0001.894 (1) To decrease the likelihood of overlaps, increasing resumption interval to: 300 + 120 = 420
+0515.911 (2) Opened log file at time: Sun, 23 Dec 2018 06:03:48 +0000 on https://www.best-boxes.com
+0515.913 (2) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.0 WP: 5.0 PHP: 7.2.10 (apache2handler, Linux iz0xidtic2d71tris2ak53z 3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017 x86_64) MySQL: 5.7.23-log WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 8.9M | 2M) multisite: N openssl: OpenSSL 1.0.2p  14 Aug 2018 mcrypt: N LANG: en_US.UTF-8 ZipArchive::addFile: Y
+0515.915 (2) Free space on disk containing Updraft's temporary directory: 27008.6 MB
+0515.919 (2) Backup run: resumption=2, nonce=4e3f56f02a43, file_nonce=4e3f56f02a43 begun at=1545544512 (516s ago), job type=backup, previous check-in=0s
+0515.925 (2) Terminate: This backup job is already finished (1).
