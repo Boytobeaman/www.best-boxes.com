@@ -30,17 +30,33 @@ $productweight = get_field('productweight');
 $productvolumn = get_field('productvolumn');
 $productmodel = get_field('productmodel');
 $productfoldedheight = get_field('productfoldedheight');
+$staticload = get_field('staticload');
+$dynamicload = get_field('dynamicload');
 $mmtoinch = 0.03937;
 $kgtolbs = 2.20462262;
 $ltogal = 0.26417;
 if (!$productmodel) {
     $productmodel = "N/A";
 }
+
 if (!$productfoldedheight) {
     $displayFoldedHeight = "none";
 }else{
 	$displayFoldedHeight = "";
 }
+
+if (!$staticload) {
+    $displayStaticload = "none";
+}else{
+	$displayStaticload = "";
+}
+
+if (!$dynamicload) {
+    $displayDynamicload = "none";
+}else{
+	$displayDynamicload = "";
+}
+
 
 echo ' 
 	<table class="table table-hover table-bordered single-product-attr">
@@ -91,6 +107,24 @@ echo '
 	        		'. round($productfoldedheight*$mmtoinch,2) .'
 	        	</span>
 	        	<span class="pull-right">in</span>
+        	</td>
+	      </tr>
+	      <tr style="display:'. $displayStaticLoad .'">
+	      	<td><h4>Static Load Weight</h4></td>
+	      	<td>
+	      		<span class="folded-height pull-left value">
+		        		'. $staticload .'
+	        	</span>
+	        	<span class="pull-right"></span>
+        	</td>
+	      </tr>
+	      <tr style="display:'. $displayDynamicload .'">
+	      	<td><h4>Dynamic Load Weight</h4></td>
+	      	<td>
+	      		<span class="folded-height pull-left value">
+		        		'. $dynamicload .'
+	        	</span>
+	        	<span class="pull-right"></span>
         	</td>
 	      </tr>
 	      <tr>
