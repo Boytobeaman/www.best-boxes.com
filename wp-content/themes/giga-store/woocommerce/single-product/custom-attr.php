@@ -39,7 +39,7 @@ if (!$productmodel) {
     $productmodel = "N/A";
 }
 
-if (!$productfoldedheight || $productfoldedheight==NULL) {
+if (!$productfoldedheight || $productfoldedheight == NULL || $productfoldedheight == "NULL") {
     $displayFoldedHeight = "none";
 }else{
 	$displayFoldedHeight = "";
