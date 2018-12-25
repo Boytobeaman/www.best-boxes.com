@@ -39,22 +39,22 @@ if (!$productmodel) {
     $productmodel = "N/A";
 }
 
-if (!$productfoldedheight) {
+if (!$productfoldedheight || $productfoldedheight==NULL) {
     $displayFoldedHeight = "none";
 }else{
 	$displayFoldedHeight = "";
 }
 
 if (!$staticload) {
-    $displayStaticload = "none";
+    $displayStaticLoad = "none";
 }else{
-	$displayStaticload = "";
+	$displayStaticLoad = "";
 }
 
 if (!$dynamicload) {
-    $displayDynamicload = "none";
+    $displayDynamicLoad = "none";
 }else{
-	$displayDynamicload = "";
+	$displayDynamicLoad = "";
 }
 
 
@@ -118,7 +118,7 @@ echo '
 	        	<span class="pull-right">T</span>
         	</td>
 	      </tr>
-	      <tr style="display:'. $displayDynamicload .'">
+	      <tr style="display:'. $displayDynamicLoad .'">
 	      	<td><h4>Dynamic Load Weight</h4></td>
 	      	<td>
 	      		<span class="folded-height pull-left value">
