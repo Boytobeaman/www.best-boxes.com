@@ -152,7 +152,7 @@ a.woocommerce-loop-product__link:focus{
 }
 
 .products .product:first-child {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .product-right {
@@ -163,7 +163,7 @@ a.woocommerce-loop-product__link:focus{
     -o-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .product-right .product-name {
