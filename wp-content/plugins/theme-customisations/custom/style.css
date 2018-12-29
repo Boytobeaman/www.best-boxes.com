@@ -411,9 +411,8 @@ a.flexslider-button:hover{
 }
 .woo-tabs-section.row .tabs-left>li.active:before{
     left: 0;
-}
-.woo-tabs-section.row .nav>li>a{
-    padding-right: 35px;
+    transform: inherit;
+    background-color: #3b88a9;
 }
 .woo-tabs-section.row .nav>li>a:hover {
     background-color: #3b88a9;
