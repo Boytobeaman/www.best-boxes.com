@@ -418,6 +418,9 @@ a.flexslider-button:hover{
     transform: inherit;
     background-color: #3b88a9;
 }
+.woo-tabs-section.row .nav>li>a{
+    font-size: 1.5em;
+}
 .woo-tabs-section.row .nav>li>a:hover {
     background-color: #3b88a9;
 }
