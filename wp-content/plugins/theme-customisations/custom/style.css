@@ -13,7 +13,7 @@ a:focus {
 }
 .products a,
 .products a:hover,
-.products a:focus, {
+.products a:focus{
     color: #333;
     font-family: 'Flexo-Light';
     padding: 0;
