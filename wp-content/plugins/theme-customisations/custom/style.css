@@ -162,7 +162,7 @@ a.woocommerce-loop-product__link:focus{
     -o-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .product-right .product-name {
@@ -400,9 +400,22 @@ a.flexslider-button:hover{
 .woo-tabs-section.row>div{
     width: 100%;
 }
+.woo-tabs-section.row .tabs-left{
+    text-align: center;
+}
 .woo-tabs-section.row .tabs-left>li{
-    float: left;
+    display: inline-block;
 }
 .woo-tabs-section.row .tab-content{
     background-color: #fff;
+}
+.woo-tabs-section.row .tabs-left>li.active:before{
+    left: 0;
+}
+.woo-tabs-section.row .nav>li>a{
+    padding-right: 35px;
+}
+.woo-tabs-section.row .nav>li>a:hover,
+.woo-tabs-section.row .nav>li>a:focus {
+    background-color: #3b88a9;
 }
