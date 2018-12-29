@@ -1,7 +1,10 @@
 body {
     height: 100%;
 }
-
+.mx-0{
+    margin-left: 0;
+    margin-right: 0;
+}
 a {
     color: #3b88a9;
     padding: 5px;
