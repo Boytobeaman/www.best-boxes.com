@@ -170,7 +170,7 @@ if ( ! function_exists( 'woocommerce_template_loop_product_attr' ) ) {
 						</div>
 						<div class="product-attributes">
 							<div class="row mx-0">
-							  <div class="col-sm-7">
+							  <div class="col-xs-7">
 							    <div class="row mx-0">
 							      <div class="col-sm-6 col-xs-12 br-2-white external-dimension">
 							      	<div class="table-head bb-2-white">External Dimensions</div>
@@ -184,7 +184,7 @@ if ( ! function_exists( 'woocommerce_template_loop_product_attr' ) ) {
 							      </div>
 							    </div>
 							  </div>
-							  <div class="col-sm-5">
+							  <div class="col-xs-5">
 							    <div class="row mx-0">
 							      <div class="col-sm-6 col-xs-12 br-2-white weight hidden-xs">
 							      	<div class="table-head bb-2-white">Weight</div>
