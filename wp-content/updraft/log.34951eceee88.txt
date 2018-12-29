@@ -1,0 +1,649 @@
+0000.000 (0) Opened log file at time: Sat, 29 Dec 2018 06:35:40 +0000 on https://www.best-boxes.com
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.0 WP: 5.0.2 PHP: 7.2.10 (apache2handler, Linux iz0xidtic2d71tris2ak53z 3.10.0-693.2.2.el7.x86_64 #1 SMP Tue Sep 12 22:26:13 UTC 2017 x86_64) MySQL: 5.7.23-log WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 192M (used: 11.5M | 4M) multisite: N openssl: OpenSSL 1.0.2p  14 Aug 2018 mcrypt: N LANG: en_US.UTF-8 ZipArchive::addFile: Y
+0000.004 (0) Free space on disk containing Updraft's temporary directory: 26067.3 MB
+0000.006 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: daily)
+0000.008 (0) Semaphore (fd, wp_options) being initialised
+0000.018 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.024 (0) Set semaphore last lock (fd) time to 2018-12-29 06:35:40
+0000.025 (0) Semaphore lock (fd) complete
+0000.032 (0) Backup run: resumption=0, nonce=34951eceee88, file_nonce=34951eceee88 begun at=1546065340 (0s ago), job type=backup
+0000.035 (0) Scheduling a resumption (1) after 300 seconds (1546065640) in case this run gets aborted
+0000.039 (0) Checking if we have a zip executable available
+0000.043 (0) Creation of backups of directories: beginning
+0000.049 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.297 (0) Total entities for the zip file: 934 directories, 6333 files (0 skipped as non-modified), 88.8 MB
+0000.307 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.312 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.316 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.321 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.325 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.327 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.5 MB, 6333 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.619 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 600 files added (on-disk size: 968.9 KB)
+0000.623 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 700 files added (on-disk size: 968.9 KB)
+0000.628 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 800 files added (on-disk size: 968.9 KB)
+0000.632 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 900 files added (on-disk size: 968.9 KB)
+0000.636 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 1000 files added (on-disk size: 968.9 KB)
+0000.637 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10.7 MB, 6333 files batched, 501 (1002) added so far); re-opening (prior size: 968.9 KB)
+0002.222 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 1100 files added (on-disk size: 4115.3 KB)
+0002.227 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 1200 files added (on-disk size: 4115.3 KB)
+0002.231 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 1300 files added (on-disk size: 4115.3 KB)
+0002.235 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 1400 files added (on-disk size: 4115.3 KB)
+0002.240 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 1500 files added (on-disk size: 4115.3 KB)
+0002.241 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.2 MB, 6333 files batched, 501 (1503) added so far); re-opening (prior size: 4115.3 KB)
+0002.675 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 1600 files added (on-disk size: 5399.4 KB)
+0002.680 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 1700 files added (on-disk size: 5399.4 KB)
+0002.684 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 1800 files added (on-disk size: 5399.4 KB)
+0002.688 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 1900 files added (on-disk size: 5399.4 KB)
+0002.693 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 2000 files added (on-disk size: 5399.4 KB)
+0002.694 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6 MB, 6333 files batched, 501 (2004) added so far); re-opening (prior size: 5399.4 KB)
+0003.199 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 2100 files added (on-disk size: 7596.4 KB)
+0003.203 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 2200 files added (on-disk size: 7596.4 KB)
+0003.207 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 2300 files added (on-disk size: 7596.4 KB)
+0003.212 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 2400 files added (on-disk size: 7596.4 KB)
+0003.216 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 2500 files added (on-disk size: 7596.4 KB)
+0003.218 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4 MB, 6333 files batched, 501 (2505) added so far); re-opening (prior size: 7596.4 KB)
+0003.542 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 2600 files added (on-disk size: 8729.1 KB)
+0003.546 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 2700 files added (on-disk size: 8729.1 KB)
+0003.550 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 2800 files added (on-disk size: 8729.1 KB)
+0003.554 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 2900 files added (on-disk size: 8729.1 KB)
+0003.558 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 3000 files added (on-disk size: 8729.1 KB)
+0003.560 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.6 MB, 6333 files batched, 501 (3006) added so far); re-opening (prior size: 8729.1 KB)
+0004.721 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 3100 files added (on-disk size: 11702 KB)
+0004.726 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 3200 files added (on-disk size: 11702 KB)
+0004.730 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 3300 files added (on-disk size: 11702 KB)
+0004.734 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 3400 files added (on-disk size: 11702 KB)
+0004.739 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 3500 files added (on-disk size: 11702 KB)
+0004.741 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.2 MB, 6333 files batched, 501 (3507) added so far); re-opening (prior size: 11702 KB)
+0005.199 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 3600 files added (on-disk size: 13257.3 KB)
+0005.204 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 3700 files added (on-disk size: 13257.3 KB)
+0005.208 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 3800 files added (on-disk size: 13257.3 KB)
+0005.212 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 3900 files added (on-disk size: 13257.3 KB)
+0005.216 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 4000 files added (on-disk size: 13257.3 KB)
+0005.218 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.8 MB, 6333 files batched, 501 (4008) added so far); re-opening (prior size: 13257.3 KB)
+0006.126 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 4100 files added (on-disk size: 15745.2 KB)
+0006.132 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 4200 files added (on-disk size: 15745.2 KB)
+0006.136 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 4300 files added (on-disk size: 15745.2 KB)
+0006.139 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 4400 files added (on-disk size: 15745.2 KB)
+0006.144 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 4500 files added (on-disk size: 15745.2 KB)
+0006.147 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5 MB, 6333 files batched, 501 (4509) added so far); re-opening (prior size: 15745.2 KB)
+0006.690 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 4600 files added (on-disk size: 17677 KB)
+0006.696 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 4700 files added (on-disk size: 17677 KB)
+0006.700 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 4800 files added (on-disk size: 17677 KB)
+0006.704 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 4900 files added (on-disk size: 17677 KB)
+0006.708 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 5000 files added (on-disk size: 17677 KB)
+0006.719 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.7 MB, 6333 files batched, 501 (5010) added so far); re-opening (prior size: 17677 KB)
+0007.425 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 5100 files added (on-disk size: 19955 KB)
+0007.429 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 5200 files added (on-disk size: 19955 KB)
+0007.433 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 5300 files added (on-disk size: 19955 KB)
+0007.438 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 5400 files added (on-disk size: 19955 KB)
+0007.442 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 5500 files added (on-disk size: 19955 KB)
+0007.445 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.2 MB, 6333 files batched, 501 (5511) added so far); re-opening (prior size: 19955 KB)
+0007.920 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 5600 files added (on-disk size: 21144.5 KB)
+0007.925 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 5700 files added (on-disk size: 21144.5 KB)
+0007.929 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 5800 files added (on-disk size: 21144.5 KB)
+0007.934 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 5900 files added (on-disk size: 21144.5 KB)
+0007.938 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 6000 files added (on-disk size: 21144.5 KB)
+0007.940 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.6 MB, 6333 files batched, 501 (6012) added so far); re-opening (prior size: 21144.5 KB)
+0008.299 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 6100 files added (on-disk size: 21820 KB)
+0008.304 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 6200 files added (on-disk size: 21820 KB)
+0008.307 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip.tmp: 6300 files added (on-disk size: 21820 KB)
+0010.277 (0) Created plugins zip (0) - 26488 KB in 10.2 s (2590.2 KB/s) (sha1: bd73530e4165e0a809a43e6354b2134b6423df2b, sha256: 32bf2e59a3131b3cb40b89c1fa3b58607c07196ecec328234247d4fdcdf15a9b)
+0010.283 (0) Beginning creation of dump of themes (split every: 400 MB)
+0010.316 (0) Total entities for the zip file: 169 directories, 937 files (0 skipped as non-modified), 18.1 MB
+0010.321 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0010.325 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0010.328 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0010.332 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0010.336 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0010.338 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (11 MB, 937 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0011.058 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip.tmp: 600 files added (on-disk size: 4893.1 KB)
+0011.063 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip.tmp: 700 files added (on-disk size: 4893.1 KB)
+0011.067 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip.tmp: 800 files added (on-disk size: 4893.1 KB)
+0011.071 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip.tmp: 900 files added (on-disk size: 4893.1 KB)
+0011.768 (0) Created themes zip (0) - 8220.1 KB in 1.5 s (5546.1 KB/s) (sha1: cd1eb089d0a9c13f9418142575e2a45ff95e8c5f, sha256: a6e08f3bf36f19836ca2ab01bdbfe263c2c9325fd441313b3f1b068d86d08a64)
+0011.773 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0011.774 (0) Looking for candidates to backup in: /data/wwwroot/www.best-boxes.com/wp-content/uploads
+0011.776 (0) finding files: woocommerce_uploads: adding to list (1)
+0011.778 (0) finding files: 2018: adding to list (2)
+0011.780 (0) finding files: GeoLite2-Country.mmdb: adding to list (3)
+0011.781 (0) finding files: wc-logs: adding to list (4)
+0011.783 (0) finding files: wpallimport: adding to list (5)
+0011.785 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0012.058 (0) Total entities for the zip file: 97 directories, 10209 files (0 skipped as non-modified), 570.9 MB
+0012.063 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0012.067 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0012.071 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0012.076 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0012.080 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (30.2 MB, 10209 files batched, 466 (466) added so far); re-opening (prior size: 0 KB)
+0012.699 (0) A useful amount of data was added after this amount of zip processing: 1.9 s (normalised: 1.6 s, rate: 16397.8 KB/s)
+0012.703 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.8888590335846, normalised_time=1.5611828143385, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=100748226)
+0012.710 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 500 files added (on-disk size: 31072.6 KB)
+0012.714 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 600 files added (on-disk size: 31072.6 KB)
+0012.718 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 700 files added (on-disk size: 31072.6 KB)
+0012.722 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 800 files added (on-disk size: 31072.6 KB)
+0012.726 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 900 files added (on-disk size: 31072.6 KB)
+0012.729 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (21.4 MB, 10209 files batched, 501 (967) added so far); re-opening (prior size: 31072.6 KB)
+0013.243 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 1000 files added (on-disk size: 53115.4 KB)
+0013.247 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 1100 files added (on-disk size: 53115.4 KB)
+0013.251 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 1200 files added (on-disk size: 53115.4 KB)
+0013.255 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 1300 files added (on-disk size: 53115.4 KB)
+0013.259 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 1400 files added (on-disk size: 53115.4 KB)
+0013.264 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (25.9 MB, 10209 files batched, 501 (1468) added so far); re-opening (prior size: 53115.4 KB)
+0014.283 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 1500 files added (on-disk size: 79679.8 KB)
+0014.287 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 1600 files added (on-disk size: 79679.8 KB)
+0014.292 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 1700 files added (on-disk size: 79679.8 KB)
+0014.297 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 1800 files added (on-disk size: 79679.8 KB)
+0014.301 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 1900 files added (on-disk size: 79679.8 KB)
+0014.304 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (31.1 MB, 10209 files batched, 501 (1969) added so far); re-opening (prior size: 79679.8 KB)
+0015.718 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 2000 files added (on-disk size: 111665.2 KB)
+0015.723 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 2100 files added (on-disk size: 111665.2 KB)
+0015.728 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 2200 files added (on-disk size: 111665.2 KB)
+0015.733 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 2300 files added (on-disk size: 111665.2 KB)
+0015.738 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 2400 files added (on-disk size: 111665.2 KB)
+0015.742 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (19.8 MB, 10209 files batched, 501 (2470) added so far); re-opening (prior size: 111665.2 KB)
+0017.248 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 2500 files added (on-disk size: 131993.6 KB)
+0017.253 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 2600 files added (on-disk size: 131993.6 KB)
+0017.257 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 2700 files added (on-disk size: 131993.6 KB)
+0017.261 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 2800 files added (on-disk size: 131993.6 KB)
+0017.265 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 2900 files added (on-disk size: 131993.6 KB)
+0017.268 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (27.6 MB, 10209 files batched, 501 (2971) added so far); re-opening (prior size: 131993.6 KB)
+0019.206 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 3000 files added (on-disk size: 160358.5 KB)
+0019.211 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 3100 files added (on-disk size: 160358.5 KB)
+0019.215 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 3200 files added (on-disk size: 160358.5 KB)
+0019.219 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 3300 files added (on-disk size: 160358.5 KB)
+0019.223 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 3400 files added (on-disk size: 160358.5 KB)
+0019.227 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (20.5 MB, 10209 files batched, 501 (3472) added so far); re-opening (prior size: 160358.5 KB)
+0021.017 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 3500 files added (on-disk size: 181424.4 KB)
+0021.022 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 3600 files added (on-disk size: 181424.4 KB)
+0021.027 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 3700 files added (on-disk size: 181424.4 KB)
+0021.031 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 3800 files added (on-disk size: 181424.4 KB)
+0021.037 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 3900 files added (on-disk size: 181424.4 KB)
+0021.041 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (23 MB, 10209 files batched, 501 (3973) added so far); re-opening (prior size: 181424.4 KB)
+0023.246 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 4000 files added (on-disk size: 205098.7 KB)
+0023.252 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 4100 files added (on-disk size: 205098.7 KB)
+0023.256 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 4200 files added (on-disk size: 205098.7 KB)
+0023.260 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 4300 files added (on-disk size: 205098.7 KB)
+0023.264 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 4400 files added (on-disk size: 205098.7 KB)
+0023.268 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (28.2 MB, 10209 files batched, 501 (4474) added so far); re-opening (prior size: 205098.7 KB)
+0025.625 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 4500 files added (on-disk size: 234093.6 KB)
+0025.675 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 4600 files added (on-disk size: 234093.6 KB)
+0025.687 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 4700 files added (on-disk size: 234093.6 KB)
+0025.693 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 4800 files added (on-disk size: 234093.6 KB)
+0025.697 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 4900 files added (on-disk size: 234093.6 KB)
+0025.701 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (22.8 MB, 10209 files batched, 501 (4975) added so far); re-opening (prior size: 234093.6 KB)
+0029.033 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 5000 files added (on-disk size: 257565.7 KB)
+0029.040 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 5100 files added (on-disk size: 257565.7 KB)
+0029.044 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 5200 files added (on-disk size: 257565.7 KB)
+0029.049 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 5300 files added (on-disk size: 257565.7 KB)
+0029.054 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 5400 files added (on-disk size: 257565.7 KB)
+0029.058 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (22.5 MB, 10209 files batched, 501 (5476) added so far); re-opening (prior size: 257565.7 KB)
+0031.924 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 5500 files added (on-disk size: 280720.9 KB)
+0031.930 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 5600 files added (on-disk size: 280720.9 KB)
+0031.935 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 5700 files added (on-disk size: 280720.9 KB)
+0031.939 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 5800 files added (on-disk size: 280720.9 KB)
+0031.945 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 5900 files added (on-disk size: 280720.9 KB)
+0031.948 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (23.8 MB, 10209 files batched, 501 (5977) added so far); re-opening (prior size: 280720.9 KB)
+0034.921 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 6000 files added (on-disk size: 305183.7 KB)
+0034.927 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 6100 files added (on-disk size: 305183.7 KB)
+0034.972 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 6200 files added (on-disk size: 305183.7 KB)
+0034.977 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 6300 files added (on-disk size: 305183.7 KB)
+0034.982 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 6400 files added (on-disk size: 305183.7 KB)
+0034.987 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (21.3 MB, 10209 files batched, 501 (6478) added so far); re-opening (prior size: 305183.7 KB)
+0038.265 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 6500 files added (on-disk size: 327058.2 KB)
+0038.271 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 6600 files added (on-disk size: 327058.2 KB)
+0038.277 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 6700 files added (on-disk size: 327058.2 KB)
+0038.281 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 6800 files added (on-disk size: 327058.2 KB)
+0038.285 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 6900 files added (on-disk size: 327058.2 KB)
+0038.289 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (49.1 MB, 10209 files batched, 501 (6979) added so far); re-opening (prior size: 327058.2 KB)
+0042.334 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 7000 files added (on-disk size: 377452.2 KB)
+0042.341 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 7100 files added (on-disk size: 377452.2 KB)
+0042.346 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 7200 files added (on-disk size: 377452.2 KB)
+0042.350 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 7300 files added (on-disk size: 377452.2 KB)
+0042.354 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 7400 files added (on-disk size: 377452.2 KB)
+0042.358 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (28.4 MB, 10209 files batched, 501 (7480) added so far); re-opening (prior size: 377452.2 KB)
+0046.344 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip.tmp: 7500 files added (on-disk size: 406619.7 KB)
+0046.348 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): possibly approaching split limit (2.6 MB, 69 (7549) files added so far); last ratio: 1; re-opening (prior size: 406619.7 KB)
+0050.404 (0) Zip size is at/near split limit (399.7 MB / 400 MB) - bumping index (from: 0)
+0057.924 (0) Created uploads zip (0) - 409341.7 KB in 38.6 s (10599.3 KB/s) (checksums: sha1: 6da82739b76d48575e2e9b977059a860dd8681c6, sha256: b0f77c383dce95f7807b3dc2fe39c36efa148dfbeac9d48d3bff40c2eabb0806)
+0057.928 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (7550) files added so far); re-opening (prior size: 0 KB)
+0057.935 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 7600 files added (on-disk size: 19.4 KB)
+0057.940 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 7700 files added (on-disk size: 19.4 KB)
+0057.944 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 7800 files added (on-disk size: 19.4 KB)
+0057.950 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 7900 files added (on-disk size: 19.4 KB)
+0057.954 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 8000 files added (on-disk size: 19.4 KB)
+0057.957 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (24.5 MB, 10209 files batched, 501 (8051) added so far); re-opening (prior size: 19.4 KB)
+0058.317 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 8100 files added (on-disk size: 25216 KB)
+0058.321 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 8200 files added (on-disk size: 25216 KB)
+0058.326 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 8300 files added (on-disk size: 25216 KB)
+0058.332 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 8400 files added (on-disk size: 25216 KB)
+0058.336 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 8500 files added (on-disk size: 25216 KB)
+0058.340 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (45.6 MB, 10209 files batched, 501 (8552) added so far); re-opening (prior size: 25216 KB)
+0059.003 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 8600 files added (on-disk size: 72017.1 KB)
+0059.011 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 8700 files added (on-disk size: 72017.1 KB)
+0059.015 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 8800 files added (on-disk size: 72017.1 KB)
+0059.020 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 8900 files added (on-disk size: 72017.1 KB)
+0059.024 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 9000 files added (on-disk size: 72017.1 KB)
+0059.027 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (17.1 MB, 10209 files batched, 501 (9053) added so far); re-opening (prior size: 72017.1 KB)
+0059.974 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 9100 files added (on-disk size: 89630.5 KB)
+0059.979 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 9200 files added (on-disk size: 89630.5 KB)
+0059.984 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 9300 files added (on-disk size: 89630.5 KB)
+0059.989 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 9400 files added (on-disk size: 89630.5 KB)
+0059.993 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 9500 files added (on-disk size: 89630.5 KB)
+0059.997 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (34.9 MB, 10209 files batched, 501 (9554) added so far); re-opening (prior size: 89630.5 KB)
+0061.609 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 9600 files added (on-disk size: 125490.8 KB)
+0061.672 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 9700 files added (on-disk size: 125490.8 KB)
+0061.678 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 9800 files added (on-disk size: 125490.8 KB)
+0061.684 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 9900 files added (on-disk size: 125490.8 KB)
+0061.689 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 10000 files added (on-disk size: 125490.8 KB)
+0061.693 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (39.9 MB, 10209 files batched, 501 (10055) added so far); re-opening (prior size: 125490.8 KB)
+0066.213 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 10100 files added (on-disk size: 164608.8 KB)
+0066.291 (0) Zip: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip.tmp: 10200 files added (on-disk size: 164608.8 KB)
+0071.194 (0) Created uploads zip (1) - 165136.3 KB in 13.3 s (12446.3 KB/s) (sha1: 8d55bb7a48adf6b996f1ccadb26c5ecbed6de441, sha256: 643bfb4ce52d5176299514b5f13d4a3ecdaf4ee665dd777fcb5c57c2096abc14)
+0071.200 (0) Beginning backup of other directories found in the content directory (index: 0)
+0071.202 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0071.204 (0) Looking for candidates to backup in: /data/wwwroot/www.best-boxes.com/wp-content
+0071.206 (0) finding files: plugins: skipping: this is the plugins directory
+0071.208 (0) finding files: upgrade: skipping: excluded by options
+0071.211 (0) finding files: cache: skipping: excluded by options
+0071.213 (0) finding files: w3tc-config: adding to list (1)
+0071.217 (0) finding files: updraft: skipping: this is the updraft directory
+0071.219 (0) finding files: index.php: adding to list (2)
+0071.221 (0) finding files: advanced-cache.php: adding to list (3)
+0071.223 (0) finding files: uploads: skipping: this is the uploads directory
+0071.226 (0) finding files: themes: skipping: this is the themes directory
+0071.287 (0) Total entities for the zip file: 1 directories, 4 files (0 skipped as non-modified), 0 MB
+0071.303 (0) Created others zip (0) - 5.9 KB in 0.1 s (98.5 KB/s) (sha1: f151b204382dfeaf55e306b87ef81d5c7c826542, sha256: a30345b47b71fcdd3e45c56da3c461d3ca9d1da3c0cb5a66cb962c8094b1423f)
+0071.311 (0) Saving backup status to database (elements: 9)
+0071.315 (0) Beginning creation of database dump (WordPress DB)
+0071.490 (0) Table wp_options: Total expected rows (approximate): 945
+0071.544 (0) Table wp_options: Total rows added: 955 in 0.05 seconds
+0071.547 (0) Table wp_options: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_options.table.gz - 213.2 KB)
+0071.553 (0) Table wp_users: Total expected rows (approximate): 2
+0071.555 (0) Table wp_users: Total rows added: 2 in 0.00 seconds
+0071.557 (0) Table wp_users: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_users.table.gz - 0.7 KB)
+0071.564 (0) Table wp_usermeta: Total expected rows (approximate): 52
+0071.567 (0) Table wp_usermeta: Total rows added: 55 in 0.00 seconds
+0071.569 (0) Table wp_usermeta: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_usermeta.table.gz - 2.8 KB)
+0071.578 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0071.580 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0071.582 (0) Table wp_commentmeta: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0071.592 (0) Table wp_comments: Total expected rows (approximate): 0
+0071.595 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0071.597 (0) Table wp_comments: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_comments.table.gz - 0.7 KB)
+0071.604 (0) Table wp_links: Total expected rows (approximate): 0
+0071.606 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0071.610 (0) Table wp_links: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_links.table.gz - 0.4 KB)
+0071.619 (0) Table wp_postmeta: Total expected rows (approximate): 12023
+0071.792 (0) Table wp_postmeta: Total rows added: 13646 in 0.17 seconds
+0071.796 (0) Table wp_postmeta: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_postmeta.table.gz - 169.5 KB)
+0071.804 (0) Table wp_posts: Total expected rows (approximate): 1113
+0071.846 (0) Table wp_posts: Total rows added: 1392 in 0.04 seconds
+0071.852 (0) Table wp_posts: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_posts.table.gz - 77.9 KB)
+0071.861 (0) Table wp_term_relationships: Total expected rows (approximate): 668
+0071.865 (0) Table wp_term_relationships: Total rows added: 668 in 0.00 seconds
+0071.867 (0) Table wp_term_relationships: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_term_relationships.table.gz - 2.1 KB)
+0071.874 (0) Table wp_term_taxonomy: Total expected rows (approximate): 99
+0071.877 (0) Table wp_term_taxonomy: Total rows added: 99 in 0.00 seconds
+0071.879 (0) Table wp_term_taxonomy: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_term_taxonomy.table.gz - 3.4 KB)
+0071.886 (0) Table wp_termmeta: Total expected rows (approximate): 112
+0071.889 (0) Table wp_termmeta: Total rows added: 112 in 0.00 seconds
+0071.892 (0) Table wp_termmeta: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_termmeta.table.gz - 1.1 KB)
+0071.899 (0) Table wp_terms: Total expected rows (approximate): 99
+0071.903 (0) Table wp_terms: Total rows added: 99 in 0.00 seconds
+0071.906 (0) Table wp_terms: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_terms.table.gz - 1.8 KB)
+0071.917 (0) Table wp_woocommerce_order_itemmeta: Total expected rows (approximate): 0
+0071.920 (0) Table wp_woocommerce_order_itemmeta: Total rows added: 0 in 0.00 seconds
+0071.922 (0) Table wp_woocommerce_order_itemmeta: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_order_itemmeta.table.gz - 0.4 KB)
+0071.930 (0) Table wp_woocommerce_payment_tokenmeta: Total expected rows (approximate): 0
+0071.933 (0) Table wp_woocommerce_payment_tokenmeta: Total rows added: 0 in 0.00 seconds
+0071.936 (0) Table wp_woocommerce_payment_tokenmeta: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_payment_tokenmeta.table.gz - 0.4 KB)
+0071.942 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 1
+0071.945 (0) Table wp_yoast_seo_links: Total rows added: 1 in 0.00 seconds
+0071.947 (0) Table wp_yoast_seo_links: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_yoast_seo_links.table.gz - 0.4 KB)
+0071.956 (0) Table wp_yoast_seo_meta: Total expected rows (approximate): 176
+0071.960 (0) Table wp_yoast_seo_meta: Total rows added: 214 in 0.00 seconds
+0071.962 (0) Table wp_yoast_seo_meta: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_yoast_seo_meta.table.gz - 0.9 KB)
+0071.969 (0) Table wp_pmxi_files: Total expected rows (approximate): 8
+0071.972 (0) Table wp_pmxi_files: Total rows added: 10 in 0.00 seconds
+0071.976 (0) Table wp_pmxi_files: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_files.table.gz - 0.9 KB)
+0071.983 (0) Table wp_pmxi_history: Total expected rows (approximate): 32
+0071.987 (0) Table wp_pmxi_history: Total rows added: 34 in 0.00 seconds
+0071.990 (0) Table wp_pmxi_history: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_history.table.gz - 1 KB)
+0071.997 (0) Table wp_pmxi_images: Total expected rows (approximate): 723
+0072.006 (0) Table wp_pmxi_images: Total rows added: 826 in 0.01 seconds
+0072.009 (0) Table wp_pmxi_images: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_images.table.gz - 18 KB)
+0072.016 (0) Table wp_pmxi_imports: Total expected rows (approximate): 8
+0072.022 (0) Table wp_pmxi_imports: Total rows added: 10 in 0.00 seconds
+0072.024 (0) Table wp_pmxi_imports: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_imports.table.gz - 11.5 KB)
+0072.032 (0) Table wp_pmxi_posts: Total expected rows (approximate): 173
+0072.035 (0) Table wp_pmxi_posts: Total rows added: 189 in 0.00 seconds
+0072.038 (0) Table wp_pmxi_posts: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_posts.table.gz - 3.4 KB)
+0072.047 (0) Table wp_pmxi_templates: Total expected rows (approximate): 8
+0072.052 (0) Table wp_pmxi_templates: Total rows added: 8 in 0.00 seconds
+0072.055 (0) Table wp_pmxi_templates: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_templates.table.gz - 9.2 KB)
+0072.064 (0) Table wp_wc_download_log: Total expected rows (approximate): 0
+0072.067 (0) Table wp_wc_download_log: Total rows added: 0 in 0.00 seconds
+0072.069 (0) Table wp_wc_download_log: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wc_download_log.table.gz - 0.4 KB)
+0072.076 (0) Table wp_wc_webhooks: Total expected rows (approximate): 0
+0072.079 (0) Table wp_wc_webhooks: Total rows added: 0 in 0.00 seconds
+0072.081 (0) Table wp_wc_webhooks: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wc_webhooks.table.gz - 0.5 KB)
+0072.089 (0) Table wp_woocommerce_api_keys: Total expected rows (approximate): 0
+0072.092 (0) Table wp_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0072.096 (0) Table wp_woocommerce_api_keys: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_api_keys.table.gz - 0.4 KB)
+0072.105 (0) Table wp_woocommerce_attribute_taxonomies: Total expected rows (approximate): 0
+0072.108 (0) Table wp_woocommerce_attribute_taxonomies: Total rows added: 0 in 0.00 seconds
+0072.111 (0) Table wp_woocommerce_attribute_taxonomies: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_attribute_taxonomies.table.gz - 0.4 KB)
+0072.124 (0) Table wp_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0072.127 (0) Table wp_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0072.129 (0) Table wp_woocommerce_downloadable_product_permissions: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_downloadable_product_permissions.table.gz - 0.5 KB)
+0072.139 (0) Table wp_woocommerce_log: Total expected rows (approximate): 0
+0072.141 (0) Table wp_woocommerce_log: Total rows added: 0 in 0.00 seconds
+0072.143 (0) Table wp_woocommerce_log: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_log.table.gz - 0.4 KB)
+0072.150 (0) Table wp_woocommerce_order_items: Total expected rows (approximate): 0
+0072.153 (0) Table wp_woocommerce_order_items: Total rows added: 0 in 0.00 seconds
+0072.154 (0) Table wp_woocommerce_order_items: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_order_items.table.gz - 0.4 KB)
+0072.164 (0) Table wp_woocommerce_payment_tokens: Total expected rows (approximate): 0
+0072.167 (0) Table wp_woocommerce_payment_tokens: Total rows added: 0 in 0.00 seconds
+0072.169 (0) Table wp_woocommerce_payment_tokens: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_payment_tokens.table.gz - 0.4 KB)
+0072.176 (0) Table wp_woocommerce_sessions: Total expected rows (approximate): 2
+0072.178 (0) Table wp_woocommerce_sessions: Total rows added: 2 in 0.00 seconds
+0072.180 (0) Table wp_woocommerce_sessions: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_sessions.table.gz - 0.9 KB)
+0072.188 (0) Table wp_woocommerce_shipping_zone_locations: Total expected rows (approximate): 0
+0072.191 (0) Table wp_woocommerce_shipping_zone_locations: Total rows added: 0 in 0.00 seconds
+0072.193 (0) Table wp_woocommerce_shipping_zone_locations: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_shipping_zone_locations.table.gz - 0.4 KB)
+0072.201 (0) Table wp_woocommerce_shipping_zone_methods: Total expected rows (approximate): 0
+0072.203 (0) Table wp_woocommerce_shipping_zone_methods: Total rows added: 0 in 0.00 seconds
+0072.205 (0) Table wp_woocommerce_shipping_zone_methods: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_shipping_zone_methods.table.gz - 0.4 KB)
+0072.212 (0) Table wp_woocommerce_shipping_zones: Total expected rows (approximate): 0
+0072.216 (0) Table wp_woocommerce_shipping_zones: Total rows added: 0 in 0.00 seconds
+0072.219 (0) Table wp_woocommerce_shipping_zones: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_shipping_zones.table.gz - 0.3 KB)
+0072.226 (0) Table wp_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0072.228 (0) Table wp_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0072.230 (0) Table wp_woocommerce_tax_rate_locations: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_tax_rate_locations.table.gz - 0.4 KB)
+0072.237 (0) Table wp_woocommerce_tax_rates: Total expected rows (approximate): 0
+0072.239 (0) Table wp_woocommerce_tax_rates: Total rows added: 0 in 0.00 seconds
+0072.241 (0) Table wp_woocommerce_tax_rates: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_tax_rates.table.gz - 0.4 KB)
+0072.249 (0) Table wp_wpgmza: Total expected rows (approximate): 0
+0072.252 (0) Table wp_wpgmza: Total rows added: 1 in 0.00 seconds
+0072.254 (0) Table wp_wpgmza: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza.table.gz - 0.5 KB)
+0072.264 (0) Table wp_wpgmza_categories: Total expected rows (approximate): 0
+0072.269 (0) Table wp_wpgmza_categories: Total rows added: 0 in 0.00 seconds
+0072.271 (0) Table wp_wpgmza_categories: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_categories.table.gz - 0.3 KB)
+0072.278 (0) Table wp_wpgmza_category_maps: Total expected rows (approximate): 0
+0072.280 (0) Table wp_wpgmza_category_maps: Total rows added: 0 in 0.00 seconds
+0072.282 (0) Table wp_wpgmza_category_maps: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_category_maps.table.gz - 0.3 KB)
+0072.288 (0) Table wp_wpgmza_circles: Total expected rows (approximate): 0
+0072.291 (0) Table wp_wpgmza_circles: Total rows added: 0 in 0.00 seconds
+0072.293 (0) Table wp_wpgmza_circles: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_circles.table.gz - 0.3 KB)
+0072.300 (0) Table wp_wpgmza_maps: Total expected rows (approximate): 0
+0072.303 (0) Table wp_wpgmza_maps: Total rows added: 1 in 0.00 seconds
+0072.305 (0) Table wp_wpgmza_maps: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_maps.table.gz - 0.7 KB)
+0072.312 (0) Table wp_wpgmza_polygon: Total expected rows (approximate): 0
+0072.315 (0) Table wp_wpgmza_polygon: Total rows added: 0 in 0.00 seconds
+0072.316 (0) Table wp_wpgmza_polygon: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_polygon.table.gz - 0.4 KB)
+0072.323 (0) Table wp_wpgmza_polylines: Total expected rows (approximate): 0
+0072.325 (0) Table wp_wpgmza_polylines: Total rows added: 0 in 0.00 seconds
+0072.327 (0) Table wp_wpgmza_polylines: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_polylines.table.gz - 0.3 KB)
+0072.333 (0) Table wp_wpgmza_rectangles: Total expected rows (approximate): 0
+0072.336 (0) Table wp_wpgmza_rectangles: Total rows added: 0 in 0.00 seconds
+0072.338 (0) Table wp_wpgmza_rectangles: finishing file (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_rectangles.table.gz - 0.3 KB)
+0072.345 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_options.table.gz (1/44): adding to final database dump
+0072.388 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_users.table.gz (2/44): adding to final database dump
+0072.391 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_usermeta.table.gz (3/44): adding to final database dump
+0072.393 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_commentmeta.table.gz (4/44): adding to final database dump
+0072.395 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_comments.table.gz (5/44): adding to final database dump
+0072.397 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_links.table.gz (6/44): adding to final database dump
+0072.399 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_postmeta.table.gz (7/44): adding to final database dump
+0072.460 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_posts.table.gz (8/44): adding to final database dump
+0072.484 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_term_relationships.table.gz (9/44): adding to final database dump
+0072.487 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_term_taxonomy.table.gz (10/44): adding to final database dump
+0072.490 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_termmeta.table.gz (11/44): adding to final database dump
+0072.492 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_terms.table.gz (12/44): adding to final database dump
+0072.494 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_order_itemmeta.table.gz (13/44): adding to final database dump
+0072.496 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_payment_tokenmeta.table.gz (14/44): adding to final database dump
+0072.498 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_yoast_seo_links.table.gz (15/44): adding to final database dump
+0072.499 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_yoast_seo_meta.table.gz (16/44): adding to final database dump
+0072.501 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_files.table.gz (17/44): adding to final database dump
+0072.503 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_history.table.gz (18/44): adding to final database dump
+0072.506 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_images.table.gz (19/44): adding to final database dump
+0072.511 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_imports.table.gz (20/44): adding to final database dump
+0072.517 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_posts.table.gz (21/44): adding to final database dump
+0072.519 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_pmxi_templates.table.gz (22/44): adding to final database dump
+0072.538 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wc_download_log.table.gz (23/44): adding to final database dump
+0072.541 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wc_webhooks.table.gz (24/44): adding to final database dump
+0072.543 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_api_keys.table.gz (25/44): adding to final database dump
+0072.545 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_attribute_taxonomies.table.gz (26/44): adding to final database dump
+0072.547 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_downloadable_product_permissions.table.gz (27/44): adding to final database dump
+0072.549 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_log.table.gz (28/44): adding to final database dump
+0072.551 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_order_items.table.gz (29/44): adding to final database dump
+0072.553 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_payment_tokens.table.gz (30/44): adding to final database dump
+0072.555 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_sessions.table.gz (31/44): adding to final database dump
+0072.557 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_shipping_zone_locations.table.gz (32/44): adding to final database dump
+0072.559 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_shipping_zone_methods.table.gz (33/44): adding to final database dump
+0072.561 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_shipping_zones.table.gz (34/44): adding to final database dump
+0072.563 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_tax_rate_locations.table.gz (35/44): adding to final database dump
+0072.565 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_woocommerce_tax_rates.table.gz (36/44): adding to final database dump
+0072.567 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza.table.gz (37/44): adding to final database dump
+0072.569 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_categories.table.gz (38/44): adding to final database dump
+0072.571 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_category_maps.table.gz (39/44): adding to final database dump
+0072.573 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_circles.table.gz (40/44): adding to final database dump
+0072.575 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_maps.table.gz (41/44): adding to final database dump
+0072.576 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_polygon.table.gz (42/44): adding to final database dump
+0072.580 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_polylines.table.gz (43/44): adding to final database dump
+0072.582 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db-table-wp_wpgmza_rectangles.table.gz (44/44): adding to final database dump
+0072.584 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db.gz: finished writing out complete database file (496 KB)
+0072.602 (0) Total database tables backed up: 44 (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db.gz, size: 531902, sha256)
+0072.613 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0072.615 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0072.617 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0072.619 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip: uploads: This file has not yet been successfully uploaded: will queue
+0072.620 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-others.zip: others: This file has not yet been successfully uploaded: will queue
+0072.622 (0) backup_2018-12-29-0635_Crates_supplier_34951eceee88-db.gz: db: This file has not yet been successfully uploaded: will queue
+0072.625 (0) Saving backup history. Total backup size: 595.4 MB
+0072.632 (0) Requesting upload of the files that have not yet been successfully uploaded (6)
+0072.638 (0) Cloud backup selection (1/1): s3 with instance (1/1) (last)
+0072.641 (0) Beginning dispatch of backup to remote (s3) (instance identifier s-c971e17551661374adada997ff4d66fb)
+0072.950 (0) Set region: us-west-1
+0072.953 (0) S3 upload (us-west-1): backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip (chunks: 6) -> s3://website-database-lxc/best-boxes.com/backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip
+0073.295 (0) S3 chunked upload: got multipart ID: F76M2PHk6h8zYNCVmPfudMRQxv1I1SYlWOfC6oUMOyYnmu4cBQbMK7l7uGka61Vu6DJj6RycoPWXSkaU7sIFo2LMpMvJEIvQ04eTofI_FKXvYfhdm65vuhrIdopW6X00
+0074.287 (0) S3 chunked upload: 16.7 % uploaded (1, "bf9494322092b3f3a45a08c941e6b5a2")
+0074.724 (0) S3 chunked upload: 33.3 % uploaded (2, "444324b228a50c5860284f34dea99116")
+0075.655 (0) S3 chunked upload: 50 % uploaded (3, "fd183c9c61935be3368aff4f48e702e2")
+0076.731 (0) S3 chunked upload: 66.7 % uploaded (4, "6c830713087f175a22befcc168b38768")
+0077.304 (0) S3 chunked upload: 83.3 % uploaded (5, "81998c503cf98d12f762fa75b109059d")
+0077.499 (0) S3 chunked upload: 100 % uploaded (6, "4c17521ee213b9f800d2976e43aed112")
+0077.505 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0077.660 (0) S3 upload (plugins0): re-assembly succeeded
+0077.663 (0) Recording as successfully uploaded: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip
+0077.671 (0) Deleting local file: backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip: OK
+0077.676 (0) S3 upload (us-west-1): backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip (chunks: 2) -> s3://website-database-lxc/best-boxes.com/backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip
+0077.761 (0) S3 chunked upload: got multipart ID: caamoX4i8zNpAZXojg6m0bbfJBqkHRiV.0ZURj8qXO7LTFhdOnIZxPUMX6qLlomTJdEUlNaqqea0ZzY6oeql2brCOUZW5Oi1mkBXI2Uo7i8MpFWQ946kgMUPM4LsH4ud
+0078.312 (0) S3 chunked upload: 50 % uploaded (1, "01ab3b4a5dcd5137894fcb27b09a7ba5")
+0078.745 (0) S3 chunked upload: 100 % uploaded (2, "36471f46eb1aec4f0d8aec83ad2f13fa")
+0078.752 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0078.894 (0) S3 upload (themes0): re-assembly succeeded
+0078.897 (0) Recording as successfully uploaded: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip
+0078.903 (0) Deleting local file: backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip: OK
+0078.905 (0) S3 upload (us-west-1): backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip (chunks: 80) -> s3://website-database-lxc/best-boxes.com/backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip
+0078.989 (0) S3 chunked upload: got multipart ID: pSaccFZ77CUfK6yP2SP3dsbgzeQXJm5bQ.AooOytVc61BNmCkgBx8OocJ60sE3577ksZcGucMefVTp9r.SHhzXKQnB24Qxh14KtJ5tOG91mPkg4AVW99ap7SncQ7WV4w
+0079.604 (0) S3 chunked upload: 1.3 % uploaded (1, "1112a4e1e564ea0851484caea2634e18")
+0080.213 (0) S3 chunked upload: 2.5 % uploaded (2, "70d4d99b20bab074b3c4c9fbaecdf1d5")
+0080.773 (0) S3 chunked upload: 3.8 % uploaded (3, "6863bc689afbd0ddd40fe7379e846818")
+0081.290 (0) S3 chunked upload: 5 % uploaded (4, "1da9f7626ec9e1387d1599b8c6846780")
+0081.816 (0) S3 chunked upload: 6.3 % uploaded (5, "803a8bd95e9cbf1731b40ca800563cb9")
+0082.322 (0) S3 chunked upload: 7.5 % uploaded (6, "e995f645681cc82732eb66dfd3ea2608")
+0082.821 (0) S3 chunked upload: 8.8 % uploaded (7, "3788b059849cebcf2d1a8a9191162ca3")
+0083.272 (0) S3 chunked upload: 10 % uploaded (8, "5b6e086a96e0519fbebe73dad2684f0c")
+0083.736 (0) S3 chunked upload: 11.3 % uploaded (9, "acc98b24710350c7ad97ea63a14511dc")
+0084.181 (0) S3 chunked upload: 12.5 % uploaded (10, "0e9fd707507744f2c0bcc7eb86ae7c20")
+0084.617 (0) S3 chunked upload: 13.8 % uploaded (11, "a73e69deabe13389664b66177ea8486f")
+0085.058 (0) S3 chunked upload: 15 % uploaded (12, "7305e6baebdf67f3e0990c8d633b1ce5")
+0085.480 (0) S3 chunked upload: 16.3 % uploaded (13, "85f00781afd32ecb66663048b66d8adb")
+0086.010 (0) S3 chunked upload: 17.5 % uploaded (14, "c7757d1b3a1931b2b04ff0b8c59c5cd3")
+0086.486 (0) S3 chunked upload: 18.8 % uploaded (15, "81bc63df8e112748c83be297dc5fe7ca")
+0086.969 (0) S3 chunked upload: 20 % uploaded (16, "342bfb179494d99a48da4a76c43c4be0")
+0087.490 (0) S3 chunked upload: 21.3 % uploaded (17, "c51650355c3e3ab01bd9769c71910614")
+0088.032 (0) S3 chunked upload: 22.5 % uploaded (18, "3cd63dfe8b0d2854fee34c75159bdd00")
+0088.632 (0) S3 chunked upload: 23.8 % uploaded (19, "0f8f40e3c2521fb4a20b60c1cfc31651")
+0089.289 (0) S3 chunked upload: 25 % uploaded (20, "69daada6d55b3e429817744434c3a1f8")
+0089.923 (0) S3 chunked upload: 26.3 % uploaded (21, "925a478109db4bd85ea462e1f09cfc48")
+0090.555 (0) S3 chunked upload: 27.5 % uploaded (22, "b9670ff270d77cac54ae52b9934e35e9")
+0091.209 (0) S3 chunked upload: 28.8 % uploaded (23, "26fba9ada318ede0ff557d3a1e5baaf9")
+0091.836 (0) S3 chunked upload: 30 % uploaded (24, "75e567730d9f93133d08e20649f03638")
+0092.506 (0) S3 chunked upload: 31.3 % uploaded (25, "0c6649a867ae61d2c8f1dca23f97ed06")
+0093.135 (0) S3 chunked upload: 32.5 % uploaded (26, "6059c58d3bf752032f9323745e531bfa")
+0093.765 (0) S3 chunked upload: 33.8 % uploaded (27, "68c8078021fa212e3ecbaa7601ddf66b")
+0094.447 (0) S3 chunked upload: 35 % uploaded (28, "988ad218bfe633e6faba0f425a34c632")
+0095.087 (0) S3 chunked upload: 36.3 % uploaded (29, "493583ae76a092bf0df751d23176d00c")
+0095.683 (0) S3 chunked upload: 37.5 % uploaded (30, "98e5f80e2a261235e8c241b5966afeaa")
+0096.265 (0) S3 chunked upload: 38.8 % uploaded (31, "6ad1793265ec73aa991a4c097e4f3ad5")
+0096.854 (0) S3 chunked upload: 40 % uploaded (32, "8a873fd7fddf20c527a786a67b4033a2")
+0097.490 (0) S3 chunked upload: 41.3 % uploaded (33, "7b35e90de43f8ba899d1c1e34b48afd7")
+0098.079 (0) S3 chunked upload: 42.5 % uploaded (34, "64a8af0896d4d80a03e39e4460cf71a3")
+0098.648 (0) S3 chunked upload: 43.8 % uploaded (35, "8c9487fe54e2eaf65649d540e127e4a0")
+0099.231 (0) S3 chunked upload: 45 % uploaded (36, "4a9ba0522b9b518851886dd7647843bf")
+0099.824 (0) S3 chunked upload: 46.3 % uploaded (37, "6a3ca99304a3c75791c624a73ed5a75f")
+0100.398 (0) S3 chunked upload: 47.5 % uploaded (38, "9a6760049c442de26bbc461045cf856b")
+0100.997 (0) S3 chunked upload: 48.8 % uploaded (39, "c83b89e5b7f53cbc1aad41ba7d4159a0")
+0101.578 (0) S3 chunked upload: 50 % uploaded (40, "22f3d53cc87027d2a8f4b9275c4c994a")
+0102.155 (0) S3 chunked upload: 51.3 % uploaded (41, "bf924076bb41ec02491d3897a0346c1a")
+0102.730 (0) S3 chunked upload: 52.5 % uploaded (42, "651c512cdae873ab98e56f8bb56cb409")
+0103.397 (0) S3 chunked upload: 53.8 % uploaded (43, "f59abc8a762f8669e0921bfe6a88d6b3")
+0103.975 (0) S3 chunked upload: 55 % uploaded (44, "93f0e6ed457dfc3b93687b443721353f")
+0104.547 (0) S3 chunked upload: 56.3 % uploaded (45, "65ab50cf802ac7fd4dd6930782a0e651")
+0105.165 (0) S3 chunked upload: 57.5 % uploaded (46, "fdcafbddd8cfb954905859511723ea7b")
+0105.777 (0) S3 chunked upload: 58.8 % uploaded (47, "c5fb880f1e02782387ef01c2f2f24e78")
+0106.356 (0) S3 chunked upload: 60 % uploaded (48, "ec742d045304733d34e2f8f007777134")
+0106.948 (0) S3 chunked upload: 61.3 % uploaded (49, "4f271d62a84d746335bc124a1b5ee834")
+0107.537 (0) S3 chunked upload: 62.5 % uploaded (50, "9fea7e14eb92e3fa749df6a77c287915")
+0108.135 (0) S3 chunked upload: 63.8 % uploaded (51, "b0d86f1f115a26af115014bb5d5b64f3")
+0108.768 (0) S3 chunked upload: 65 % uploaded (52, "bbe2a9029bea0cb58d1043862a1890d0")
+0109.396 (0) S3 chunked upload: 66.3 % uploaded (53, "59d8e808f2320374197ce8ecf05b5c2e")
+0110.112 (0) S3 chunked upload: 67.5 % uploaded (54, "dcfde6d0683e86439908c17f8100eb55")
+0110.701 (0) S3 chunked upload: 68.8 % uploaded (55, "1de2c88de393a10f2a19dad1526aa69c")
+0111.292 (0) S3 chunked upload: 70 % uploaded (56, "1e67539a31d0d0e68ca58734d192fb90")
+0111.875 (0) S3 chunked upload: 71.3 % uploaded (57, "8a572f60a6639ce3275ca5268cb88b05")
+0112.530 (0) S3 chunked upload: 72.5 % uploaded (58, "13ca48a518c265aab54df9b998bd6d47")
+0113.127 (0) S3 chunked upload: 73.8 % uploaded (59, "e09c9cd3fc4454e47c16d7ae3b1b8c9d")
+0113.739 (0) S3 chunked upload: 75 % uploaded (60, "b8996f273049a726f6a5118f1a15463f")
+0114.366 (0) S3 chunked upload: 76.3 % uploaded (61, "a49fd88aafd5279552e7fcf559147216")
+0115.003 (0) S3 chunked upload: 77.5 % uploaded (62, "9260ba7f15e496e79933d31ff66336d7")
+0115.616 (0) S3 chunked upload: 78.8 % uploaded (63, "0ebdd554032a76b91852ec4b1cd56b95")
+0116.195 (0) S3 chunked upload: 80 % uploaded (64, "bc0f2b5b69e9320631727f183b18b864")
+0116.757 (0) S3 chunked upload: 81.3 % uploaded (65, "9036be5b307c5ed3e78e3a7a1423dfdd")
+0117.344 (0) S3 chunked upload: 82.5 % uploaded (66, "4399c16ad83ce3a5969c6c316f7ccb54")
+0117.941 (0) S3 chunked upload: 83.8 % uploaded (67, "fb000a0ff1603c496d92cbae2b1530df")
+0118.513 (0) S3 chunked upload: 85 % uploaded (68, "c2c25a7212d245c16558b1bd0322eec5")
+0119.095 (0) S3 chunked upload: 86.3 % uploaded (69, "3a2a365c7d14c87682a5e509fa65c458")
+0119.769 (0) S3 chunked upload: 87.5 % uploaded (70, "3bdb25068ee25cdab5053bbcfb2b530c")
+0120.352 (0) S3 chunked upload: 88.8 % uploaded (71, "93486c1e0327b13240a4a832e0db242a")
+0120.945 (0) S3 chunked upload: 90 % uploaded (72, "0bd1902282daad4e4cbbb6176a578367")
+0121.518 (0) S3 chunked upload: 91.3 % uploaded (73, "98d593f7cbc90e25a386d460f778a213")
+0122.098 (0) S3 chunked upload: 92.5 % uploaded (74, "3f2bc91ef3dfbaeb7f77672f28bdd166")
+0122.688 (0) S3 chunked upload: 93.8 % uploaded (75, "1b98f0b02d400f487d80b0a2e35acb2b")
+0123.260 (0) S3 chunked upload: 95 % uploaded (76, "e7fd22a40441526087f7a56b4df63b4d")
+0123.834 (0) S3 chunked upload: 96.3 % uploaded (77, "b3718020edf06e3dadf9494cae28c427")
+0124.429 (0) S3 chunked upload: 97.5 % uploaded (78, "89fe8dce44a3ca9327447b753596dd46")
+0125.037 (0) S3 chunked upload: 98.8 % uploaded (79, "3ff2c3638f0213ee730fa85936b8422d")
+0125.596 (0) S3 chunked upload: 100 % uploaded (80, "595205d21deb5de7b7f073cc2843f5d6")
+0125.605 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0125.805 (0) S3 upload (uploads0): re-assembly succeeded
+0125.812 (0) Recording as successfully uploaded: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip
+0125.830 (0) Deleting local file: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip: OK
+0125.835 (0) S3 upload (us-west-1): backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip (chunks: 33) -> s3://website-database-lxc/best-boxes.com/backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip
+0125.918 (0) S3 chunked upload: got multipart ID: 8bK_zczfszF9do0cqC1Ftdo836Cgu.7eAit9gv_SLbaxSHrN.SZvdqyL0R9TCcnBFqReBg89VWBPrBUb4kPF2ps_yIpLckXae1UzdupT8Wjy3FONW7o7G0POUorLQov2
+0126.504 (0) S3 chunked upload: 3 % uploaded (1, "c267ad223a2dc59b246cdbf7f37c4282")
+0127.107 (0) S3 chunked upload: 6.1 % uploaded (2, "5b040b15aae240ba0b9bc541eb9abe76")
+0127.683 (0) S3 chunked upload: 9.1 % uploaded (3, "56cf6413db032fbba1556a000e17af88")
+0128.295 (0) S3 chunked upload: 12.1 % uploaded (4, "712ec58cfe128a3c988730ecc9a3598c")
+0128.866 (0) S3 chunked upload: 15.2 % uploaded (5, "7c4ec86f84d9ef32d68334f56cf6ef3c")
+0129.993 (0) S3 chunked upload: 18.2 % uploaded (6, "cd1ef6fc7464f2fdc84f53c19fc90da5")
+0130.422 (0) S3 chunked upload: 21.2 % uploaded (7, "9fe36fe026e5f61160ef46e0b6390fb4")
+0130.841 (0) S3 chunked upload: 24.2 % uploaded (8, "5b6c67b6e7b273019802b6013387fe08")
+0131.274 (0) S3 chunked upload: 27.3 % uploaded (9, "7092332ed99f88bb13c38b84190cf6c5")
+0131.807 (0) S3 chunked upload: 30.3 % uploaded (10, "7f0ef57f52d849dca91f6b29d603bc2e")
+0132.182 (0) S3 chunked upload: 33.3 % uploaded (11, "c598bb79dbb8dded87323342d45d4e83")
+0132.567 (0) S3 chunked upload: 36.4 % uploaded (12, "d0b5a6441dff0ec975af8b1b62b8cbc2")
+0132.970 (0) S3 chunked upload: 39.4 % uploaded (13, "334535a165f6740cc43bb08d57d276c5")
+0133.516 (0) S3 chunked upload: 42.4 % uploaded (14, "1fef03056ea8a6a2e54a435865f0a4e9")
+0133.962 (0) S3 chunked upload: 45.5 % uploaded (15, "1c04b86e63c33f6863a408fa23068bfb")
+0134.553 (0) S3 chunked upload: 48.5 % uploaded (16, "c2b026d2018e77cd7a4bdc0dd10ec0f1")
+0135.205 (0) S3 chunked upload: 51.5 % uploaded (17, "01de982e7b18aaee9ad7b3a1a8ac4b02")
+0135.839 (0) S3 chunked upload: 54.5 % uploaded (18, "776a19505f51463cc9f729c91338f0e7")
+0136.464 (0) S3 chunked upload: 57.6 % uploaded (19, "884e4256d09773c51818086897cd005b")
+0137.108 (0) S3 chunked upload: 60.6 % uploaded (20, "b569dc5066feabc26342467e0da91ef7")
+0137.752 (0) S3 chunked upload: 63.6 % uploaded (21, "6732312c1bdefaa2fa38bb9a80429c94")
+0138.372 (0) S3 chunked upload: 66.7 % uploaded (22, "20b90d39d3dd092a34042392ba5f6ff5")
+0139.014 (0) S3 chunked upload: 69.7 % uploaded (23, "e0591284ab08d9549eb180c8d928ef81")
+0139.650 (0) S3 chunked upload: 72.7 % uploaded (24, "8d3a9375a0c03c831d839efb8d93637b")
+0140.319 (0) S3 chunked upload: 75.8 % uploaded (25, "5bbb4a9e44d812ec633559e37e688f84")
+0140.956 (0) S3 chunked upload: 78.8 % uploaded (26, "f0c2e002db0fa84e4b6768c734374163")
+0141.542 (0) S3 chunked upload: 81.8 % uploaded (27, "99c8c4ad78c2ec078a4c6dfe567325f0")
+0142.128 (0) S3 chunked upload: 84.8 % uploaded (28, "fe5d607b63127e770e8e44040f2786eb")
+0142.728 (0) S3 chunked upload: 87.9 % uploaded (29, "313454cf30a6c7650b50dc45aa42c101")
+0143.310 (0) S3 chunked upload: 90.9 % uploaded (30, "01753e9784c5e980cee6c7791270296c")
+0143.906 (0) S3 chunked upload: 93.9 % uploaded (31, "b4850b45a511f4f138f865a6df893c39")
+0144.483 (0) S3 chunked upload: 97 % uploaded (32, "d1d426866bd7b1bb723ef4fcb8b2db43")
+0144.799 (0) S3 chunked upload: 100 % uploaded (33, "53345ed096ea6aaae6f34698f16c7453")
+0144.810 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0145.011 (0) S3 upload (uploads1): re-assembly succeeded
+0145.014 (0) Recording as successfully uploaded: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip
+0145.028 (0) Deleting local file: backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip: OK
+0145.031 (0) S3 upload (us-west-1): backup_2018-12-29-0635_Crates_supplier_34951eceee88-others.zip (chunks: 1) -> s3://website-database-lxc/best-boxes.com/backup_2018-12-29-0635_Crates_supplier_34951eceee88-others.zip
+0145.150 (0) S3 regular upload: success
+0145.152 (0) Recording as successfully uploaded: backup_2018-12-29-0635_Crates_supplier_34951eceee88-others.zip
+0145.157 (0) Deleting local file: backup_2018-12-29-0635_Crates_supplier_34951eceee88-others.zip: OK
+0145.159 (0) S3 upload (us-west-1): backup_2018-12-29-0635_Crates_supplier_34951eceee88-db.gz (chunks: 1) -> s3://website-database-lxc/best-boxes.com/backup_2018-12-29-0635_Crates_supplier_34951eceee88-db.gz
+0145.306 (0) S3 regular upload: success
+0145.309 (0) Recording as successfully uploaded: backup_2018-12-29-0635_Crates_supplier_34951eceee88-db.gz
+0145.314 (0) Deleting local file: backup_2018-12-29-0635_Crates_supplier_34951eceee88-db.gz: OK
+0145.320 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=12, retain_db=120
+0145.327 (0) Number of backup sets in history: 9; groups (db): 1
+0145.331 (0) Examining (for databases) backup set with group_id=0, nonce=34951eceee88, datestamp=1546065340 (Dec 29 2018 06:35:40)
+0145.335 (0) This backup set is the backup set just made, so will not be deleted.
+0145.335 (0) Examining (for databases) backup set with group_id=0, nonce=da3fcf92a7c2, datestamp=1546060430 (Dec 29 2018 05:13:50)
+0145.335 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.336 (0) Examining (for databases) backup set with group_id=0, nonce=1620d52a68ab, datestamp=1545977893 (Dec 28 2018 06:18:13)
+0145.336 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.336 (0) Examining (for databases) backup set with group_id=0, nonce=584498125960, datestamp=1545887619 (Dec 27 2018 05:13:39)
+0145.336 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.337 (0) Examining (for databases) backup set with group_id=0, nonce=42331079c4db, datestamp=1545801487 (Dec 26 2018 05:18:07)
+0145.337 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.337 (0) Examining (for databases) backup set with group_id=0, nonce=8aaa5d61c08a, datestamp=1545715022 (Dec 25 2018 05:17:02)
+0145.337 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.337 (0) Examining (for databases) backup set with group_id=0, nonce=3b6447046312, datestamp=1545628695 (Dec 24 2018 05:18:15)
+0145.337 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.337 (0) Examining (for databases) backup set with group_id=0, nonce=aa061f316b7c, datestamp=1545544512 (Dec 23 2018 05:55:12)
+0145.337 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.337 (0) Examining (for databases) backup set with group_id=0, nonce=4e3f56f02a43, datestamp=1545541860 (Dec 23 2018 05:11:00)
+0145.337 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.337 (0) Number of backup sets in history: 9; groups (files): 1
+0145.338 (0) Examining (for files) backup set with nonce=34951eceee88, datestamp=1546065340 (Dec 29 2018 06:35:40)
+0145.338 (0) This backup set is the backup set just made, so will not be deleted.
+0145.341 (0) This backup set is the backup set just made, so will not be deleted.
+0145.341 (0) This backup set is the backup set just made, so will not be deleted.
+0145.341 (0) This backup set is the backup set just made, so will not be deleted.
+0145.341 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0145.342 (0) Examining (for files) backup set with nonce=da3fcf92a7c2, datestamp=1546060430 (Dec 29 2018 05:13:50)
+0145.342 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.344 (0) Examining (for files) backup set with nonce=1620d52a68ab, datestamp=1545977893 (Dec 28 2018 06:18:13)
+0145.344 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.344 (0) Examining (for files) backup set with nonce=584498125960, datestamp=1545887619 (Dec 27 2018 05:13:39)
+0145.344 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.344 (0) Examining (for files) backup set with nonce=42331079c4db, datestamp=1545801487 (Dec 26 2018 05:18:07)
+0145.344 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.344 (0) Examining (for files) backup set with nonce=8aaa5d61c08a, datestamp=1545715022 (Dec 25 2018 05:17:02)
+0145.344 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.344 (0) Examining (for files) backup set with nonce=3b6447046312, datestamp=1545628695 (Dec 24 2018 05:18:15)
+0145.344 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.344 (0) Examining (for files) backup set with nonce=aa061f316b7c, datestamp=1545544512 (Dec 23 2018 05:55:12)
+0145.344 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.344 (0) Examining (for files) backup set with nonce=4e3f56f02a43, datestamp=1545541860 (Dec 23 2018 05:11:00)
+0145.344 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0145.344 (0) Retain: saving new backup history (sets now: 9) and finishing retain operation
+0145.351 (0) Resume backup (34951eceee88, 0): finish run
+0145.363 (0) Decremented the semaphore (fd) by 1
+0145.367 (0) Semaphore (fd) unlocked
+0145.368 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0145.375 (0) No email will/can be sent - the user has not configured an email address.
+0145.376 (0) The backup apparently succeeded and is now complete
