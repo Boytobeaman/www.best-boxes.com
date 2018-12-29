@@ -6,17 +6,20 @@ a {
     color: #3b88a9;
     padding: 5px;
 }
-.products a {
-    color: #333;
-    font-family: 'Flexo-Light';
-    padding: 0;
-}
-
 a:hover,
 a:focus {
     color: #fff;
     background-color: #214454;
 }
+.products a,
+.products a:hover,
+.products a:focus, {
+    color: #333;
+    font-family: 'Flexo-Light';
+    padding: 0;
+}
+
+
 a.woocommerce-loop-product__link:hover,
 a.woocommerce-loop-product__link:focus{
     background-color: inherit;
