@@ -1,11 +1,15 @@
 body {
-    /*background: #FFFFFF url(/img/public/bg-body.png) repeat-x top left;*/
     height: 100%;
 }
 
 a {
     color: #3b88a9;
     padding: 5px;
+}
+.products a {
+    color: #333;
+    font-family: 'Flexo-Light';
+    padding: 0;
 }
 
 a:hover,
@@ -141,11 +145,6 @@ a.woocommerce-loop-product__link:focus{
     clear: both;
 }
 
-.products a {
-    color: #333;
-    font-family: 'Flexo-Light';
-}
-
 .products .product {
     background-color: #fff;
     border-radius: 5px;
@@ -224,8 +223,8 @@ a.woocommerce-loop-product__link:focus{
 .product-val-mm,
 .product-val-inch {
     padding: 0px 10px 0 4px;
-    line-height: 63px;
-    height: 63px;
+    line-height: 61.5px;
+    height: 61.5px;
 }
 
 .product-val-mm {
@@ -361,4 +360,49 @@ a.woocommerce-loop-product__link:focus{
     .product-right>.row {
         margin-left: initial;
     }
+}
+
+.related.products{
+    clear:both;
+}
+.header-search-form input{
+    background-color:#f2f2f2;
+}
+#main-navigation .navbar-nav > li > a {
+        text-transform: capitalize;
+    }
+@media (min-width: 768px) {
+    #main-navigation .navbar-nav > li > a {
+        text-transform: capitalize;
+    }
+}
+.flexslider-inner{
+    background-color: rgba(0,0,0,0.25);
+}
+a.flexslider-button{
+    color: #FFFFFF;
+    background-color: #3b88a9;
+}
+a.flexslider-button:hover{
+    color: #FFFFFF;
+    background-color: #214454;
+}
+.wpcf7-form br{
+    display:none;
+}
+.wpcf7-form label,
+.wpcf7-form .wpcf7-form-control{
+    width:100%;
+}
+.wpcf7-form textarea{
+    height:100px;
+}
+.woo-tabs-section.row>div{
+    width: 100%;
+}
+.woo-tabs-section.row .tabs-left>li{
+    float: left;
+}
+.woo-tabs-section.row .tab-content{
+    background-color: #fff;
 }
