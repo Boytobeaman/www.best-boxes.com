@@ -194,7 +194,7 @@ if ( ! function_exists( 'woocommerce_template_loop_product_attr' ) ) {
 							      <div class="col-sm-6 col-xs-12 volumn">
 							      	<div class="table-head bb-2-white">Volume</div>
 							      	<div class="product-val-mm"><span class="value">'. $productvolumn . '</span> <span class="pull-right">Liters</span></div>
-							      	<div class="product-val-inch"><span class="value">'. round($productvolumn*$ltogal,1) .'</span> <span class="pull-right">Us gallon</span></div>
+							      	<div class="product-val-inch"><span class="value">'. round($productvolumn*$ltogal,1) .'</span> <span class="pull-right">Gallon</span></div>
 							      </div>
 							    </div>
 							  </div>

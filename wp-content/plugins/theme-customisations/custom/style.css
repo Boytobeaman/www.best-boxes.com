@@ -336,19 +336,6 @@ a.woocommerce-loop-product__link:focus{
 }
 
 @media screen and (max-width: 1000px) and (min-width: 768px) {
-    .product-attributes .product-val-mm,
-    .product-attributes .product-val-inch,
-    .product-attributes .product-val-mm,
-    .product-attributes .product-val-inch {
-        line-height: initial;
-    }
-    .product-attributes .product-val-mm span,
-    .product-attributes .product-val-inch span,
-    .product-attributes .product-val-mm span,
-    .product-attributes .product-val-inch span {
-        line-height: 31.5px;
-        display: block;
-    }
     .product-attributes .product-val-inch span:first-child,
     .product-attributes .product-val-mm span:first-child {
         font-size: 12px;
