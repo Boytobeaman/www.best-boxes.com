@@ -46,9 +46,7 @@ jQuery(function($){
 			$("#contactUs").modal();
 		}
 	})
-	$("#contactUs").off().on('show.bs.modal', function () {
-        var url = window.document.location.href;
-        $('#productURL').val(url);
-    });
+	var url = window.document.location.href;
+  $('#productURL').val(url);
 
 })
