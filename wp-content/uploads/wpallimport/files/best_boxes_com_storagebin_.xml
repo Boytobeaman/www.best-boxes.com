@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.4.15.10
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Dec 27, 2018 at 12:20 PM
+- Server version: 10.2.7-MariaDB-log
+- PHP Version: 7.1.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="nodedb" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="best_boxes_com_storagebin_">
+                CREATE TABLE `best_boxes_com_storagebin_` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `post_title` varchar(255) DEFAULT NULL,
+                  `model` varchar(255) DEFAULT NULL,
+                  `external_long` varchar(255) DEFAULT NULL,
+                  `external_width` varchar(255) DEFAULT NULL,
+                  `external_height` varchar(255) DEFAULT NULL,
+                  `internal_long` varchar(255) DEFAULT NULL,
+                  `internal_width` varchar(255) DEFAULT NULL,
+                  `internal_height` varchar(255) DEFAULT NULL,
+                  `foldedHeight` varchar(255) DEFAULT NULL,
+                  `volumn` varchar(255) DEFAULT NULL,
+                  `weight` varchar(255) DEFAULT NULL,
+                  `img_path` longtext DEFAULT NULL,
+                  `backlinks` longtext DEFAULT NULL,
+                  `product_category` varchar(255) DEFAULT NULL,
+                  `tags` varchar(255) DEFAULT NULL,
+                  `post_title_slug` varchar(255) DEFAULT NULL,
+                  `static_load` varchar(255) DEFAULT NULL,
+                  `dynamic_load` varchar(255) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'nodedb'
+    -->
+    <database name="nodedb">
+        <!-- Table best_boxes_com_storagebin_ -->
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">1</column>
+            <column name="post_title">plastic part bins</column>
+            <column name="model">6115</column>
+            <column name="external_long">635</column>
+            <column name="external_width">150</column>
+            <column name="external_height">150</column>
+            <column name="internal_long">595</column>
+            <column name="internal_width">125</column>
+            <column name="internal_height">140</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">10.4</column>
+            <column name="weight">0.88</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/ddf8c9e5b57e4180b7f2b342b86f7ed8.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/d1375ad3a5444c138254bf12d84e1f6f.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/44178bed9bdf4fb280fa2891295bd3aa.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/e745615fadcf40df81d1be94a28616ad.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/7ab1b535eb534a70bcce9532b223ba39.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;plastic pallet and container&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;large plastic storage bins&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;collapsible storage containers&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;euro stacking boxes&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">drawer bin,storage bin with divider </column>
+            <column name="post_title_slug">plastic-part-bins</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">2</column>
+            <column name="post_title">storage plastic drawers</column>
+            <column name="model">6112</column>
+            <column name="external_long">600</column>
+            <column name="external_width">147</column>
+            <column name="external_height">125</column>
+            <column name="internal_long">555</column>
+            <column name="internal_width">120</column>
+            <column name="internal_height">115</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">7.6</column>
+            <column name="weight">0.66</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/e63db8b5510f4ceca44ddb3906cdfd41.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b959b0e1b11b4d9aa6c76debcb3f8444.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b04641f780f74332bf979af996e649a8.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/9a779b88e63c4bfebf92d4ef2f1aa74d.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/487d114ed3b54b8f9541b646240753ce.JPG,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;fish crate&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;plastic collapsible storage boxes&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;nested container&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;industrial bins&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">drawer bin,storage bin with divider </column>
+            <column name="post_title_slug">storage-plastic-drawers</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">3</column>
+            <column name="post_title">spare parts bins</column>
+            <column name="model">6620</column>
+            <column name="external_long">600</column>
+            <column name="external_width">620</column>
+            <column name="external_height">200</column>
+            <column name="internal_long">555</column>
+            <column name="internal_width">580</column>
+            <column name="internal_height">190</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">61</column>
+            <column name="weight">2</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/7a32ce1e908442c28560e0667a4dfa91.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/9e0bd63de27c41d4ae6ef975e4142380.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/a30b1accfc7048fcbe6e84ca5265b7c9.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/e90e955ba1a74a189441e85527d81f33.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/1237811c59b5477b9bcd6a2d68c6511a.JPG,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;stackable storage bins&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;plastic crates vegetables&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;collapsible pallet bins&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;collapsible plastic storage crates&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">drawer bin,storage bin</column>
+            <column name="post_title_slug">spare-parts-bins</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">4</column>
+            <column name="post_title">shelves for storage bins</column>
+            <column name="model">B4#</column>
+            <column name="external_long">220</column>
+            <column name="external_width">140</column>
+            <column name="external_height">125</column>
+            <column name="internal_long">202</column>
+            <column name="internal_width">120</column>
+            <column name="internal_height">120</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">2.9</column>
+            <column name="weight">0.2</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b16e574108854521bd451659c4000a22.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/81544c1af61e4658bcb4d0ce8a0f4fff.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/1c4c28b3392a4147aa9047e10095ad15.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/43c7013d5b904aa1b8b93b0ba66e9c85.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;fish crate&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;collapsible plastic pallets&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;moving boxes for sale&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;strong plastic storage boxes with lids&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">drawer bin,small storage bin</column>
+            <column name="post_title_slug">shelves-for-storage-bins</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">5</column>
+            <column name="post_title">storage bins for shelves</column>
+            <column name="model">A5</column>
+            <column name="external_long">452</column>
+            <column name="external_width">300</column>
+            <column name="external_height">180</column>
+            <column name="internal_long">410</column>
+            <column name="internal_width">271</column>
+            <column name="internal_height">171</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">19</column>
+            <column name="weight">1.095</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/1393f75c8ab9487b9427fc4340ba7a73.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/be8405458aba4b6f85a5b2d203fd486f.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/db73253b84ac481596093b89b1874169.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/3a250918001c4b378bdb27b3a3f4babe.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/0ba924b629cb4de29cb91b7978053f7c.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;euro stacking boxes&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;Ventilated Plastic Crate&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;nested and stacked containers&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;hinged lid plastic boxes&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse bin,drawer bin</column>
+            <column name="post_title_slug">storage-bins-for-shelves</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">6</column>
+            <column name="post_title">plastic parts bin</column>
+            <column name="model">3109</column>
+            <column name="external_long">300</column>
+            <column name="external_width">117</column>
+            <column name="external_height">90</column>
+            <column name="internal_long">260</column>
+            <column name="internal_width">94</column>
+            <column name="internal_height">80</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">1.9</column>
+            <column name="weight">0.235</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/2a7806984d124456ae79079ea2d013e8.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/86c9c6403a394da6b18956417682959f.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/c962148cda1a44bfacb92b212f2f835c.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/54f41a1eda0e4ebfb024eb30242bb6e1.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/58f68e5aa6d84010a1535054e1fc21c6.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;foldable bins&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;storage boxes&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;turnover mesh basket&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;nested tubs&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse storage bin,drawer bin</column>
+            <column name="post_title_slug">plastic-parts-bin</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">7</column>
+            <column name="post_title">stackable parts bins</column>
+            <column name="model">3209</column>
+            <column name="external_long">300</column>
+            <column name="external_width">234</column>
+            <column name="external_height">90</column>
+            <column name="internal_long">256</column>
+            <column name="internal_width">211</column>
+            <column name="internal_height">80</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">NULL</column>
+            <column name="weight">0.415</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/ca829928a499494e9bf6bfc56b435a00.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/404087b6dd874bc1b632019f133634ce.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/3e1969c426944eca81061ae9975dc4d2.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/381c4bb6d212431687f095f8c2aab387.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/85c8cff10f3f45e6a20487209a3f16a0.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;plastic pallet crates for sale&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;plastic box sale&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;collapsible plastic pallets&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;bulk storage totes&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse storage bin,drawer bin</column>
+            <column name="post_title_slug">stackable-parts-bins</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">8</column>
+            <column name="post_title">plastic spare parts bins</column>
+            <column name="model">3214</column>
+            <column name="external_long">300</column>
+            <column name="external_width">234</column>
+            <column name="external_height">140</column>
+            <column name="internal_long">253</column>
+            <column name="internal_width">210</column>
+            <column name="internal_height">129</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">6.8</column>
+            <column name="weight">0.54</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/06207d85e891495581f05c143b4817f1.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/7d714f782ca049dd9601eb40416adb70.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/6aea8fc55bac4b3d8c48adc9feffb4b3.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/460005e1d20d41d1851e9b7f6717ab78.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/2f39cf0ae2f546fabd15e82ef489ea45.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;plastic storage containers with attached lids&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;collapsible crate with handles&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;bulk crates&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;large plastic pallets&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse bin,drawer bin </column>
+            <column name="post_title_slug">plastic-spare-parts-bins</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">9</column>
+            <column name="post_title">bins for shelves</column>
+            <column name="model">4109</column>
+            <column name="external_long">400</column>
+            <column name="external_width">117</column>
+            <column name="external_height">90</column>
+            <column name="internal_long">360</column>
+            <column name="internal_width">94</column>
+            <column name="internal_height">80</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">2.7</column>
+            <column name="weight">0.285</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/588cdd1860f548038d853c49bd7db2c2.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/04bb4ee142da4f70a06b5b91cc57ec29.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/e33ac3ee8cc94546b6013b6e87ab9d26.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/41ace63d67324f4287c447e01f221485.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/448ac562e8014c4aa750ff3a241c6bed.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;plastic pallet boxes&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;nested and stacked containers&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;transporting fruit box&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;collapsible pallet&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse bin,drawer bin </column>
+            <column name="post_title_slug">bins-for-shelves</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">10</column>
+            <column name="post_title">shelves with storage bins</column>
+            <column name="model">4209</column>
+            <column name="external_long">400</column>
+            <column name="external_width">234</column>
+            <column name="external_height">90</column>
+            <column name="internal_long">356</column>
+            <column name="internal_width">211</column>
+            <column name="internal_height">80</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">6</column>
+            <column name="weight">0.51</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/5c305bb54c8f44c19b996818f5d32d6d.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/9955efde3a4a43858e2a1b0df09dabf4.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/6500490113094a528f1b74c343341baf.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/bec342791ed0457f87c0807719ff2f8a.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/87a2354083904ac3bc35ffd2cd85eac7.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;small plastic boxes with hinged lids&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;tub stack and nest&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;pallet boxes with lids&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;storage stacking boxes&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse bin,storage bin,drawer bin</column>
+            <column name="post_title_slug">shelves-with-storage-bins</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">11</column>
+            <column name="post_title">stackable bin organizers</column>
+            <column name="model">4214</column>
+            <column name="external_long">400</column>
+            <column name="external_width">234</column>
+            <column name="external_height">140</column>
+            <column name="internal_long">353</column>
+            <column name="internal_width">210</column>
+            <column name="internal_height">129</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">9.5</column>
+            <column name="weight">0.68</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/0483ca9145fb42338991d9fa55bc2dcb.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/9522bac52ffc4817b0c5ca60a959444d.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/ed6671be9a27439a8dc9c9c6294ae0a4.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/62aa2dbba2e64915a0c18abe63905886.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/fe237de3cb15473c813255180059228b.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;nested and stacked containers&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;Fruit Crates For Sale&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;stackable plastic containers&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;pallet containers plastic&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse bin,storage bin,drawer bin</column>
+            <column name="post_title_slug">stackable-bin-organizers</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">12</column>
+            <column name="post_title">bin shelving</column>
+            <column name="model">5109</column>
+            <column name="external_long">500</column>
+            <column name="external_width">117</column>
+            <column name="external_height">90</column>
+            <column name="internal_long">460</column>
+            <column name="internal_width">94</column>
+            <column name="internal_height">80</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">3.4</column>
+            <column name="weight">0.35</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/15c55ee95b3e448cad7dc16360e1648b.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/a256cfd647fa4710a71913840cb6fb2a.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/3ccc5ea22c214822a715f644501e6dce.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/ba411a49f5424e288de73776b9c28a24.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b24de81a147c4ffab7f8bea2c5140f87.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;plastic mesh containers&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;100 ltr plastic storage boxes with lids&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;FOOD DISTRIBUTION CRATES&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;collapsible plastic pallets&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags"></column>
+            <column name="post_title_slug">bin-shelving</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">13</column>
+            <column name="post_title">parts bins plastic</column>
+            <column name="model">5209</column>
+            <column name="external_long">500</column>
+            <column name="external_width">234</column>
+            <column name="external_height">90</column>
+            <column name="internal_long">456</column>
+            <column name="internal_width">211</column>
+            <column name="internal_height">80</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">7.6</column>
+            <column name="weight">0.65</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/dc8b784f4fed45a2827513c44d886cbb.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/8828595a39a04b8594dae09bef31d4e8.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/6705ee26f94240f5a9b0ab4c19e28620.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/9c3ab1b20aec4f24ab60824e1cccaf05.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/03dab77fecbc4da48e0f87fd39121d4a.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;bulk plastic boxes&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;folding crates&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;plastic storage box for sale&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;sale on storage totes&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse bin,storage bin,drawer bin</column>
+            <column name="post_title_slug">parts-bins-plastic</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">14</column>
+            <column name="post_title">plastic shelf bins</column>
+            <column name="model">5214</column>
+            <column name="external_long">500</column>
+            <column name="external_width">234</column>
+            <column name="external_height">140</column>
+            <column name="internal_long">453</column>
+            <column name="internal_width">210</column>
+            <column name="internal_height">129</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">12.2</column>
+            <column name="weight">0.82</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/a6fab8e160284af3847d1ab51f4bed56.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/3397fd269be34045997324631a1005d5.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/04e07502dcf543f5a44848c4b9fa1f69.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/ebe689d64f984e2c82c47b751f43fba8.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/d55b2ba5732c4e828aa7bca8b771d452.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;collapsible plastic pallets&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;best price on storage totes&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;stackable storage bins on wheels&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;nestable vegetable crate&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse bin,storage bin,drawer bin</column>
+            <column name="post_title_slug">plastic-shelf-bins</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">15</column>
+            <column name="post_title">shelving storage bins</column>
+            <column name="model">6109</column>
+            <column name="external_long">600</column>
+            <column name="external_width">117</column>
+            <column name="external_height">90</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">94</column>
+            <column name="internal_height">80</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">4.2</column>
+            <column name="weight">0.44</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/ac347965838e43ef89c7cf61acd6efaf.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/843f924e8eb5441fb2aa87e74d89e0f2.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/e10ec4b678964d0e9c0b9c7334436148.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/94d0fceb820f4774a03b03c78ec4f797.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/7f60e0bfdae44f1aac18c3bf5fbab476.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;plastic fruit crates&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;large totes for storage&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;plastic bulk bins&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;collapsible storage containers&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse bin,storage bin</column>
+            <column name="post_title_slug">shelving-storage-bins</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">16</column>
+            <column name="post_title">plastic storage bins drawers</column>
+            <column name="model">6209</column>
+            <column name="external_long">600</column>
+            <column name="external_width">234</column>
+            <column name="external_height">90</column>
+            <column name="internal_long">556</column>
+            <column name="internal_width">211</column>
+            <column name="internal_height">80</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">9.3</column>
+            <column name="weight">0.71</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/2f68e76b1d6a4d268a1ee244c0ea62ee.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/0c57d28f7f834586855be6bafb5f36ea.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/0a55981d6aad438f9d14806d2c3a0eae.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/eb2c7db31ba74c37b79e1956741e2787.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/fdd7940b480a448abd9d11b3d9033293.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;collapsible plastic&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;plastic storage tub&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;box pallet&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;buy plastic totes in bulk&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse bin,drawer bin,shelf bin</column>
+            <column name="post_title_slug">plastic-storage-bins-drawers</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_storagebin_">
+            <column name="id">17</column>
+            <column name="post_title">parts bins</column>
+            <column name="model">6214</column>
+            <column name="external_long">600</column>
+            <column name="external_width">234</column>
+            <column name="external_height">140</column>
+            <column name="internal_long">553</column>
+            <column name="internal_width">210</column>
+            <column name="internal_height">129</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">15</column>
+            <column name="weight">0.935</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/1c3179ab0860489a8b2df5ce0cec7115.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/9e422a07dbcc4f968453a4ce71f44198.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/2552b933218847558a9fe5621d9e366c.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/81f85fcc84104ef8981bd668f7ca60bd.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/fc199e36fbac43d189eb6d0d0e3b7ecb.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;kis collapsible crate&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;large plastic pallets&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;small plastic containers&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;plastic pallet bins&lt;/a&gt;</column>
+            <column name="product_category">storage bin</column>
+            <column name="tags">warehouse bin,drawer bin,shelf bin</column>
+            <column name="post_title_slug">parts-bins</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+    </database>
+</pma_xml_export>

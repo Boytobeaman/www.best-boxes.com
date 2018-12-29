@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.4.15.10
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Dec 27, 2018 at 02:41 PM
+- Server version: 10.2.7-MariaDB-log
+- PHP Version: 7.1.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="nodedb" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="best_boxes_com_nestablestoragetub_">
+                CREATE TABLE `best_boxes_com_nestablestoragetub_` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `post_title` varchar(255) DEFAULT NULL,
+                  `model` varchar(255) DEFAULT NULL,
+                  `external_long` varchar(255) DEFAULT NULL,
+                  `external_width` varchar(255) DEFAULT NULL,
+                  `external_height` varchar(255) DEFAULT NULL,
+                  `internal_long` varchar(255) DEFAULT NULL,
+                  `internal_width` varchar(255) DEFAULT NULL,
+                  `internal_height` varchar(255) DEFAULT NULL,
+                  `foldedHeight` varchar(255) DEFAULT NULL,
+                  `volumn` varchar(255) DEFAULT NULL,
+                  `weight` varchar(255) DEFAULT NULL,
+                  `img_path` longtext DEFAULT NULL,
+                  `backlinks` longtext DEFAULT NULL,
+                  `product_category` varchar(255) DEFAULT NULL,
+                  `tags` varchar(255) DEFAULT NULL,
+                  `post_title_slug` varchar(255) DEFAULT NULL,
+                  `static_load` varchar(255) DEFAULT NULL,
+                  `dynamic_load` varchar(255) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'nodedb'
+    -->
+    <database name="nodedb">
+        <!-- Table best_boxes_com_nestablestoragetub_ -->
+        <table name="best_boxes_com_nestablestoragetub_">
+            <column name="id">1</column>
+            <column name="post_title">nested container</column>
+            <column name="model">6430</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">300</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">360</column>
+            <column name="internal_height">280</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">42</column>
+            <column name="weight">1.88</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/610f116a17044f078b5ef20c16b0c18c.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b2e977cce80b4f6db4b3893e63eb2f6a.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/4903c287e5b04d9d8f29db10af282969.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/7279d395dc944fcea80d555a55eb002a.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/a049adaba0f242cb9c4d2c4e11188693.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;heavy duty plastic storage tubs&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;large plastic pallets&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;plastic stacking crates&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;ventilated plastic crate&lt;/a&gt;</column>
+            <column name="product_category">nestable storage tub</column>
+            <column name="tags">nestable storage tub,nestable and stackable crate,plastic tub with lids</column>
+            <column name="post_title_slug">nested-container</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_nestablestoragetub_">
+            <column name="id">2</column>
+            <column name="post_title">nested and stacked containers</column>
+            <column name="model">5325</column>
+            <column name="external_long">500</column>
+            <column name="external_width">395</column>
+            <column name="external_height">250</column>
+            <column name="internal_long">460</column>
+            <column name="internal_width">355</column>
+            <column name="internal_height">240</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">39</column>
+            <column name="weight">1.5</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/123b1f0000e84754ae832fdaea840a5a.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/028ab28bd7894ced8c924e0cd926a224.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b753dbb1a9634a9182ba53a0942c534d.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/04eedd95ee6d4f93aee0f2f5b47e9c7a.JPG,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/ca25f20e5e6b4b6590664fa0202cbc32.JPG,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;stackable bins with lids&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;collapsible plastic pallets&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/parts-storage-bin/&quot; target=&quot;_blank&quot;&gt;plastic drawer storage&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;collapsible gaylord containers&lt;/a&gt;</column>
+            <column name="product_category">nestable storage tub</column>
+            <column name="tags">nestable storage tub,nestable and stackable crate</column>
+            <column name="post_title_slug">nested-and-stacked-containers</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_nestablestoragetub_">
+            <column name="id">3</column>
+            <column name="post_title">Stack &amp; Nest Tub</column>
+            <column name="model">2#nestable tub</column>
+            <column name="external_long">623</column>
+            <column name="external_width">426</column>
+            <column name="external_height">315</column>
+            <column name="internal_long">525</column>
+            <column name="internal_width">398</column>
+            <column name="internal_height">310</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">64</column>
+            <column name="weight">2.3</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/5be426c2382e4e799296d7458563cccd.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/3a45d2796e7040e99bb37d828aab670a.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/6a9f19443e814e5399dd14e0090a2464.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b316d84d57474a01bcdf255e4765fc81.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/6236d84dfa4d4e7aa4cd14f847999273.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;plastic pallet and container&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;euro stacking containers&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/agricultural-harvesting-containers/&quot; target=&quot;_blank&quot;&gt;fruit crates wholesale&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;folding plastic storage boxes&lt;/a&gt;</column>
+            <column name="product_category">nestable storage tub</column>
+            <column name="tags">nestable tub,plastic tub bin</column>
+            <column name="post_title_slug">Stack-&amp;-Nest-Tub</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+    </database>
+</pma_xml_export>

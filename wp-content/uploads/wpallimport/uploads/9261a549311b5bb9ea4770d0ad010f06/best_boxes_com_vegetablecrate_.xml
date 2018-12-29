@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.4.15.10
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Dec 27, 2018 at 02:32 PM
+- Server version: 10.2.7-MariaDB-log
+- PHP Version: 7.1.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="nodedb" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="best_boxes_com_vegetablecrate_">
+                CREATE TABLE `best_boxes_com_vegetablecrate_` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `post_title` varchar(255) DEFAULT NULL,
+                  `model` varchar(255) DEFAULT NULL,
+                  `external_long` varchar(255) DEFAULT NULL,
+                  `external_width` varchar(255) DEFAULT NULL,
+                  `external_height` varchar(255) DEFAULT NULL,
+                  `internal_long` varchar(255) DEFAULT NULL,
+                  `internal_width` varchar(255) DEFAULT NULL,
+                  `internal_height` varchar(255) DEFAULT NULL,
+                  `foldedHeight` varchar(255) DEFAULT NULL,
+                  `volumn` varchar(255) DEFAULT NULL,
+                  `weight` varchar(255) DEFAULT NULL,
+                  `img_path` longtext DEFAULT NULL,
+                  `backlinks` longtext DEFAULT NULL,
+                  `product_category` varchar(255) DEFAULT NULL,
+                  `tags` varchar(255) DEFAULT NULL,
+                  `post_title_slug` varchar(255) DEFAULT NULL,
+                  `static_load` varchar(255) DEFAULT NULL,
+                  `dynamic_load` varchar(255) DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'nodedb'
+    -->
+    <database name="nodedb">
+        <!-- Table best_boxes_com_vegetablecrate_ -->
+        <table name="best_boxes_com_vegetablecrate_">
+            <column name="id">1</column>
+            <column name="post_title">stackable fruit crates</column>
+            <column name="model">6420</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">200</column>
+            <column name="internal_long">565</column>
+            <column name="internal_width">370</column>
+            <column name="internal_height">175</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">37</column>
+            <column name="weight">1.44</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/78b83b2047c04d2e8c22fa2e6915d1df.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/d6dc4735fdae4ed88c6ca7ae92ad38a2.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/66e0e1dd2e9b4e558785718976c19ca7.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/aad38bfa731a4127a892b6c75f8ca86e.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/16157d6cab0e4112b21702511ccae510.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/parts-storage-bin/&quot; target=&quot;_blank&quot;&gt;shelving bins and storage&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;heavy duty folding storage boxes&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;big plastic containers for storage&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;plastic storage tub&lt;/a&gt;</column>
+            <column name="product_category">vegetable crate</column>
+            <column name="tags">plastic vegetable basket,bale arm tray,plastic vegetable and fruit crate </column>
+            <column name="post_title_slug">stackable-fruit-crates</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_vegetablecrate_">
+            <column name="id">2</column>
+            <column name="post_title">container plastic crate box for fruit</column>
+            <column name="model">6424</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">245</column>
+            <column name="internal_long">565</column>
+            <column name="internal_width">370</column>
+            <column name="internal_height">230</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">48</column>
+            <column name="weight">1.9</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/c66c0ff973954b42b7373c20a12c8e75.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/edf0347bd71549589a881d3fbacfb785.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/d46a3b7a8872469cb60a527507375e9c.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/4ab8be68fd3d4912a8d408ee0b65e04e.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/b62a048128c046ab8ab797ea3d6d7023.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;folding crates plastic&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;nesting and stacking crate&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;plastic folding bulk shipping container&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;small stackable storage containers&lt;/a&gt;</column>
+            <column name="product_category">vegetable crate</column>
+            <column name="tags">plastic vegetable basket,bale arm tray,plastic vegetable and fruit crate </column>
+            <column name="post_title_slug">container-plastic-crate-box-for-fruit</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_vegetablecrate_">
+            <column name="id">3</column>
+            <column name="post_title">apple crate boxes</column>
+            <column name="model">1# vegetable crate</column>
+            <column name="external_long">585</column>
+            <column name="external_width">365</column>
+            <column name="external_height">340</column>
+            <column name="internal_long">555</column>
+            <column name="internal_width">335</column>
+            <column name="internal_height">325</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">60</column>
+            <column name="weight">2.5</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/23b30ce035314432bfe218daaa98690e.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/87e77f1226fd4b9fb72eaf184aaba234.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/2114f5a2eb3a414f9c72dee975909bbf.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/80e59e48a0a24002a6bd6d3b23d19deb.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/c4538ad93a3945b789e8518e2657c1d8.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;tub stack and nest&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;bulk plastic storage boxes&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;collapsible plastic pallets&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;strong plastic storage containers&lt;/a&gt;</column>
+            <column name="product_category">vegetable crate</column>
+            <column name="tags">nestable and stackable vegetable crate,vegetable crate</column>
+            <column name="post_title_slug">apple-crate-boxes</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_vegetablecrate_">
+            <column name="id">4</column>
+            <column name="post_title">turnover mesh basket</column>
+            <column name="model">pizza crate</column>
+            <column name="external_long">630</column>
+            <column name="external_width">400</column>
+            <column name="external_height">124</column>
+            <column name="internal_long">565</column>
+            <column name="internal_width">365</column>
+            <column name="internal_height">116</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">25</column>
+            <column name="weight">1</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/5c7e8686d5ee403c92c5ffcb68ce5d04.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/d9d9c90eb48d4f9d8cbd35c195d98990.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/1e7597f86eee4f34a7c00bac8fb950fa.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/4b788ac335c048e6b02e7e874ac9618f.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/beff98f611474fbf9e5f40ed5987b6a9.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;stackable containers with lids&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;bulk bins&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;plastic containers with wheels&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;nested tubs&lt;/a&gt;</column>
+            <column name="product_category">vegetable crate</column>
+            <column name="tags">vegetable crate,pizza storage crate</column>
+            <column name="post_title_slug">turnover-mesh-basket</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_vegetablecrate_">
+            <column name="id">5</column>
+            <column name="post_title">fish crate</column>
+            <column name="model">aquatic crate</column>
+            <column name="external_long">600</column>
+            <column name="external_width">390</column>
+            <column name="external_height">80</column>
+            <column name="internal_long">550</column>
+            <column name="internal_width">364</column>
+            <column name="internal_height">70</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">14</column>
+            <column name="weight">0.88</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/5452d6964633466c90bdaa4dd32c375f.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/4a065216e7204e18bc5d54a5c0d6484a.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/0a6a22cbb1534582bffbe2917ac2c4fa.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/8e7ae08c8fc14f4dbcc57e896693b0c6.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/ec8acc080e6b4aeb8344dd40fc69ecda.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;collapsible pallet&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/nest-stack-tub/&quot; target=&quot;_blank&quot;&gt;nestable tub&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/parts-storage-bin/&quot; target=&quot;_blank&quot;&gt;stackable plastic bins with lids&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;plastic pallet totes&lt;/a&gt;</column>
+            <column name="product_category">vegetable crate</column>
+            <column name="tags">vegetable crate,pizza storage crate,aquatic crate</column>
+            <column name="post_title_slug">fish-crate</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_vegetablecrate_">
+            <column name="id">6</column>
+            <column name="post_title">fruit crates for sale</column>
+            <column name="model">6439</column>
+            <column name="external_long">600</column>
+            <column name="external_width">400</column>
+            <column name="external_height">390</column>
+            <column name="internal_long">570</column>
+            <column name="internal_width">372</column>
+            <column name="internal_height">380</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">80</column>
+            <column name="weight">2.75</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/afe8c4496f1947bebb6c342dfc4381f4.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/30afe21cf5ee4b9b9e8e952629423a7a.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/77ae1ea2499d479cbe1d133a5c431f7d.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/d4ad4c21c37a40829f7e50961519f6ba.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/15b838f39d9a40df93ce83b7ab9eaa0a.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/pallet-container/&quot; target=&quot;_blank&quot;&gt;bulk bins&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;collapsible storage totes&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/parts-storage-bin/&quot; target=&quot;_blank&quot;&gt;shelving bins and storage&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;large plastic pallets&lt;/a&gt;</column>
+            <column name="product_category">vegetable crate</column>
+            <column name="tags">vegetable crate,plastic storage basket</column>
+            <column name="post_title_slug">fruit-crates-for-sale</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+        <table name="best_boxes_com_vegetablecrate_">
+            <column name="id">7</column>
+            <column name="post_title">fruit nested box</column>
+            <column name="model">retaining freshness crate</column>
+            <column name="external_long">585</column>
+            <column name="external_width">405</column>
+            <column name="external_height">310</column>
+            <column name="internal_long">560</column>
+            <column name="internal_width">385</column>
+            <column name="internal_height">280</column>
+            <column name="foldedHeight">NULL</column>
+            <column name="volumn">60</column>
+            <column name="weight">1.75</column>
+            <column name="img_path">http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/fdc89d99a2bc4f408a4404ac4fe4dba5.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/9b55cc1fce7940f780e700143684c86a.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/f4485246e86f42e5b7b310857d09d4ab.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/45af3d0327924db19bc2446959389811.jpg,http://ali-us-west-1-products.oss-us-west-1.aliyuncs.com/products/025635f9832f419b8f572aa04238189d.jpg,</column>
+            <column name="backlinks">You may also interested in &lt;a href=&quot;https://www.best-boxes.com/product-category/plastic-pallet/&quot; target=&quot;_blank&quot;&gt;plastic pallet and container&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/straight-wall-containers/&quot; target=&quot;_blank&quot;&gt;industrial plastic storage bins&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/folding-crates/&quot; target=&quot;_blank&quot;&gt;fold up storage boxes&lt;/a&gt;,&lt;a href=&quot;https://www.best-boxes.com/product-category/attached-lid-container/&quot; target=&quot;_blank&quot;&gt;buy plastic totes in bulk&lt;/a&gt;</column>
+            <column name="product_category">vegetable crate</column>
+            <column name="tags">retaining freshness crate,plastic vegetable crate</column>
+            <column name="post_title_slug">fruit-nested-box</column>
+            <column name="static_load"></column>
+            <column name="dynamic_load"></column>
+        </table>
+    </database>
+</pma_xml_export>
