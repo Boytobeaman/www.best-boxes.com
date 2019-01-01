@@ -5,4 +5,4 @@
 node_modules/
 wp-config.php
 documents
-wp-content/updraft/*
+/wp-content/updraft/*
