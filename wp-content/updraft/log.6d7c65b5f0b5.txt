@@ -1,0 +1,109 @@
+0000.004 () Opened log file at time: Sat, 29 Dec 2018 08:26:20 +0000 on http://best-boxes.com
+0000.004 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.0 WP: 5.0.2 PHP: 7.3.0 (fpm-fcgi, Linux ip-172-26-9-16.ca-central-1.compute.internal 3.10.0-862.3.2.el7.x86_64 #1 SMP Mon May 21 23:36:36 UTC 2018 x86_64) MySQL: 5.7.24-log WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.4M | 4M) multisite: N openssl: OpenSSL 1.0.2q  20 Nov 2018 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.004 () Free space on disk containing Updraft's temporary directory: 11872.5 MB
+0000.006 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.028 () Entity: db
+0000.028 () restore_backup(backup_file=backup_2018-12-29-0635_Crates_supplier_34951eceee88-db.gz, type=db, info=a:0:{}, last_one=)
+0000.028 () Unpacking backup... (backup_2018-12-29-0635_Crates_supplier_34951eceee88-db.gz, 0.5 Mb)
+0000.029 () Database successfully unpacked
+0000.029 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.029 () Using direct MySQL access; value of use_mysqli is: 1
+0000.065 () Max packet size: 500 MB
+0000.065 () Entering maintenance mode
+0000.065 () Enabling Maintenance mode&#8230;
+0000.066 () Backup created by: 1.16.0
+0000.066 () Backup of: https://www.best-boxes.com
+0000.074 () Content URL: https://www.best-boxes.com/wp-content
+0000.074 () Uploads URL: https://www.best-boxes.com/wp-content/uploads
+0000.074 () Old table prefix: wp_
+0000.074 () Site information: multisite=0
+0000.084 () New table prefix: wp_
+0000.101 () Processing table (InnoDB): wp_options
+0000.271 () Restoring prior UD configuration (table: wp_options; keys: 94)
+0000.561 () Processing table (InnoDB): wp_users
+0000.581 () Processing table (InnoDB): wp_usermeta
+0000.603 () Processing table (InnoDB): wp_commentmeta
+0000.620 () Processing table (InnoDB): wp_comments
+0000.644 () Processing table (InnoDB): wp_links
+0000.660 () Processing table (InnoDB): wp_postmeta
+0001.283 () Processing table (InnoDB): wp_posts
+0001.543 () Processing table (InnoDB): wp_term_relationships
+0001.575 () Database queries processed: 50 in 1.54 seconds
+0001.576 () Processing table (InnoDB): wp_term_taxonomy
+0001.599 () Processing table (InnoDB): wp_termmeta
+0001.622 () Processing table (InnoDB): wp_terms
+0001.638 () Processing table (InnoDB): wp_woocommerce_order_itemmeta
+0001.650 () Processing table (InnoDB): wp_woocommerce_payment_tokenmeta
+0001.662 () Processing table (InnoDB): wp_yoast_seo_links
+0001.677 () Processing table (InnoDB): wp_yoast_seo_meta
+0001.689 () Processing table (InnoDB): wp_pmxi_files
+0001.700 () Processing table (InnoDB): wp_pmxi_history
+0001.711 () Processing table (InnoDB): wp_pmxi_images
+0001.744 () Processing table (InnoDB): wp_pmxi_imports
+0001.789 () Processing table (InnoDB): wp_pmxi_posts
+0001.808 () Processing table (InnoDB): wp_pmxi_templates
+0001.846 () Processing table (InnoDB): wp_wc_download_log
+0001.860 () Processing table (InnoDB): wp_wc_webhooks
+0001.872 () Processing table (InnoDB): wp_woocommerce_api_keys
+0001.884 () Processing table (InnoDB): wp_woocommerce_attribute_taxonomies
+0001.896 () Processing table (InnoDB): wp_woocommerce_downloadable_product_permissions
+0001.916 () Processing table (InnoDB): wp_woocommerce_log
+0001.926 () Processing table (InnoDB): wp_woocommerce_order_items
+0001.935 () Database queries processed: 100 in 1.90 seconds
+0001.936 () Processing table (InnoDB): wp_woocommerce_payment_tokens
+0001.948 () Processing table (InnoDB): wp_woocommerce_sessions
+0001.962 () Processing table (InnoDB): wp_woocommerce_shipping_zone_locations
+0001.974 () Processing table (InnoDB): wp_woocommerce_shipping_zone_methods
+0001.984 () Processing table (InnoDB): wp_woocommerce_shipping_zones
+0001.993 () Processing table (InnoDB): wp_woocommerce_tax_rate_locations
+0002.006 () Processing table (InnoDB): wp_woocommerce_tax_rates
+0002.021 () Processing table (InnoDB): wp_wpgmza
+0002.032 () Processing table (InnoDB): wp_wpgmza_categories
+0002.041 () Processing table (InnoDB): wp_wpgmza_category_maps
+0002.051 () Processing table (InnoDB): wp_wpgmza_circles
+0002.062 () Processing table (InnoDB): wp_wpgmza_maps
+0002.072 () Processing table (InnoDB): wp_wpgmza_polygon
+0002.082 () Processing table (InnoDB): wp_wpgmza_polylines
+0002.092 () Processing table (InnoDB): wp_wpgmza_rectangles
+0002.100 () UpdraftPlus Vault: this site has not been connected - check your settings
+0002.432 () Set region: us-west-1
+0002.960 () Unlocking database and leaving maintenance mode
+0002.960 () Disabling Maintenance mode&#8230;
+0002.960 () Finished: lines processed: 136 in 2.92 seconds
+0002.961 () Cleaning up rubbish...
+0002.969 () Entity: plugins
+0002.969 () restore_backup(backup_file=backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:51:"/data/wwwroot/www.best-boxes.com/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0002.969 () Unpacking backup... (backup_2018-12-29-0635_Crates_supplier_34951eceee88-plugins.zip, 25.9 Mb)
+0004.719 () Moving old data: filesystem method / updraft_dir is potentially possible
+0004.719 () Moving old data: can potentially use wp_filesystem method / -old
+0004.719 () Moving old data out of the way...
+0005.710 () Top-level entities being moved: advanced-custom-fields, akismet, contact-form-7-honeypot, contact-form-7, easy-wp-smtp, giga-store-advanced-sections, hello.php, index.php, kirki, theme-customisations, updraftplus, w3-total-cache, woo-gutenberg-products-block, woocommerce-xml-csv-product-import, woocommerce, wordpress-importer, wordpress-seo, wp-all-import-pro.4.3.0, wp-all-import, wp-mail-smtp, wpai-acf-add-on
+0005.713 () Moving unpacked backup into place...
+0006.116 () Top-level entities being moved: advanced-custom-fields, akismet, contact-form-7, contact-form-7-honeypot, easy-wp-smtp, giga-store-advanced-sections, kirki, theme-customisations, updraftplus, w3-total-cache, woo-gutenberg-products-block, woocommerce, woocommerce-xml-csv-product-import, wordpress-importer, wordpress-seo, wp-all-import, wp-mail-smtp, wpai-acf-add-on, hello.php, index.php
+0006.121 () Cleaning up rubbish...
+0006.125 () Entity: themes
+0006.125 () restore_backup(backup_file=backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip, type=themes, info=a:2:{s:4:"path";s:50:"/data/wwwroot/www.best-boxes.com/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0006.125 () Unpacking backup... (backup_2018-12-29-0635_Crates_supplier_34951eceee88-themes.zip, 8 Mb)
+0006.319 () Moving old data: filesystem method / updraft_dir is potentially possible
+0006.319 () Moving old data: can potentially use wp_filesystem method / -old
+0006.319 () Moving old data out of the way...
+0006.404 () Top-level entities being moved: generatepress, giga-store, index.php, oceanwp, twentyfifteen, twentynineteen, twentyseventeen, twentysixteen
+0006.405 () Moving unpacked backup into place...
+0006.458 () Top-level entities being moved: generatepress, giga-store, oceanwp, twentyfifteen, twentynineteen, twentyseventeen, twentysixteen, index.php
+0006.459 () Cleaning up rubbish...
+0006.464 () Entity: uploads
+0006.464 () restore_backup(backup_file=backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:51:"/data/wwwroot/www.best-boxes.com/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0006.464 () Unpacking backup... (backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads.zip, 399.7 Mb)
+0014.295 () Moving old data: filesystem method / updraft_dir is potentially possible
+0014.295 () Moving old data: can potentially use wp_filesystem method / -old
+0014.295 () Moving old data out of the way...
+0015.442 () Moving unpacked backup into place...
+0016.418 () Cleaning up rubbish...
+0016.420 () restore_backup(backup_file=backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip, type=uploads, info=a:2:{s:4:"path";s:51:"/data/wwwroot/www.best-boxes.com/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0016.420 () Unpacking backup... (backup_2018-12-29-0635_Crates_supplier_34951eceee88-uploads2.zip, 137.7 Mb)
+0016.440 () Error message: The package could not be installed.
+0016.440 () Error data (incompatible_archive): PCLZIP_ERR_BAD_FORMAT (-10) : Unable to find End of Central Dir Record signature
+0016.448 () Restore failed...
+0016.448 () Error message: The package could not be installed.
+0016.448 () Error data (incompatible_archive): PCLZIP_ERR_BAD_FORMAT (-10) : Unable to find End of Central Dir Record signature
+0016.448 () Restore failed
