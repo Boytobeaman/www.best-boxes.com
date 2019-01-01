@@ -1,8 +1,0 @@
-0000.004 () Opened log file at time: Sat, 29 Dec 2018 09:03:35 +0000 on https://www.best-boxes.com
-0000.027 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.0 WP: 5.0.2 PHP: 7.3.0 (fpm-fcgi, Linux ip-172-26-9-16.ca-central-1.compute.internal 3.10.0-862.3.2.el7.x86_64 #1 SMP Mon May 21 23:36:36 UTC 2018 x86_64) MySQL: 5.7.24-log WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 12.1M | 4M) multisite: N openssl: OpenSSL 1.0.2q  20 Nov 2018 mcrypt: N LANG:  ZipArchive::addFile: Y
-0000.027 () Free space on disk containing Updraft's temporary directory: 11208.9 MB
-0000.028 () Restore job started. Entities to restore: uploads. Restore options: {"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
-0000.062 () Error message: Existing unremoved folders from a previous restore exist (please use the "Delete Old Directories" button to delete them before trying again): /data/wwwroot/www.best-boxes.com/wp-content/uploads-old
-0000.064 () Restore failed...
-0000.064 () Error message: Existing unremoved folders from a previous restore exist (please use the "Delete Old Directories" button to delete them before trying again): /data/wwwroot/www.best-boxes.com/wp-content/uploads-old
-0000.064 () Restore failed
