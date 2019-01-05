@@ -45,6 +45,12 @@ if (!$productfoldedheight || $productfoldedheight == NULL || $productfoldedheigh
 	$displayFoldedHeight = "";
 }
 
+if (!$productinnerlength) {
+    $displayInternalDimensions = "none";
+}else{
+	$displayInternalDimensions = "";
+}
+
 if (!$staticload) {
     $displayStaticLoad = "none";
 }else{
@@ -57,6 +63,11 @@ if (!$dynamicload) {
 	$displayDynamicLoad = "";
 }
 
+if (!$productvolumn) {
+    $displayVolumn = "none";
+}else{
+	$displayVolumn = "";
+}
 
 echo ' 
 	<table class="table table-hover table-bordered single-product-attr">
@@ -80,7 +91,7 @@ echo '
 	      		<span class="pull-right">in</span>
 	      	</td>
 	  	  </tr>
-	      <tr>
+	      <tr style="display:'. $displayInternalDimensions .'">
 	        <td><h4>Internal Dimensions</h4></td>
 	        <td class="internal-dimension">
 	        	<span class="mm pull-left value">
@@ -142,7 +153,7 @@ echo '
 	        </td>
 	       
 	      </tr>
-	      <tr>
+	      <tr style="display:'. $displayVolumn .'">
 	        <td><h4>Volumn</h4></td>
 	        <td class="internal-dimension">
 	        	<span class="liters pull-left value">
