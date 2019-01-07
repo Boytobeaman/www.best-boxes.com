@@ -263,7 +263,8 @@ a.woocommerce-loop-product__link:focus{
 }
 
 #footerLink {
-    padding-top: 20px
+    padding: 10px;
+    color: #777;
 }
 
 #footerLink a {
