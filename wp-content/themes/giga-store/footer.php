@@ -10,9 +10,12 @@
 <footer id="colophon" class="rsrc-footer" role="contentinfo">
 	<div class="container">  
 		<div class="row">
-					<div class="copy-right text-center">
-						© 1999-2019 Best-boxes.com. All rights reserved.
+					<div id="footerLink">
+						<div class="copy-right text-center">
+							© 1999-2019 Best-boxes.com. All rights reserved.
+						</div>
 					</div>
+					
 				</div>
 	</div>       
 </footer> 
