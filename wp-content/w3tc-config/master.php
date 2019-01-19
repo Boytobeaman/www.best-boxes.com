@@ -7,12 +7,12 @@
     "cluster.messagebus.sns.api_secret": "",
     "cluster.messagebus.sns.topic_arn": "",
     "dbcache.configuration_overloaded": false,
-    "dbcache.debug": false,
-    "dbcache.enabled": false,
+    "dbcache.debug": "0",
+    "dbcache.enabled": "1",
     "dbcache.engine": "file",
-    "dbcache.file.gc": 3600,
+    "dbcache.file.gc": "3600",
     "dbcache.file.locking": false,
-    "dbcache.lifetime": 180,
+    "dbcache.lifetime": "180",
     "dbcache.memcached.persistent": true,
     "dbcache.memcached.aws_autodiscovery": false,
     "dbcache.memcached.servers": [
@@ -35,13 +35,16 @@
         "XMLRPC_REQUEST"
     ],
     "dbcache.reject.cookie": [],
-    "dbcache.reject.logged": true,
+    "dbcache.reject.logged": "1",
     "dbcache.reject.sql": [
         "gdsr_",
         "wp_rg_",
-        "_wp_session_"
+        "_wp_session_",
+        "_wc_session_"
     ],
-    "dbcache.reject.uri": [],
+    "dbcache.reject.uri": [
+        ""
+    ],
     "dbcache.reject.words": [
         "^\\s*insert\\b",
         "^\\s*delete\\b",
@@ -56,7 +59,7 @@
         "\\bfound_rows\\(\\)"
     ],
     "objectcache.configuration_overloaded": false,
-    "objectcache.enabled": false,
+    "objectcache.enabled": "0",
     "objectcache.debug": false,
     "objectcache.enabled_for_wp_admin": true,
     "objectcache.fallback_transients": true,
@@ -97,9 +100,9 @@
     "objectcache.lifetime": 180,
     "objectcache.purge.all": false,
     "pgcache.configuration_overloaded": false,
-    "pgcache.enabled": false,
+    "pgcache.enabled": "1",
     "pgcache.comment_cookie_ttl": 1800,
-    "pgcache.debug": false,
+    "pgcache.debug": "0",
     "pgcache.engine": "file_generic",
     "pgcache.file.gc": 3600,
     "pgcache.file.nfs": false,
@@ -216,10 +219,10 @@
             ]
         }
     },
-    "stats.enabled": false,
+    "stats.enabled": "0",
     "minify.configuration_overloaded": false,
-    "minify.enabled": false,
-    "minify.auto": true,
+    "minify.enabled": "0",
+    "minify.auto": "1",
     "minify.debug": false,
     "minify.engine": "file",
     "minify.error.notification": "",
@@ -318,8 +321,8 @@
     ],
     "minify.cache.files_regexp": false,
     "cdn.configuration_overloaded": false,
-    "cdn.enabled": false,
-    "cdn.debug": false,
+    "cdn.enabled": "0",
+    "cdn.debug": "0",
     "cdn.engine": "maxcdn",
     "cdn.uploads.enable": true,
     "cdn.includes.enable": true,
@@ -451,7 +454,7 @@
         "{plugins_dir}\/wp-fb-autoconnect\/facebook-platform\/channel.html"
     ],
     "cdn.reject.ssl": false,
-    "cdnfsd.enabled": false,
+    "cdnfsd.enabled": "0",
     "cdnfsd.engine": "",
     "cdnfsd.debug": false,
     "cdnfsd.cloudfront.access_key": "",
@@ -465,11 +468,13 @@
     "cdnfsd.stackpath.api_key": "",
     "cdnfsd.stackpath.zone_id": 0,
     "varnish.configuration_overloaded": false,
-    "varnish.enabled": false,
+    "varnish.enabled": "0",
     "varnish.debug": false,
-    "varnish.servers": [],
+    "varnish.servers": [
+        ""
+    ],
     "browsercache.configuration_overloaded": false,
-    "browsercache.enabled": true,
+    "browsercache.enabled": "1",
     "browsercache.rewrite": false,
     "browsercache.no404wp": false,
     "browsercache.no404wp.exceptions": [
@@ -699,16 +704,16 @@
         }
     },
     "common.support": "",
-    "common.track_usage": false,
+    "common.track_usage": "0",
     "common.tweeted": false,
-    "config.check": true,
+    "config.check": "1",
     "config.path": "",
     "widget.latest.items": 3,
     "widget.latest_news.items": 5,
-    "widget.pagespeed.enabled": true,
+    "widget.pagespeed.enabled": "1",
     "widget.pagespeed.key": "",
     "widget.pagespeed.key.restrict.referrer": "",
-    "widget.pagespeed.show_in_admin_bar": false,
+    "widget.pagespeed.show_in_admin_bar": "0",
     "timelimit.email_send": 180,
     "timelimit.varnish_purge": 300,
     "timelimit.cache_flush": 600,
@@ -730,5 +735,8 @@
     },
     "extensions.active_frontend": [],
     "plugin.license_key": "",
-    "plugin.type": ""
+    "plugin.type": "",
+    "fragmentcache": {
+        "engine": ""
+    }
 }
