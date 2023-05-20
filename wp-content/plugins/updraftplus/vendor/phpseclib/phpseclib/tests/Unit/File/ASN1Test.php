@@ -79,7 +79,7 @@ class Unit_File_ASN1Test extends PhpseclibTestCase
         $decoded = $asn1->decodeBER(base64_decode($str));
         $result = $asn1->asn1map($decoded[0], $AS_REP);
 
-        $this->assertInternalType('array', $result);
+        $this->assertIsArray($result);
     }
 
     /**
@@ -231,7 +231,7 @@ class Unit_File_ASN1Test extends PhpseclibTestCase
         $decoded = $asn1->decodeBER(base64_decode($str));
         $result = $asn1->asn1map($decoded[0], $AS_REP);
 
-        $this->assertInternalType('array', $result);
+        $this->assertIsArray($result);
     }
 
     /**
@@ -276,7 +276,7 @@ class Unit_File_ASN1Test extends PhpseclibTestCase
     {
         $asn1 = new File_ASN1();
         $decoded = $asn1->decodeBER(base64_decode('MBaAFJtUo7c00HsI5EPZ4bkICfkOY2Pv'));
-        $this->assertInternalType('string', $decoded[0]['content'][0]['content']);
+        $this->assertIsString($decoded[0]['content'][0]['content']);
     }
 
     /**
@@ -286,7 +286,7 @@ class Unit_File_ASN1Test extends PhpseclibTestCase
     {
         $asn1 = new File_ASN1();
         $decoded = $asn1->decodeBER("\xa0\x00");
-        $this->assertInternalType('array', $decoded);
+        $this->assertIsArray($decoded);
         $this->assertCount(0, $decoded[0]['content']);
     }
 
@@ -330,5 +330,122 @@ class Unit_File_ASN1Test extends PhpseclibTestCase
         $arr = $asn1->asn1map($decoded[0], $map);
 
         $this->assertSame($data, $arr);
+    }
+
+    /**
+     * @group github1296
+     */
+    public function testInvalidCertificate()
+    {
+        $data = 'a' . base64_decode('MD6gJQYKKwYBBAGCNxQCA6AXDBVvZmZpY2VAY2VydGRpZ2l0YWwucm+BFW9mZmljZUBjZXJ0ZGlnaXRhbC5ybw==');
+        $asn1 = new File_ASN1();
+        $asn1->decodeBER($data);
+    }
+
+    /**
+     * @group github1367
+     */
+    public function testOIDs()
+    {
+        // from the example in 8.19.5 in the following:
+        // https://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf#page=22
+        $orig = pack('H*', '813403');
+        $asn1 = new File_ASN1();
+        $new = $asn1->_decodeOID($orig);
+        $this->assertSame('2.100.3', $new);
+        $this->assertSame($orig, $asn1->_encodeOID($new));
+
+        // UUID OID from the following:
+        // https://healthcaresecprivacy.blogspot.com/2011/02/creating-and-using-unique-id-uuid-oid.html
+        $orig = '2.25.329800735698586629295641978511506172918';
+        $asn1 = new File_ASN1();
+        $new = $asn1->_encodeOID($orig);
+        $this->assertSame(pack('H*', '6983f09da7ebcfdee0c7a1a7b2c0948cc8f9d776'), $new);
+        $this->assertSame($orig, $asn1->_decodeOID($new));
+    }
+
+    /**
+     * @group github1388
+     */
+    public function testExplicitImplicitDate()
+    {
+        $map = array(
+            'type'     => FILE_ASN1_TYPE_SEQUENCE,
+            'children' => array(
+                'notBefore' => array(
+                                             'constant' => 0,
+                                             'optional' => true,
+                                             'implicit' => true,
+                                             'type' => FILE_ASN1_TYPE_GENERALIZED_TIME),
+                'notAfter'  => array(
+                                             'constant' => 1,
+                                             'optional' => true,
+                                             'implicit' => true,
+                                             'type' => FILE_ASN1_TYPE_GENERALIZED_TIME)
+            )
+        );
+
+        $asn1 = new File_ASN1();
+        $a = pack('H*', '3026a011180f32303137303432313039303535305aa111180f32303138303432313230353935395a');
+        $a = $asn1->decodeBER($a);
+        $a = $asn1->asn1map($a[0], $map);
+
+        $this->assertIsArray($a);
+    }
+
+    public function testNullGarbage()
+    {
+        $asn1 = new File_ASN1();
+
+        $em = pack('H*', '3080305c0609608648016503040201054f8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888804207509e5bda0c762d2bac7f90d758b5b2263fa01ccbc542ab5e3df163be08e6ca9');
+        $decoded = $asn1->decodeBER($em);
+        $this->assertFalse($decoded[0]);
+
+        $em = pack('H*', '3080307f0609608648016503040201057288888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888804207509e5bda0c762d2bac7f90d758b5b2263fa01ccbc542ab5e3df163be08e6ca90000');
+        $decoded = $asn1->decodeBER($em);
+        $this->assertFalse($decoded[0]);
+    }
+
+    public function testOIDGarbage()
+    {
+        $asn1 = new File_ASN1();
+
+        $em = pack('H*', '3080305c065860864801650304020188888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888050004207509e5bda0c762d2bac7f90d758b5b2263fa01ccbc542ab5e3df163be08e6ca9');
+        $decoded = $asn1->decodeBER($em);
+        $this->assertFalse($decoded[0]);
+
+        $em = pack('H*', '3080307f067d608648016503040201888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888804207509e5bda0c762d2bac7f90d758b5b2263fa01ccbc542ab5e3df163be08e6ca9');
+        $decoded = $asn1->decodeBER($em);
+        $this->assertFalse($decoded[0]);
+    }
+
+    public function testConstructedMismatch()
+    {
+        $asn1 = new File_ASN1();
+
+        $em = pack('H*', '1031300d0609608648016503040201050004207509e5bda0c762d2bac7f90d758b5b2263fa01ccbc542ab5e3df163be08e6ca9');
+        $decoded = $asn1->decodeBER($em);
+        $this->assertFalse($decoded[0]);
+
+        $em = pack('H*', '3031100d0609608648016503040201050004207509e5bda0c762d2bac7f90d758b5b2263fa01ccbc542ab5e3df163be08e6ca9');
+        $decoded = $asn1->decodeBER($em);
+        $this->assertFalse($decoded[0]);
+
+        $em = pack('H*', '3031300d2609608648016503040201050004207509e5bda0c762d2bac7f90d758b5b2263fa01ccbc542ab5e3df163be08e6ca9');
+        $decoded = $asn1->decodeBER($em);
+        $this->assertFalse($decoded[0]);
+
+        $em = pack('H*', '3031300d06096086480165030402012d0004207509e5bda0c762d2bac7f90d758b5b2263fa01ccbc542ab5e3df163be08e6ca9');
+        $decoded = $asn1->decodeBER($em);
+        $this->assertFalse($decoded[0]);
+    }
+
+    public function testBadTagSecondOctet()
+    {
+        $asn1 = new File_ASN1();
+
+        $em = pack('H*', '3033300f1f808080060960864801650304020104207509e5bda0c762d2bac7f90d758b5b2263fa01ccbc542ab5e3df163be08e6ca9');
+        $decoded = $asn1->decodeBER($em);
+        $this->assertFalse($decoded[0]);
     }
 }

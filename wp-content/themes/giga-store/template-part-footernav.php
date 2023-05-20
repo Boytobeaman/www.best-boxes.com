@@ -2,7 +2,7 @@
 	<div class="row rsrc-footer-menu">
 		<div class="container">
 			<nav id="footer-navigation" class="navbar navbar-inverse" role="navigation">
-				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a>
+				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?></a>
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-2-collapse">
 						<span class="sr-only"><?php esc_html_e( 'Toggle navigation', 'giga-store' ); ?></span>

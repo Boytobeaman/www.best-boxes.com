@@ -9,14 +9,20 @@
 <?php } ?>
 <footer id="colophon" class="rsrc-footer" role="contentinfo">
 	<div class="container">  
-		<div class="row">
-					<div id="footerLink">
-						<div class="copy-right text-center">
-							© 1999-2019 Best-boxes.com. All rights reserved.
-						</div>
-					</div>
-					
+		<div class="row rsrc-author-credits">
+			<?php if ( get_theme_mod( 'giga_store_socials', 0 ) == 1 ) : ?>
+				<div class="footer-socials text-center">
+					<?php
+					if ( get_theme_mod( 'giga_store_socials', 0 ) == 1 ) {
+						giga_store_social_links();
+					}
+					?>                 
 				</div>
+			<?php endif; ?>
+			<p class="text-center">
+				best-boxes.com @ All rights reserved
+			</p> 
+		</div>
 	</div>       
 </footer> 
 <p id="back-top">
@@ -33,20 +39,5 @@
 	?>
 </nav>
 <?php wp_footer(); ?>
-<div id="contactUs" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Request a Free Quote</h4>
-      </div>
-      <div class="modal-body">
-		<?php echo do_shortcode( '[contact-form-7 id="9" title="Contact form 1"]' ); ?>
-      </div>
-    </div>
-  </div>
-</div>
 </body>
 </html>

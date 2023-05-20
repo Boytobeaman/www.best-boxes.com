@@ -9,10 +9,21 @@
  * Registers the regular admin menu and network admin menu implementations.
  */
 class WPSEO_Menu implements WPSEO_WordPress_Integration {
-	/** The page identifier used in WordPress to register the admin page !DO NOT CHANGE THIS! */
+
+	/**
+	 * The page identifier used in WordPress to register the admin page.
+	 *
+	 * !DO NOT CHANGE THIS!
+	 *
+	 * @var string
+	 */
 	const PAGE_IDENTIFIER = 'wpseo_dashboard';
 
-	/** @var array List of classes that add admin functionality. */
+	/**
+	 * List of classes that add admin functionality.
+	 *
+	 * @var array
+	 */
 	protected $admin_features;
 
 	/**
@@ -48,8 +59,12 @@ class WPSEO_Menu implements WPSEO_WordPress_Integration {
 	 * @return void
 	 */
 	public function load_page() {
-		$page = filter_input( INPUT_GET, 'page' );
-		$this->show_page( $page );
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Reason: We are not processing form information.
+		if ( isset( $_GET['page'] ) && is_string( $_GET['page'] ) ) {
+			// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Reason: We are not processing form information.
+			$page = sanitize_text_field( wp_unslash( $_GET['page'] ) );
+			$this->show_page( $page );
+		}
 	}
 
 	/**
@@ -65,24 +80,12 @@ class WPSEO_Menu implements WPSEO_WordPress_Integration {
 				require_once WPSEO_PATH . 'admin/pages/tools.php';
 				break;
 
-			case 'wpseo_titles':
-				require_once WPSEO_PATH . 'admin/pages/metas.php';
-				break;
-
-			case 'wpseo_social':
-				require_once WPSEO_PATH . 'admin/pages/social.php';
-				break;
-
 			case 'wpseo_licenses':
 				require_once WPSEO_PATH . 'admin/pages/licenses.php';
 				break;
 
 			case 'wpseo_files':
 				require_once WPSEO_PATH . 'admin/views/tool-file-editor.php';
-				break;
-
-			case 'wpseo_configurator':
-				require_once WPSEO_PATH . 'admin/config-ui/class-configuration-page.php';
 				break;
 
 			default:

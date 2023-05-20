@@ -106,7 +106,7 @@ if ( ! class_exists( 'WC_Admin_Assets', false ) ) :
 			wp_register_script( 'wc-shipping-classes', WC()->plugin_url() . '/assets/js/admin/wc-shipping-classes' . $suffix . '.js', array( 'jquery', 'wp-util', 'underscore', 'backbone' ), WC_VERSION );
 			wp_register_script( 'wc-clipboard', WC()->plugin_url() . '/assets/js/admin/wc-clipboard' . $suffix . '.js', array( 'jquery' ), WC_VERSION );
 			wp_register_script( 'select2', WC()->plugin_url() . '/assets/js/select2/select2.full' . $suffix . '.js', array( 'jquery' ), '4.0.3' );
-			wp_register_script( 'selectWoo', WC()->plugin_url() . '/assets/js/selectWoo/selectWoo.full' . $suffix . '.js', array( 'jquery' ), '1.0.4' );
+			wp_register_script( 'selectWoo', WC()->plugin_url() . '/assets/js/selectWoo/selectWoo.full' . $suffix . '.js', array( 'jquery' ), '1.0.5' );
 			wp_register_script( 'wc-enhanced-select', WC()->plugin_url() . '/assets/js/admin/wc-enhanced-select' . $suffix . '.js', array( 'jquery', 'selectWoo' ), WC_VERSION );
 			wp_localize_script(
 				'wc-enhanced-select',
@@ -256,7 +256,7 @@ if ( ! class_exists( 'WC_Admin_Assets', false ) ) :
 					'wc-admin-order-meta-boxes',
 					'woocommerce_admin_meta_boxes_order',
 					array(
-						'countries'              => json_encode( array_merge( WC()->countries->get_allowed_country_states(), WC()->countries->get_shipping_country_states() ) ),
+						'countries'              => wp_json_encode( array_merge( WC()->countries->get_allowed_country_states(), WC()->countries->get_shipping_country_states() ) ),
 						'i18n_select_state_text' => esc_attr__( 'Select an option&hellip;', 'woocommerce' ),
 						'default_country'        => isset( $default_location['country'] ) ? $default_location['country'] : '',
 						'default_state'          => isset( $default_location['state'] ) ? $default_location['state'] : '',
@@ -411,7 +411,7 @@ if ( ! class_exists( 'WC_Admin_Assets', false ) ) :
 					'wc-users',
 					'wc_users_params',
 					array(
-						'countries'              => json_encode( array_merge( WC()->countries->get_allowed_country_states(), WC()->countries->get_shipping_country_states() ) ),
+						'countries'              => wp_json_encode( array_merge( WC()->countries->get_allowed_country_states(), WC()->countries->get_shipping_country_states() ) ),
 						'i18n_select_state_text' => esc_attr__( 'Select an option&hellip;', 'woocommerce' ),
 					)
 				);

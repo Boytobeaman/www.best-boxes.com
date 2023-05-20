@@ -17,13 +17,15 @@ class UpdraftPlus_Storage_Methods_Interface {
 	 */
 	public static function get_storage_object($method) {
 	
+		if (!preg_match('/^[\-a-z0-9]+$/i', $method)) return new WP_Error('no_such_storage_class', "The specified storage method ($method) was not found");
+	
 		static $objects = array();
 	
 		if (!empty($objects[$method])) return $objects[$method];
 	
 		$method_class = 'UpdraftPlus_BackupModule_'.$method;
 		
-		if (!class_exists($method_class)) include_once UPDRAFTPLUS_DIR.'/methods/'.$method.'.php';
+		if (!class_exists($method_class)) updraft_try_include_file('methods/'.$method.'.php', 'include_once');
 		
 		if (!class_exists($method_class)) return new WP_Error('no_such_storage_class', "The specified storage method ($method) was not found");
 		
@@ -43,7 +45,7 @@ class UpdraftPlus_Storage_Methods_Interface {
 	
 		$storage_objects_and_ids = self::get_storage_objects_and_ids(array_keys($updraftplus->backup_methods));
 		$options = array();
-		$templates = array();
+		$templates = $partial_templates = array();
 
 		foreach ($storage_objects_and_ids as $method => $method_info) {
 
@@ -52,11 +54,14 @@ class UpdraftPlus_Storage_Methods_Interface {
 			if (!$object->supports_feature('multi_options')) {
 				ob_start();
 				do_action('updraftplus_config_print_before_storage', $method, null);
+				do_action('updraftplus_config_print_add_conditional_logic', $method, $object);
 				$object->config_print();
 				$templates[$method] = ob_get_clean();
 			} else {
 				$templates[$method] = $object->get_template();
 			}
+
+			if (is_callable(array($object, 'get_partial_templates'))) $partial_templates[$method] = $object->get_partial_templates();
 
 			if (isset($method_info['instance_settings'])) {
 				// Add the methods default settings so that we can add new instances
@@ -79,11 +84,15 @@ class UpdraftPlus_Storage_Methods_Interface {
 					$options[$method][$instance_id] = $opts;
 				}
 			}
+
+			// Get the list of template properties from the predefined storage method
+			$options[$method]['template_properties'] = $object->get_template_properties();
 		}
 
 		return array(
 			'options' => $options,
 			'templates' => $templates,
+			'partial_templates' => $partial_templates,
 		);
 	}
 	
@@ -114,7 +123,7 @@ class UpdraftPlus_Storage_Methods_Interface {
 		
 			if (is_a($remote_storage, 'UpdraftPlus_BackupModule')) {
 			
-				if (!empty($method_objects[$method])) $storage_objects_and_ids[$method] = array();
+				if (empty($storage_objects_and_ids[$method])) $storage_objects_and_ids[$method] = array();
 				
 				$storage_objects_and_ids[$method]['object'] = $remote_storage;
 				
@@ -231,13 +240,14 @@ class UpdraftPlus_Storage_Methods_Interface {
 	/**
 	 * This method will return an array of enabled remote storage objects and instance settings of the currently connected remote storage services.
 	 *
-	 * @param Array $services - an list of service identifiers (e.g. ['dropbox', 's3'])
+	 * @param Array $services                 - an list of service identifiers (e.g. ['dropbox', 's3'])
+	 * @param Array $remote_storage_instances - a list of remote storage instances the user wants to backup to, if empty we use the saved options
 	 *
 	 * @uses self::get_storage_objects_and_ids()
 	 *
 	 * @return Array					- returns an array, with a key equal to only enabled service member of the $services list passed in. The corresponding value is then an array with keys 'object', 'instance_settings'. The value for 'object' is an UpdraftPlus_BackupModule instance. The value for 'instance_settings' is an array keyed by associated enabled instance IDs, with the values being the associated settings for the enabled instance ID.
 	 */
-	public static function get_enabled_storage_objects_and_ids($services) {
+	public static function get_enabled_storage_objects_and_ids($services, $remote_storage_instances = array()) {
 		
 		$storage_objects_and_ids = self::get_storage_objects_and_ids($services);
 		
@@ -247,7 +257,9 @@ class UpdraftPlus_Storage_Methods_Interface {
 			
 			foreach ($method_information['instance_settings'] as $instance_id => $instance_information) {
 				if (!isset($instance_information['instance_enabled'])) $instance_information['instance_enabled'] = 1;
-				if (empty($instance_information['instance_enabled'])) {
+				if (!empty($remote_storage_instances) && isset($remote_storage_instances[$method]) && !in_array($instance_id, $remote_storage_instances[$method])) {
+					unset($storage_objects_and_ids[$method]['instance_settings'][$instance_id]);
+				} elseif (empty($remote_storage_instances) && empty($instance_information['instance_enabled'])) {
 					unset($storage_objects_and_ids[$method]['instance_settings'][$instance_id]);
 				}
 			}
@@ -269,6 +281,8 @@ class UpdraftPlus_Storage_Methods_Interface {
 	public static function get_remote_file($services, $file, $timestamp, $restore = false) {
 		
 		global $updraftplus;
+
+		$backup_history = UpdraftPlus_Backup_History::get_history();
 		
 		$fullpath = $updraftplus->backups_dir_location().'/'.$file;
 
@@ -324,7 +338,7 @@ class UpdraftPlus_Storage_Methods_Interface {
 						$updraftplus->log(__('Error', 'updraftplus'), 'notice-restore');
 					} else {
 						clearstatcache();
-						if (0 === @filesize($fullpath)) @unlink($fullpath);
+						if (0 === @filesize($fullpath)) @unlink($fullpath);// phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged -- Silenced to suppress errors that may arise because of the function.
 						$updraftplus->log('Remote fetch failed');
 					}
 				}
@@ -336,30 +350,30 @@ class UpdraftPlus_Storage_Methods_Interface {
 	/**
 	 * Downloads a specified file into UD's directory
 	 *
-	 * @param String				   $file   The basename of the file
-	 * @param UpdraftPlus_BackupModule $object The object of the service to use to download with.
+	 * @param String				   $file		   The basename of the file
+	 * @param UpdraftPlus_BackupModule $service_object The object of the service to use to download with.
 	 *
 	 * @return Boolean - Whether the operation succeeded. Inherited from the storage module's download() method. N.B. At the time of writing it looks like not all modules necessarily return true upon success; but false can be relied upon for detecting failure.
 	 */
-	private static function download_file($file, $object) {
+	private static function download_file($file, $service_object) {
 
 		global $updraftplus;
 	
-		@set_time_limit(UPDRAFTPLUS_SET_TIME_LIMIT);
+		if (function_exists('set_time_limit')) @set_time_limit(UPDRAFTPLUS_SET_TIME_LIMIT);// phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged -- Silenced to suppress errors that may arise because of the function.
 
-		$service = $object->get_id();
+		$service = $service_object->get_id();
 		
 		$updraftplus->log("Requested file from remote service: $service: $file");
 
-		if (method_exists($object, 'download')) {
+		if (method_exists($service_object, 'download')) {
 		
 			try {
-				return $object->download($file);
+				return $service_object->download($file);
 			} catch (Exception $e) {
 				$log_message = 'Exception ('.get_class($e).') occurred during download: '.$e->getMessage().' (Code: '.$e->getCode().', line '.$e->getLine().' in '.$e->getFile().')';
 				error_log($log_message);
 				// @codingStandardsIgnoreLine
-				if (function_exists('wp_debug_backtrace_summary')) $log_message .= ' Backtrace: '.wp_debug_backtrace_summary();
+				$log_message .= ' Backtrace: '.str_replace(array(ABSPATH, "\n"), array('', ', '), $e->getTraceAsString());
 				$updraftplus->log($log_message);
 				$updraftplus->log(sprintf(__('A PHP exception (%s) has occurred: %s', 'updraftplus'), get_class($e), $e->getMessage()), 'error');
 				return false;
@@ -368,7 +382,7 @@ class UpdraftPlus_Storage_Methods_Interface {
 				$log_message = 'PHP Fatal error ('.get_class($e).') has occurred during download. Error Message: '.$e->getMessage().' (Code: '.$e->getCode().', line '.$e->getLine().' in '.$e->getFile().')';
 				error_log($log_message);
 				// @codingStandardsIgnoreLine
-				if (function_exists('wp_debug_backtrace_summary')) $log_message .= ' Backtrace: '.wp_debug_backtrace_summary();
+				$log_message .= ' Backtrace: '.str_replace(array(ABSPATH, "\n"), array('', ', '), $e->getTraceAsString());
 				$updraftplus->log($log_message);
 				$updraftplus->log(sprintf(__('A PHP fatal error (%s) has occurred: %s', 'updraftplus'), get_class($e), $e->getMessage()), 'error');
 				return false;

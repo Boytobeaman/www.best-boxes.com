@@ -27,12 +27,6 @@ class UpdraftPlus_Dropbox_API {
     private $root;
     
     /**
-     * Format of the API response
-     * @var string
-     */
-    private $responseFormat = 'php';
-    
-    /**
      * JSONP callback
      * @var string
      */
@@ -69,6 +63,15 @@ class UpdraftPlus_Dropbox_API {
             $this->root = $root;
         }
     }
+
+    /**
+     * This function will make a request to refresh the access token
+     *
+     * @return void
+     */
+    public function refreshAccessToken() {
+        $this->OAuth->refreshAccessToken();
+    }
     
     /**
      * Retrieves information about the user's account
@@ -83,11 +86,16 @@ class UpdraftPlus_Dropbox_API {
 
     /**
      * Retrieves information about the user's quota
+     * @param array $options - valid keys are 'timeout'
      * @return object stdClass
      */
-    public function quotaInfo() {
+    public function quotaInfo($options = array()) {
         $call = '2/users/get_space_usage';
-        $params = array('api_v2' => true);
+        // Cases have been seen (Apr 2019) where a response came back (HTTP/2.0 response header - suspected outgoing web hosting proxy, as everyone else seems to get HTTP/1.0 and I'm not aware that current Curl versions would do HTTP/2.0 without specifically being told to) after 180 seconds; a valid response, but took a long time.
+        $params = array(
+            'api_v2' => true,
+            'timeout' => isset($options['timeout']) ? $options['timeout'] : 20
+        );
         $response = $this->fetch('POST', self::API_URL_V2, $call, $params);
         return $response;
     }
@@ -119,8 +127,8 @@ class UpdraftPlus_Dropbox_API {
                 
                 // Read from the file handle until EOF, uploading each chunk
                 while ($data = fread($handle, $this->chunkSize)) {
-                    
-                    // Set the file, request parameters and send the request
+
+					// Set the file, request parameters and send the request
                     $this->OAuth->setInFile($data);
 
                     if ($firstCommit) {
@@ -195,14 +203,23 @@ class UpdraftPlus_Dropbox_API {
             }   
         } catch (Exception $e) {
             $responseCheck = json_decode($e->getMessage());
-            if (isset($responseCheck) && strpos($responseCheck[0] , 'incorrect_offset') !== false) {
+            if (empty($responseCheck)) {
+                throw $e;
+            } else {
+                
+                $extract_message = (is_object($responseCheck[0]) && isset($responseCheck[0]->{'.tag'})) ? $responseCheck[0]->{'.tag'} : $responseCheck[0];
+                
+                if (strpos($responseCheck, 'incorrect_offset') !== false) {
 				$expected_offset = $responseCheck[1];
 				throw new Exception('Submitted input out of alignment: got ['.$params['cursor']['offset'].'] expected ['.$expected_offset.']');
 				
 //                 $params['cursor']['offset'] = $responseCheck[1];
 //                 $response = $this->append_upload($params, $last_call);
-            } else {
-                throw $e;
+                } elseif (strpos($responseCheck, 'closed') !== false) {
+                    throw new Exception("Upload with upload_id {$params['cursor']['session_id']} already completed");
+                } elseif (strpos($responseCheck, 'too_many_requests') !== false) {
+                    throw new Exception("Dropbox API error: too_many_requests");
+                }
             }
         }
         return $response;
@@ -217,10 +234,6 @@ class UpdraftPlus_Dropbox_API {
      * @return boolean          - a boolean to indicate success or failure
      */
     public function download($file, $outFile = null, $options = array()) {
-        // Only allow php response format for this call
-        if ($this->responseFormat !== 'php') {
-            throw new Exception('This method only supports the `php` response format');
-        }
 
         if ($outFile) {
             $this->OAuth->setOutFile($outFile);
@@ -248,23 +261,58 @@ class UpdraftPlus_Dropbox_API {
     }
     
     /**
-     * Returns metadata for all files and folders that match the search query
+     * Calls the relevant method to return metadata for all files and folders that match the search query
      * @param mixed $query The search string. Must be at least 3 characters long
      * @param string [$path=''] The path to the folder you want to search in
      * @param integer [$limit=1000] Maximum number of results to return (1-1000)
-     * @param integer [$start=0] Result number to start from
+     * @param integer [$cursor=''] A Dropbox ID to start the search from
      * @return array
      */
-    public function search($query, $path = '', $limit = 1000, $start = 0) {
-        $call = '2/files/search';
+    public function search($query, $path = '', $limit = 1000, $cursor = '') {
+        if (empty($cursor)) {
+            return $this->start_search($query, $path, $limit);
+        } else {
+            return $this->continue_search($cursor);
+        }
+    }
+
+    /**
+     * This method will start a search for all files and folders that match the search query
+     *
+     * @param mixed   $query - the search string, must be at least 3 characters long
+     * @param string  $path  - the path to the folder you want to search in
+     * @param integer $limit - maximum number of results to return (1-1000)
+     *
+     * @return array - an array of search results
+     */
+    private function start_search($query, $path, $limit) {
+        $call = '2/files/search_v2';
         $path = $this->encodePath($path);
         // APIv2 requires that the path match this regex: String(pattern="(/(.|[\r\n])*)?|(ns:[0-9]+(/.*)?)")
         if ($path && '/' != substr($path, 0, 1)) $path = "/$path";
         $params = array(
-            'path' => $path,
             'query' => $query,
-            'start' => $start,
-            'max_results' => ($limit < 1) ? 1 : (($limit > 1000) ? 1000 : (int) $limit),
+            'options' => array(
+                'path' => $path,
+                'max_results' => ($limit < 1) ? 1 : (($limit > 1000) ? 1000 : (int) $limit),
+            ),
+            'api_v2' => true,
+        );
+        $response = $this->fetch('POST', self::API_URL_V2, $call, $params);
+        return $response;
+    }
+
+    /**
+     * This method will continue a previous search for all files and folders that match the previous search query
+     *
+     * @param string $cursor - a Dropbox ID to continue the search
+     *
+     * @return array - an array of search results
+     */
+    private function continue_search($cursor) {
+        $call = '2/files/search/continue_v2';
+        $params = array(
+            'cursor' => $cursor,
             'api_v2' => true,
         );
         $response = $this->fetch('POST', self::API_URL_V2, $call, $params);
@@ -277,7 +325,7 @@ class UpdraftPlus_Dropbox_API {
      * @return object stdClass
      */
     public function delete($path) {
-        $call = '2/files/delete';
+        $call = '2/files/delete_v2';
         $params = array('path' => '/' . $this->normalisePath($path), 'api_v2' => true);
         $response = $this->fetch('POST', self::API_URL_V2, $call, $params);
         return $response;
@@ -293,32 +341,7 @@ class UpdraftPlus_Dropbox_API {
      */
     private function fetch($method, $url, $call, array $params = array()) {
         // Make the API call via the consumer
-        $response = $this->OAuth->fetch($method, $url, $call, $params);
-        
-        // Format the response and return
-        switch ($this->responseFormat) {
-            case 'json':
-                return json_encode($response);
-            case 'jsonp':
-                $response = json_encode($response);
-                return $this->callback . '(' . $response . ')';
-            default:
-                return $response;
-        }
-    }
-    
-    /**
-     * Set the API response format
-     * @param string $format One of php, json or jsonp
-     * @return void
-     */
-    public function setResponseFormat($format) {
-        $format = strtolower($format);
-        if (!in_array($format, array('php', 'json', 'jsonp'))) {
-            throw new Exception("Expected a format of php, json or jsonp, got '$format'");
-        } else {
-            $this->responseFormat = $format;
-        }
+        return $this->OAuth->fetch($method, $url, $call, $params);
     }
     
     /**

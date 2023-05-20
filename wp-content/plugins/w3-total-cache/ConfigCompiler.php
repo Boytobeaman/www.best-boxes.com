@@ -103,6 +103,8 @@ class ConfigCompiler {
 			$this->_data[$key] = $value['default'];
 
 		$this->_data['version'] = W3TC_VERSION;
+
+		$this->set_dynamic_defaults();
 	}
 
 
@@ -209,12 +211,24 @@ class ConfigCompiler {
 
 
 
+	private function set_dynamic_defaults() {
+		if ( empty( $this->_data['stats.access_log.webserver'] ) ) {
+			if ( Util_Environment::is_nginx() ) {
+				$this->_data['stats.access_log.webserver'] = 'nginx';
+				$this->_data['stats.access_log.format'] = '$remote_addr - $remote_user [$time_local] "$request" $status $body_bytes_sent "$http_referer" "$http_user_agent"';
+			} else {
+				$this->_data['stats.access_log.webserver'] = 'apache';
+			}
+		}
+
+	}
 	/**
 	 * Apply new default values when version changes
 	 */
 	private function upgrade( $file_data ) {
-		if ( !isset( $file_data['version'] ) )
+		if ( !isset( $file_data['version'] ) ) {
 			$file_data['version'] = '0.0.0';
+		}
 
 		if ( !function_exists( 'bb2_start' ) ) {
 			$file_data['pgcache.bad_behavior_path'] = '';
@@ -233,6 +247,32 @@ class ConfigCompiler {
 		}
 
 		//
+		// changes in 0.15.2
+		//
+		if ( version_compare( $file_data['version'], '0.15.2', '<' ) ) {
+			if ( isset( $file_data['minify.js.combine.header'] ) && $file_data['minify.js.combine.header'] ) {
+				$file_data['minify.js.method'] = 'combine';
+			}
+
+			if ( isset( $file_data['minify.css.combine'] ) && $file_data['minify.css.combine'] ) {
+				$file_data['minify.css.method'] = 'combine';
+			}
+		}
+
+		//
+		// changes in 0.13
+		//
+		if ( version_compare( $file_data['version'], '0.12.0', '<=' ) ) {
+			if ( empty( $file_data['lazyload.exclude'] ) ) {
+				$file_data['lazyload.exclude'] = array();
+			}
+
+			if ( !in_array( 'skip_lazy', $file_data['lazyload.exclude'] ) ) {
+				$file_data['lazyload.exclude'][] = 'skip_lazy';
+			}
+		}
+
+		//
 		// changes in 0.9.7
 		//
 		if ( isset( $file_data['cdnfsd.enabled'] ) &&
@@ -246,13 +286,6 @@ class ConfigCompiler {
 		//
 		if ( !isset( $file_data['cdn.cors_header'] ) ) {
 			$file_data['cdn.cors_header'] = true;
-		}
-		if ( isset( $file_data['cdn.engine'] ) && $file_data['cdn.engine'] == 'netdna' ) {
-			$file_data['cdn.engine'] = 'maxcdn';
-			$file_data['cdn.maxcdn.authorization_key'] = $file_data['cdn.netdna.authorization_key'];
-			$file_data['cdn.maxcdn.domain'] = $file_data['cdn.netdna.domain'];
-			$file_data['cdn.maxcdn.ssl'] = $file_data['cdn.netdna.ssl'];
-			$file_data['cdn.maxcdn.zone_id'] = $file_data['cdn.netdna.zone_id'];
 		}
 
 		//
@@ -288,8 +321,6 @@ class ConfigCompiler {
 				is_array( $file_data['extensions.active'] ) ) {
 				if ( isset( $file_data['extensions.active']['cloudflare'] ) )
 					$active['cloudflare'] = 'w3-total-cache/Extension_CloudFlare_Plugin.php';
-				if ( isset( $file_data['extensions.active']['feedburner'] ) )
-					$active['feedburner'] = 'w3-total-cache/Extension_FeedBurner_Plugin.php';
 				if ( isset( $file_data['extensions.active']['genesis.theme'] ) )
 					$active['genesis.theme'] = 'w3-total-cache/Extension_Genesis_Plugin.php';
 				if ( isset( $file_data['extensions.active']['wordpress-seo'] ) )
@@ -308,7 +339,6 @@ class ConfigCompiler {
 				'w3-total-cache/Extension_NewRelic_Plugin.php';
 			$file_data['extensions.active']['fragmentcache'] =
 				'w3-total-cache/Extension_FragmentCache_Plugin.php';
-
 		}
 
 		// newrelic settings - migrate to extension
@@ -345,7 +375,6 @@ class ConfigCompiler {
 		// extensions - kept in separate key now
 		$this->_set_if_exists_extension( $file_data, 'cloudflare' );
 		$this->_set_if_exists_extension( $file_data, 'genesis.theme' );
-		$this->_set_if_exists_extension( $file_data, 'feedburner' );
 
 		// fragmentcache to extension
 		if ( isset( $file_data['fragmentcache.enabled'] ) &&
@@ -373,10 +402,14 @@ class ConfigCompiler {
 			'fragmentcache', 'memcached.username' );
 		$this->_set_if_exists( $file_data, 'fragmentcache.memcached.password',
 			'fragmentcache', 'memcached.password' );
+		$this->_set_if_exists( $file_data, 'fragmentcache.memcached.binary_protocol',
+			'fragmentcache', 'memcached.binary_protocol' );
 		$this->_set_if_exists( $file_data, 'fragmentcache.redis.persistent',
 			'fragmentcache', 'redis.persistent' );
 		$this->_set_if_exists( $file_data, 'fragmentcache.redis.servers',
 			'fragmentcache', 'redis.servers' );
+		$this->_set_if_exists( $file_data, 'fragmentcache.redis.verify_tls_certificates',
+			'fragmentcache', 'redis.verify_tls_certificates' );
 		$this->_set_if_exists( $file_data, 'fragmentcache.redis.password',
 			'fragmentcache', 'redis.password' );
 		$this->_set_if_exists( $file_data, 'fragmentcache.redis.dbid',
@@ -396,31 +429,9 @@ class ConfigCompiler {
 		}
 
 		//
-		// changes in 0.9.5.3
-		//
-		if ( version_compare( $file_data['version'], '0.9.5.3', '<' ) ) {
-			if ( !isset( $file_data['extensions.active']['swarmify'] ) ) {
-				$file_data['extensions.active']['swarmify'] = 'w3-total-cache/Extension_Swarmify_Plugin.php';
-			}
-		}
-
-		//
 		// changes in 0.9.5.4
 		//
 		if ( isset( $file_data['cdn.engine'] ) ) {
-			if ( $file_data['cdn.engine'] == 'maxcdn_fsd' ) {
-				$file_data['cdnfsd.engine'] = 'maxcdn';
-				$file_data['cdnfsd.enabled'] = $file_data['cdn.enabled'];
-
-				if ( isset( $file_data['cdn.maxcdn_fsd.api_key'] ) ) {
-					$file_data['cdnfsd.maxcdn.api_key'] =
-						$file_data['cdn.maxcdn_fsd.api_key'];
-					$file_data['cdnfsd.maxcdn.zone_id'] =
-						$file_data['cdn.maxcdn_fsd.zone_id'];
-					$file_data['cdnfsd.maxcdn.zone_domain'] =
-						$file_data['cdn.maxcdn_fsd.zone_domain'];
-				}
-			}
 			if ( $file_data['cdn.engine'] == 'cloudfront_fsd' ) {
 				$file_data['cdnfsd.engine'] = 'cloudfront';
 				$file_data['cdnfsd.enabled'] = $file_data['cdn.enabled'];

@@ -24,12 +24,16 @@ class UpdraftPlus_Temporary_Clone_Restore {
 
 		$state_file = trailingslashit($updraftplus->backups_dir_location()). 'ready_for_restore';
 		
+		error_log("UpdraftPlus_Temporary_Clone_Restore::clone_ready_for_restore($job_id): touching flag file");
+		
 		if ($job_id) {
 			file_put_contents($state_file, $job_id);
 		} else {
 			touch($state_file);
 		}
 
+		// Make the scope of $wp_file_descriptions global, so that when wp-admin/includes/file.php assigns to it, it is adjusting the global variable as intended
+		global $wp_file_descriptions; // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable -- Passed though to wp-admin/includes/file.php.
 		if (!function_exists('WP_Filesystem')) require_once ABSPATH.'wp-admin/includes/file.php';
 		WP_Filesystem();
 
@@ -60,6 +64,8 @@ class UpdraftPlus_Temporary_Clone_Restore {
 
 		if (!file_exists($updraft_dir . 'ready_for_restore')) return;
 
+		// Make the scope of $wp_file_descriptions global, so that when wp-admin/includes/file.php assigns to it, it is adjusting the global variable as intended
+		global $wp_file_descriptions; // phpcs:ignore VariableAnalysis.CodeAnalysis.VariableAnalysis.UnusedVariable -- Passed though to wp-admin/includes/file.php.
 		if (!function_exists('WP_Filesystem')) require_once ABSPATH.'wp-admin/includes/file.php';
 		WP_Filesystem();
 
@@ -68,5 +74,5 @@ class UpdraftPlus_Temporary_Clone_Restore {
 }
 
 if (defined('UPDRAFTPLUS_THIS_IS_CLONE') && UPDRAFTPLUS_THIS_IS_CLONE) {
-	$updraftplus_temporary_clone_restore = new UpdraftPlus_Temporary_Clone_Restore();
+	new UpdraftPlus_Temporary_Clone_Restore();
 }

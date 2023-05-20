@@ -90,7 +90,7 @@ add_action( 'wp_enqueue_scripts', 'giga_store_theme_stylesheets' );
 // Register Bootstrap JS with jquery
 ////////////////////////////////////////////////////////////////////
 function giga_store_theme_js() {
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '3.3.6', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery' ), '3.3.6', true );
 	wp_enqueue_script( 'giga-store-theme-js', get_template_directory_uri() . '/js/customscript.js', array( 'jquery', 'flexslider' ), '1.1.0', true );
 	wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/js/jquery.flexslider-min.js', array( 'jquery' ), '2.6.0', true );
 	wp_enqueue_script( 'of-canvas-menu', get_template_directory_uri() . '/js/jquery.mmenu.min.all.js', array( 'jquery' ), '5.5.3', true );
@@ -248,7 +248,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 		function giga_store_cart_link() {
 			?>	
-			<a class="cart-contents text-right" href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" title="<?php esc_html_e( 'View your shopping cart', 'giga-store' ); ?>">
+			<a class="cart-contents text-right" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'giga-store' ); ?>">
 				<i class="fa fa-shopping-cart"><span class="count"><?php echo wp_kses_data( WC()->cart->get_cart_contents_count() ); ?></span></i><div class="amount-title"><?php echo esc_html_e( 'Cart ', 'giga-store' ); ?></div><div class="amount-cart"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></div> 
 			</a>
 			<?php
@@ -262,7 +262,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 				$wishlist_url = YITH_WCWL()->get_wishlist_url();
 				?>
 				<div class="top-wishlist text-right">
-					<a href="<?php echo esc_url( $wishlist_url ); ?>" title="<?php esc_html_e( 'Wishlist', 'giga-store' ); ?>" data-toggle="tooltip" data-placement="top">
+					<a href="<?php echo esc_url( $wishlist_url ); ?>" title="<?php esc_attr_e( 'Wishlist', 'giga-store' ); ?>" data-toggle="tooltip" data-placement="top">
 						<div class="fa fa-heart"><div class="count"><span><?php echo absint( yith_wcwl_count_products() ); ?></span></div></div>
 					</a>
 				</div>
@@ -345,3 +345,29 @@ if ( class_exists( 'WooCommerce' ) ) {
 	}
 	
 }
+
+if ( ! function_exists( 'wp_body_open' ) ) :
+    /**
+     * Fire the wp_body_open action.
+     *
+     * Added for backwards compatibility to support pre 5.2.0 WordPress versions.
+     *
+     */
+    function wp_body_open() {
+        /**
+         * Triggered after the opening <body> tag.
+         *
+         */
+        do_action( 'wp_body_open' );
+    }
+endif;
+
+/**
+ * Include a skip to content link at the top of the page so that users can bypass the header.
+ */
+function giga_store_skip_link() {
+	echo '<a class="skip-link screen-reader-text" href="#site-content">' . esc_html__( 'Skip to the content', 'giga-store' ) . '</a>';
+}
+
+add_action( 'wp_body_open', 'giga_store_skip_link', 5 );
+

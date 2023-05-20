@@ -106,6 +106,22 @@ abstract class Unit_Math_BigInteger_TestCase extends PhpseclibTestCase
 
         $this->assertSame('95627922070', (string) $q);
         $this->assertSame('10688759725', (string) $r);
+
+        $x = $this->getInstance('3369993333393829974333376885877453834204643052817571560137951281152');
+        $y = $this->getInstance('4294967296');
+
+        list($q, $r) = $x->divide($y);
+
+        $this->assertSame('784637716923335095479473677900958302012794430558004314112', (string) $q);
+        $this->assertSame('0', (string) $r);
+
+        $x = $this->getInstance('3369993333393829974333376885877453834204643052817571560137951281153');
+        $y = $this->getInstance('4294967296');
+
+        list($q, $r) = $x->divide($y);
+
+        $this->assertSame('784637716923335095479473677900958302012794430558004314112', (string) $q);
+        $this->assertSame('1', (string) $r);
     }
 
     public function testModPow()
@@ -185,6 +201,9 @@ abstract class Unit_Math_BigInteger_TestCase extends PhpseclibTestCase
         // c < d
         $this->assertLessThan(0, $c->compare($d));
         $this->assertGreaterThan(0, $d->compare($c));
+
+        $this->assertSame(-1, $this->getInstance(-999)->compare($this->getInstance(370)));
+        $this->assertSame(1, $this->getInstance(999)->compare($this->getInstance(-700)));
     }
 
     public function testBitwiseAND()
@@ -383,7 +402,7 @@ abstract class Unit_Math_BigInteger_TestCase extends PhpseclibTestCase
     {
         $num = $this->getInstance(50);
         $str = print_r($num, true);
-        $this->assertContains('[value] => 0x32', $str);
+        $this->assertStringContainsString('[value] => 0x32', $str);
         return $str;
     }
 
@@ -405,5 +424,31 @@ abstract class Unit_Math_BigInteger_TestCase extends PhpseclibTestCase
     {
         $temp = $this->getInstance(48);
         $this->assertSame($temp->toHex(true), '30');
+    }
+
+    public function testZeroBase10()
+    {
+        $temp = $this->getInstance('00');
+        $this->assertSame($temp->toString(), '0');
+
+        $temp = $this->getInstance('-0');
+        $this->assertSame($temp->toString(), '0');
+    }
+
+    public function testNegativePrecision()
+    {
+        $vals = array(
+            '-9223372036854775808', // eg. 8000 0000 0000 0000
+            '-1'
+        );
+        foreach ($vals as $val) {
+            $x = $this->getInstance($val);
+            $x->setPrecision(64); // ie. 8 bytes
+            $this->assertSame($val, "$x");
+            $r = $x->toBytes(true);
+            $this->assertSame(8, strlen($r));
+            $x2 = $this->getInstance($r, -256);
+            $this->assertSame(0, $x->compare($x2));
+        }
     }
 }

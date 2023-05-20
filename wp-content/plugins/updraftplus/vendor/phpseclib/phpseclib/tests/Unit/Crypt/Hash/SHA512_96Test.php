@@ -5,6 +5,8 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
+require_once 'SHA512Test.php';
+
 class Unit_Crypt_Hash_SHA512_96Test extends Unit_Crypt_Hash_SHA512Test
 {
     public function getInstance()

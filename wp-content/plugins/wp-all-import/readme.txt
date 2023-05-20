@@ -1,8 +1,8 @@
 === Import any XML or CSV File to WordPress ===
-Contributors: soflyy, wpallimport 
+Contributors: soflyy, wpallimport
 Requires at least: 4.1
-Tested up to: 4.9.6
-Stable tag: 3.4.9
+Tested up to: 6.2
+Stable tag: 3.7.2
 Tags: wordpress csv import, wordpress xml import, xml, csv, datafeed, import, migrate, import csv to wordpress, import xml to wordpress, advanced xml import, advanced csv import, bulk csv import, bulk xml import, bulk data import, xml to custom post type, csv to custom post type, woocommerce csv import, woocommerce xml import, csv import, import csv, xml import, import xml, csv importer
 
 WP All Import is an extremely powerful importer that makes it easy to import any XML or CSV file to WordPress.
@@ -11,7 +11,7 @@ WP All Import is an extremely powerful importer that makes it easy to import any
 
 = WP All Import - Simple & Powerful XML / CSV Importer Plugin =
 
-*“It's a wonderful plugin that does so much, so well that it's hard to list all of the features. But I'll tell you this, I was able to import the content of a pair of websites running the ModX CMS into a WordPress install in less than 30 minutes. No joke!”*  
+*“It's a wonderful plugin that does so much, so well that it's hard to list all of the features. But I'll tell you this, I was able to import the content of a pair of websites running the ModX CMS into a WordPress install in less than 30 minutes. No joke!”*
 **Alex Vasquez** - DigiSavvy Co-Founder & WordCamp Los Angeles Organizer
 
 WP All Import has a four step import process and an intuitive drag & drop interface that makes complicated import tasks simple and fast.
@@ -20,7 +20,7 @@ There are no special requirements that the elements in your file must be laid ou
 
 WP All Import can be used for everything from migrating content from a legacy CMS to WordPress to building a store with an affiliate datafeed to displaying live stock quotes or sports scores to building a real estate portal.
 
-Check out our [documentation and video tutorials](http://www.wpallimport.com/documentation/?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=docs) to make the most of WP All Import.
+Check out our [documentation and video tutorials](http://www.wpallimport.com/documentation/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=docs) to make the most of WP All Import.
 
 WP All Import integrates with our companion plugin, [WP All Export](https://wordpress.org/plugins/wp-all-export/). You can export posts, WooCommerce products, orders, users, or anything else with WP All Export. Then you can edit in Excel and re-import to the same site or migrate the data to another site with WP All Import.
 
@@ -43,9 +43,9 @@ For technical support from the developers, please consider purchasing WP All Imp
 
 * Guaranteed technical support via e-mail.
 
-[Upgrade to the Pro edition of WP All Import.](http://www.wpallimport.com/upgrade-to-pro/?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=upgrade)
+[Upgrade to the Pro edition of WP All Import.](http://www.wpallimport.com/wordpress-xml-csv-import/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=upgrade-to-pro)
 
-Need to [import XML and CSV to WooCommerce?](http://wordpress.org/plugins/woocommerce-xml-csv-product-import/) Check out our WooCommerce add-on.
+Need to [import XML and CSV to WooCommerce?](http://www.wpallimport.com/woocommerce-product-import/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=upgrade-to-pro) Check out our WooCommerce add-on.
 
 = WordPress CSV Imports =
 
@@ -57,7 +57,7 @@ When importing CSV files, your CSV should have UTF-8 encoding if you are having 
 
 In step 2 of a CSV import, you can specify an alternative delimiter if you aren't using a comma. WP All Import can import CSVs that are pipe-delimited, # delimited, or delimited/separated by any other character.
 
-For CSV import tutorials and example files, visit our [documentation](http://www.wpallimport.com/documentation/?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=documentation). Please keep in mind CSV imports with WP All Import are just like XML imports - you have all the same functionality, and the process is exactly the same. Any of our tutorial videos that apply to XML files also apply to importing CSV files, so if you see a tutorial with us importing an XML file, know that you can follow the exact same steps for a CSV import.
+For CSV import tutorials and example files, visit our [documentation](http://www.wpallimport.com/documentation/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=docs). Please keep in mind CSV imports with WP All Import are just like XML imports - you have all the same functionality, and the process is exactly the same. Any of our tutorial videos that apply to XML files also apply to importing CSV files, so if you see a tutorial with us importing an XML file, know that you can follow the exact same steps for a CSV import.
 
 = Add-Ons =
 
@@ -68,27 +68,35 @@ A number of premium add-ons are available to add functionality to the importer a
  - User Import Add-On - XML & CSV importer for users, including user_meta
  - Link Cloak Add-On - Auto-create redirects for links present during an XML or CSV import
 
-Learn more about our add-ons at [http://www.wpallimport.com/add-ons](http://www.wpallimport.com/add-ons?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=add-ons)
+Learn more about our add-ons at [http://www.wpallimport.com/add-ons](http://www.wpallimport.com/add-ons/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=add-ons)
 
-A [developer API](http://www.wpallimport.com/documentation/developers/action-reference/?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=documentation) (action hooks) is also available.
+A [developer API](http://www.wpallimport.com/documentation/developers/action-reference/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=docs) (action hooks) is also available.
+
+= Related Plugins =
+[Export any WordPress data to XML/CSV](https://wordpress.org/plugins/wp-all-export/)
+[Import Products from any XML or CSV to WooCommerce](https://wordpress.org/plugins/woocommerce-xml-csv-product-import/)
+[Export Products to CSV/XML for WooCommerce](https://wordpress.org/plugins/product-export-for-woocommerce/)
+[Custom Product Tabs for WooCommerce WP All Import Add-on](https://wordpress.org/plugins/custom-product-tabs-wp-all-import-add-on/)
+[Export Orders to CSV/XML for WooCommerce](https://wordpress.org/plugins/order-export-for-woocommerce/)
+[Export WordPress Users to CSV/XML](https://wordpress.org/plugins/export-wp-users-xml-csv/)
 
 == Premium Support ==
-Upgrade to the Pro edition of WP All Import for premium support.
+Support for the free version of WP All Import is handled through the WordPress.org community forums.
 
-E-mail: support@wpallimport.com
+Support is not guaranteed and is based on ability. For premium support over email, [purchase WP All Import.](https://www.wpallimport.com/checkout/?edd_action=add_to_cart&download_id=2707176&edd_options%5Bprice_id%5D=1&utm_source=import-plugin-free&utm_medium=readme&utm_campaign=premium-support)
 
 == Import To WooCommerce ==
 
 Need to [import XML and CSV to WooCommerce?](http://wordpress.org/plugins/woocommerce-xml-csv-product-import/) Check out our WooCommerce add-on.
 
-[WooCommerce XML & CSV Import Pro Version](http://www.wpallimport.com/woocommerce-product-import?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=woocommerce)
+[WooCommerce XML & CSV Import Pro Version](http://www.wpallimport.com/woocommerce-product-import/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=import-wooco-products)
 
 == Frequently Asked Questions ==
 
 **What Size Files Can WP All Import Handle?**
-It depends on your hosting provider’s settings. We’ve imported files of 200Mb and up, even on shared hosts. WP All Import splits your file into manageable chunks. 
+It depends on your hosting provider’s settings. We’ve imported files of 200Mb and up, even on shared hosts. WP All Import splits your file into manageable chunks.
 
-[Various settings are available](http://www.wpallimport.com/documentation/advanced/import-processing/?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=large-files) to make it possible to import larger files or speed up your import.
+[Various settings are available](http://www.wpallimport.com/documentation/advanced/import-processing/?utm_source=import-plugin-free&utm_medium=readme&utm_campaign=upgrade-to-pro) to make it possible to import larger files or speed up your import.
 
 *The answer to all of the following questions is yes:*
 
@@ -105,9 +113,118 @@ Does it work with special character encoding like Hebrew, Arabic, Chinese, etc?
 
 == Changelog ==
 
+= 3.7.2 =
+* improvement: refine various UI elements
+* bug fix: PHP 8.1 warning on Step 3
+
+= 3.7.1 =
+* bug fix: unable to install on Windows environments
+* improvement: increased timer accuracy on import processing page
+
+= 3.7.0 =
+* improvement: UI styling improvements
+
+= 3.6.9 =
+* security improvement
+* improvement: resolve PHP 8 Deprecated notice
+
+= 3.6.8 =
+* security improvement
+
+= 3.6.7 =
+* security improvement
+* improvement: changed Manage Imports page button labels to be more precise
+* improvement: assign 'Uncategorized' term to posts imported without a category assigned
+* improvement: add support for taxonomies that return objects instead of IDs
+* improvement: remove commented code that could cause false positives for security scans
+* bug fix: jQuery error related to 'destroy' method
+* bug fix: rare issue that prevented content image URLs from being updated during import
+* bug fix: taxonomies section drag and drop doesn't save after rearranging fields
+* bug fix: conflict with Advanced Ads plugin
+* bug fix: 'Instead of deletion, set missing records to out of stock' still deleting products
+
+= 3.6.6 =
+* bug fix: jQuery nestedSortable compatibility with WordPress 5.9
+
+= 3.6.5 =
+* improvement: better sanitization and escaping of data in WP All Import interface
+
+= 3.6.4 =
+* improvement: better sanitization and escaping of data in WP All Import interface
+* improvement: use libraries included in WordPress Core
+
+= 3.6.3 =
+* security fix
+* bug fix: images not updated for existing products when using WooCommerce Import Add-On
+
+= 3.6.2 =
+* improvement: add ability to control taxonomy mapping case sensitivity via filter wpai_is_case_insensitive_taxonomy_mapping
+* improvement: add ability to control uploads directory for single file/image via filters wp_all_import_single_image_uploads_dir and wp_all_import_single_attachment_uploads_dir
+* improvement: add missing options on confirm import step
+* bug fix
+* improvement: initial PHP 8 support
+* bugfix: manage_options capability check
+
+= 3.6.1 =
+* bug fix: categories were imported despite the taxonomy option being disabled
+* improvement: add ability to filter csv escape symbol via wp_all_import_csv_parser_settings filter
+
+= 3.6.0 =
+* maintenance: compatibility with Elementor v3.3 JavaScript changes
+
+= 3.5.9 =
+* bug fix: call to the non existing function wp_all_import_sanitize_url
+
+= 3.5.8 =
+* bug fix: import of taxonomies hierarchy didn't work properly
+
+= 3.5.7 =
+* improvement: git rid if deprecated join query on manage imports screen
+* improvement: add is_update_post_format option
+* improvement: add wp_all_import_manual_matching filter
+* improvement: add wp_all_import_logger filter
+* bug fix: records were removed from pmxi_posts table when activating WPAI on multisite installation
+* bug fix: get rid of unused deprecated function add_contextual_help()
+
+= 3.5.6 =
+* bug fix: PMXI_Hash_Record class doesn't exist error appears when deleting missing records
+
+= 3.5.5 =
+* improvement: get rid of deprecated setting 'High Speed Small File Processing'
+* bug fix: chromium scroll anchoring caused screen jumping effect
+* bug fix: pagenum query argument caused broken link on import complete screen
+
+= 3.5.4 =
+* improvement: compatibility with WordPress 5.5
+* API: added helper function wp_all_import_get_import_id()
+* API: added helper function wp_all_import_get_import_post_type($import_id)
+
+= 3.5.3 =
+* bug fix: switch to CodeMirror implementation shipped in WordPress core
+* bug fix: unable to double click to insert XPath in some cases
+* bug fix: unable to apply pmxi_is_images_to_update filter to featured images
+* bug fix: unable to match existing images when suffix is added to file name during import
+
+= 3.5.2 =
+* improvement: match existing images by filename with underscores
+* API: add new action wp_all_import_before_preserve_post_data
+* API: add new filter wp_all_import_specified_delimiters
+* bug fix: attachment author not imported for API image imports
+
+= 3.5.1 =
+* improvement: add support for importing WebP images
+* bug fix: images in content not being imported when creating new simple WooCommerce products
+
+= 3.5.0 =
+* improvement: add support for .tsv format
+* API: add current XML variable to pmxi_article_data filter
+* bug fix: post terms incorrect after import complete, must be recounted
+* bug fix: empty attachments created when attachment import fails
+* bug fix: matching posts by ID matches and imports into attachments with the same ID
+
 = 3.4.9 =
 * bug fix: import using stream reader
-* bug fix: generation temporary files in system temporary folder   
+* bug fix: generation temporary files in system temporary folder
 
 = 3.4.8 =
 * improvement: various import speed optimizations
@@ -153,7 +270,7 @@ Does it work with special character encoding like Hebrew, Arabic, Chinese, etc?
 = 3.4.4 =
 * bug fix: import template not worked when downloaded via Import Settings
 * bug fix: updating user login
-* bug fix: import images with encoded quotes 
+* bug fix: import images with encoded quotes
 * improvement: added hungarian translation
 
 = 3.4.3 =
@@ -255,7 +372,7 @@ Does it work with special character encoding like Hebrew, Arabic, Chinese, etc?
 
 = 3.3.0 =
 * added new options to taxonomies import 'Try to match terms to existing child Product Categories' & 'Only assign Products to the imported Product Category, not the entire hierarchy'
-* added support for Excel files ( .xls, .xlsx ) 
+* added support for Excel files ( .xls, .xlsx )
 
 = 3.2.9 =
 * load ini_set only on plugin pages
@@ -348,7 +465,7 @@ Does it work with special character encoding like Hebrew, Arabic, Chinese, etc?
 * Added option to set Post Status with XPath (the value of presented XPath should be one of the following: publish, draft, trash)
 * Preview navigation
 
-= 3.0.4 = 
+= 3.0.4 =
 * Fixed import categories;
 * Updated UI/UX;
 * Added import/export templates feature;
@@ -356,17 +473,17 @@ Does it work with special character encoding like Hebrew, Arabic, Chinese, etc?
 * Added option to set post status with XPath;
 * Added feeds encoding feature;
 
-= 3.0.2 = 
+= 3.0.2 =
 * Added support for the WooCommerce add-on
 
-= 3.0 = 
+= 3.0 =
 * Free edition of 3.0 pro release
 
 = 2.14 =
 * Category list delimiter bug fix
 
 = 2.13 =
-* Tons of bug fixes, updates, and additional features. 
+* Tons of bug fixes, updates, and additional features.
 
 
 = 2.12 =

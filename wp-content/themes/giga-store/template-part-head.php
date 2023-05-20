@@ -8,9 +8,9 @@
 				} else {
 					if ( is_front_page() && is_home() ) :
 						?>
-						<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a></h1>
+						<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?></a></h1>
 					<?php else : ?>
-						<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a></div>
+						<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?></a></div>
 					<?php endif; ?>
 				<?php } ?>	
 			</header>
@@ -27,7 +27,7 @@
 						<div class="header-search-form">
 							<form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 								<input type="hidden" name="post_type" value="product" />
-								<input class="product-header-search col-xs-8" name="s" type="text" placeholder="<?php esc_html_e( 'Search...', 'giga-store' ); ?>"/>
+								<input class="product-header-search col-xs-8" name="s" type="text" placeholder="<?php esc_attr_e( 'Search...', 'giga-store' ); ?>"/>
 								<select class="col-xs-4" name="product_cat">
 									<option value=""><?php esc_html_e( 'All Categories', 'giga-store' ); ?></option> 
 									<?php
@@ -74,9 +74,9 @@
 							} else {
 								?>
 								<?php if ( is_front_page() && is_home() ) : ?>
-									<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a></h1>
+									<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?></a></h1>
 								<?php else : ?>
-									<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a></div>
+									<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name', 'display' ) ); ?></a></div>
 								<?php endif; ?>	
 								<?php
 							}
@@ -101,4 +101,4 @@
 		</div>
 	</div>
 </div>
-<div class="container-fluid rsrc-container" role="main">
+<div id="site-content" class="container-fluid rsrc-container" role="main">

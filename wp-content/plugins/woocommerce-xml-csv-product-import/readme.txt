@@ -1,8 +1,8 @@
 === Import Products from any XML or CSV to WooCommerce ===
-Contributors: soflyy, wpallimport 
+Contributors: soflyy, wpallimport
 Requires at least: 4.1
-Tested up to: 4.9.6
-Stable tag: 1.3.9
+Tested up to: 6.2
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: woocommerce xml import, woocommerce csv import, woocommerce, import, xml, csv, wp all import, csv import, import csv, xml import, import xml, woocommerce csv importer, woocommerce xml importer, csv importer, csv import suite
@@ -11,12 +11,12 @@ Easily import products from any XML or CSV file to WooCommerce with the WooComme
 
 == Description ==
 
-*“I've been doing eCommerce sites for almost a decade. The combination of WP All Import and WooCommerce is a game changer! I can now get clients into eCommerce sites that could never afford the time/energy or money it took to administrate a site. It has opened up a whole new client base for me.”*  
+*“I've been doing eCommerce sites for almost a decade. The combination of WP All Import and WooCommerce is a game changer! I can now get clients into eCommerce sites that could never afford the time/energy or money it took to administrate a site. It has opened up a whole new client base for me.”*
 **Mike Tidmore** -Founder, Successful Online Stores
 
 The WooCommerce add-on for [WP All Import](http://wordpress.org/plugins/wp-all-import/) makes it easy to bulk import your products to WooCommerce in less than 10 minutes.
 
-The left side of the plugin looks just like WooCommerce, and the right side displays a product from your XML/CSV file. 
+The left side of the plugin looks just like WooCommerce, and the right side displays a product from your XML/CSV file.
 
 **Drag & drop the data from your XML or CSV into the WooCommerce fields to import it.**
 
@@ -27,20 +27,20 @@ WooCommerce CSV imports? WooCommerce XML imports? They are EASY with WP All Impo
 Here's why you should use the WooCommerce add-on for WP All Import:
 
  - Supports files in any format and structure. There are no requirements that the data in your file be organized in a certain way. WooCommerce CSV imports are easy, no matter the structure of your file. WooCommerce XML imports are flexible and work with any XML file.
- - Supports files of practically unlimited size by automatically splitting them into chunks. Import 200Mb+ product catalogs with ease, even on shared hosting. 
+ - Supports files of practically unlimited size by automatically splitting them into chunks. Import 200Mb+ product catalogs with ease, even on shared hosting.
 
 = WooCommerce Add-On Professional Edition =
 [youtube http://www.youtube.com/watch?v=7kCmESmKGro]
 
 The Pro edition of *WP All Import + the WooCommerce add-on* is a paid upgrade that includes premium support and adds the following features:
 
-* [In-depth support for Variable products](http://www.wpallimport.com/documentation/woocommerce/variable-products/?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=woocommerce) - example CSV files, ability to import variations from properly formatted XML, and much more.
+* [In-depth support for Variable products](http://www.wpallimport.com/documentation/woocommerce/variable-products/?utm_source=import-wooco-products-addon-free&utm_medium=readme&utm_campaign=import-variable-wooco-products) - example CSV files, ability to import variations from properly formatted XML, and much more.
 
 * Import External/Affiliate products
 
 * Import Grouped products
 
-* Import files from a URL - Download and import files from external websites, even if they are password protected with HTTP authentication. 
+* Import files from a URL - Download and import files from external websites, even if they are password protected with HTTP authentication.
 
 * Cron Job/Recurring Imports - WP All Import pro can check periodically check a file for updates, and add, edit, delete, and update the stock status of the imported products accordingly.
 
@@ -48,7 +48,7 @@ The Pro edition of *WP All Import + the WooCommerce add-on* is a paid upgrade th
 
 * Get access to our customer portal with documentation and tutorials, and e-mail technical support.
 
-[Upgrade to the Pro edition of WP All Import + the WooCommerce add-on now.](http://www.wpallimport.com/woocommerce-product-import?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=woocommerce "WooCommerce XML & CSV Import")
+[Upgrade to the Pro edition of WP All Import + the WooCommerce add-on now.](http://www.wpallimport.com/woocommerce-product-import/?utm_source=import-wooco-products-addon-free&utm_medium=wp-plugins-page&utm_campaign=upgrade-to-pro "WooCommerce XML & CSV Import")
 
 You need the WooCommerce add-on if you need to:
 
@@ -63,6 +63,23 @@ Of course, XML files can have complex structures, but for CSV files, you can eas
 When importing CSV files, you should use UTF-8 encoding (which is very standard) if you are having any trouble with CSV imports containing special characters. But other than that, there are no special requirements.
 
 This importer is the best option for WooCommerce CSV import tasks - our importer is extremely flexible when doing CSV imports because you don't need to edit your CSV files to import them to WooCommerce. WP All Import can import ANY CSV file to WooCommerce. You don't need to layout your data in a specific way, and you don't need your CSV to have specific column names. WP All Import's drag & drop interface provides you with a visual way to map the columns in your CSV file to the appropriate fields in WooCommerce.
+
+= Related Plugins =
+[Export any WordPress data to XML/CSV](https://wordpress.org/plugins/wp-all-export/)
+[Import any XML or CSV File to WordPress](https://wordpress.org/plugins/wp-all-import/)
+[Export Products to CSV/XML for WooCommerce](https://wordpress.org/plugins/product-export-for-woocommerce/)
+[Custom Product Tabs for WooCommerce WP All Import Add-on](https://wordpress.org/plugins/custom-product-tabs-wp-all-import-add-on/)
+[Export Orders to CSV/XML for WooCommerce](https://wordpress.org/plugins/order-export-for-woocommerce/)
+[Export WordPress Users to CSV/XML](https://wordpress.org/plugins/export-wp-users-xml-csv/)
+
+= Related Tutorials =
+[How to Import Product Types Including Simple, Grouped, Virtual, Downloadable, Bookable, Subscriptions, and Product Bundles](https://www.wpallimport.com/documentation/how-to-import-woocommerce-products/)
+[How to Synch WooCommerce Product Stock Levels](https://www.wpallimport.com/documentation/syncing-stock/)
+[How to Import Product Customers](https://www.wpallimport.com/documentation/how-to-import-woocommerce-customers/)
+[How to Import Product Image Galleries and Metadata](https://www.wpallimport.com/documentation/images-overview/)
+[How to Import Product Categories, Tags, and Other Taxonomies](https://www.wpallimport.com/documentation/how-to-import-wordpress-categories-and-tags/)
+[How to Schedule Product Imports](https://www.wpallimport.com/documentation/update-import/)
+[How to Migrate WooCommerce Products](https://www.wpallimport.com/documentation/how-to-migrate-woocommerce-products/)
 
 == Installation ==
 
@@ -83,21 +100,66 @@ The WooCommerce add-on will appear in the Step 4 of WP All Import.
 
 == Changelog ==
 
+= 1.5.1 =
+* bugfix: some output not properly sanitized
+* bugfix: update only these attributes option doesn't work in some cases
+* bugfix: import attributes with < and > characters doesn't work properly
+* bugfix: not possible to import "0" as an attribute value
+
+= 1.5.0 =
+* bug fix: attributes with < and > characters weren't imported correctly
+
+= 1.4.9 =
+* bug fix: product_shipping_class taxonomy not updated
+
+= 1.4.8 =
+* bug fix: downloadable permissions wan not imported correctly
+
+= 1.4.7 =
+* bug fix: matching linked products didn't work properly, this functionality moved to the end of import process
+* bug fix: import download limit and download expiry are set to 1, instead of being provided empty values
+* bug fix: featured image not updated when only "Images" is set to be updated in "Choose which data to update"
+
+= 1.4.6 =
+* improvement: compatibility with WordPress 5.5
+
+= 1.4.5 =
+* improvement: updated tested up to version
+
+= 1.4.4 =
+* API: add wp_all_import_regenerate_lookup_tables filter to control lookup tables generation
+
+= 1.4.3 =
+* bug fix: lookup table not updating after import
+* bug fix: attributes not re-counting after import
+
+= 1.4.2 =
+* bug fix: grant incorrect downloadable product permissions
+* bug fix: update attributes with non utf-8 characters
+
+= 1.4.1 =
+* bug fix: re-import options not rendering correctly
+
+= 1.4.0 =
+* improvement: notice on plugin activation when WooCommerce Add-On Pro installed
+* improvement: match cross-sell products by title
+* bug fix: shipping class not imported properly in some cases
+
 = 1.3.9 =
-bug fix: do not execute product import code when importing other post types
+* bug fix: do not execute product import code when importing other post types
 
 = 1.3.8 =
-bug fix: stock status not importing properly when _backorders custom field is not set
-bug fix: product dimensions won't import if 'Virtual' field is not set
-bug fix: compatibility fix WooCommerce 2.6.x
-bug fix: remove deprecated function calls for PHP 7.2 compatibility
-bug fix: unable to import 0 as a value for attributes
-bug fix: mirror new WooCommerce core behavior that forces all uncategorized products to be assigned to the Uncategorized category
-bug fix: import attributes with special characters 
-bug fix: recount product terms when updating post status 
+* bug fix: stock status not importing properly when _backorders custom field is not set
+* bug fix: product dimensions won't import if 'Virtual' field is not set
+* bug fix: compatibility fix WooCommerce 2.6.x
+* bug fix: remove deprecated function calls for PHP 7.2 compatibility
+* bug fix: unable to import 0 as a value for attributes
+* bug fix: mirror new WooCommerce core behavior that forces all uncategorized products to be assigned to the Uncategorized category
+* bug fix: import attributes with special characters
+* bug fix: recount product terms when updating post status
 
 = 1.3.7 =
-* improvement: added new filter wp_all_import_recount_terms_after_import 
+* improvement: added new filter wp_all_import_recount_terms_after_import
 * bug fix: compatibility with woo commerce 2.6
 * bug fix: do not update stock_status if _stock is not set to update
 
@@ -135,7 +197,7 @@ bug fix: recount product terms when updating post status
 * fixed ucwords attributes names
 * fixed tooltips & css for woo 2.6 compatibility
 
-= 1.2.8 = 
+= 1.2.8 =
 * fixed updating stock qty with disabled manage_stock import
 
 = 1.2.7 =
@@ -148,7 +210,7 @@ bug fix: recount product terms when updating post status
 = 1.2.5 =
 * fixed conflict between options [update only these custom fields & update only these attributes]
 * added feature to dynamically set attribute options
-* added new option "Convert decimal separator to a period"   
+* added new option "Convert decimal separator to a period"
 
 = 1.2.4 =
 * added Variation Description field
@@ -167,7 +229,7 @@ bug fix: recount product terms when updating post status
 * fixed css styles
 * added compatibility with woocommerce 2.3
 
-= 1.2.0 = 
+= 1.2.0 =
 * IMPORTANT: WP All Import v4 (3.2.0) is a MAJOR update. Read this post before upgrading: (http://www.wpallimport.com/2014/11/free-version-wordpress-org-update-information)
 * speed up the import of taxonomies/categories
 * updated design
@@ -185,7 +247,7 @@ bug fix: recount product terms when updating post status
 
 = 1.1.4 =
 * fixed automatic fixing of improperly formatted prices
-* fixed php notices 
+* fixed php notices
 * updated css for compatibility with wocommerce 2.1
 * added download type option
 * added file names option
@@ -218,10 +280,6 @@ bug fix: recount product terms when updating post status
 
 == Support ==
 
-We do not handle support in the WordPress.org community forums.
+Support for the free version of WP All Import is handled through the WordPress.org community forums.
 
-We do try to handle support for our free version users at the following e-mail address:
-
-E-mail: support@wpallimport.com
-
-Support for free version customers is not guaranteed and based on ability. For premium support, [purchase WP All Import and the WooCommerce add-on.](http://www.wpallimport.com/upgrade-to-pro?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=woocommerce)
+Support is not guaranteed and is based on ability. For premium support over email, [purchase WP All Import and the WooCommerce add-on.](https://www.wpallimport.com/checkout/?edd_action=add_to_cart&download_id=2707227&edd_options%5Bprice_id%5D=1)

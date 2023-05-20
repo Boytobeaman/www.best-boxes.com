@@ -6,17 +6,29 @@
  */
 
 /**
- * Class WPSEO_Option_Tab
+ * Class WPSEO_Option_Tab.
  */
 class WPSEO_Option_Tab {
 
-	/** @var string Name of the tab */
+	/**
+	 * Name of the tab.
+	 *
+	 * @var string
+	 */
 	private $name;
 
-	/** @var string Label of the tab */
+	/**
+	 * Label of the tab.
+	 *
+	 * @var string
+	 */
 	private $label;
 
-	/** @var array Optional arguments */
+	/**
+	 * Optional arguments.
+	 *
+	 * @var array
+	 */
 	private $arguments;
 
 	/**
@@ -26,7 +38,7 @@ class WPSEO_Option_Tab {
 	 * @param string $label     Localized label of the tab.
 	 * @param array  $arguments Optional arguments.
 	 */
-	public function __construct( $name, $label, array $arguments = array() ) {
+	public function __construct( $name, $label, array $arguments = [] ) {
 		$this->name      = sanitize_title( $name );
 		$this->label     = $label;
 		$this->arguments = $arguments;
@@ -51,21 +63,30 @@ class WPSEO_Option_Tab {
 	}
 
 	/**
-	 * Gets the video URL.
-	 *
-	 * @return string The video url.
-	 */
-	public function get_video_url() {
-		return $this->get_argument( 'video_url' );
-	}
-
-	/**
 	 * Retrieves whether the tab needs a save button.
 	 *
 	 * @return bool True whether the tabs needs a save button.
 	 */
 	public function has_save_button() {
 		return (bool) $this->get_argument( 'save_button', true );
+	}
+
+	/**
+	 * Retrieves whether the tab hosts beta functionalities.
+	 *
+	 * @return bool True whether the tab hosts beta functionalities.
+	 */
+	public function is_beta() {
+		return (bool) $this->get_argument( 'beta', false );
+	}
+
+	/**
+	 * Retrieves whether the tab hosts premium functionalities.
+	 *
+	 * @return bool True whether the tab hosts premium functionalities.
+	 */
+	public function is_premium() {
+		return (bool) $this->get_argument( 'premium', false );
 	}
 
 	/**
@@ -80,12 +101,12 @@ class WPSEO_Option_Tab {
 	/**
 	 * Retrieves the variable from the supplied arguments.
 	 *
-	 * @param string       $variable Variable to retrieve.
-	 * @param string|mixed $default  Default to use when variable not found.
+	 * @param string       $variable      Variable to retrieve.
+	 * @param string|mixed $default_value Default to use when variable not found.
 	 *
 	 * @return mixed|string The retrieved variable.
 	 */
-	protected function get_argument( $variable, $default = '' ) {
-		return array_key_exists( $variable, $this->arguments ) ? $this->arguments[ $variable ] : $default;
+	protected function get_argument( $variable, $default_value = '' ) {
+		return array_key_exists( $variable, $this->arguments ) ? $this->arguments[ $variable ] : $default_value;
 	}
 }

@@ -39,7 +39,7 @@ class UpdraftPlus_Temporary_Clone_Status {
 	 * @return void
 	 */
 	public function init() {
-		if (is_admin() || (defined('WP_CLI') && WP_CLI) || 'GET' != $_SERVER['REQUEST_METHOD']) return;
+		if (is_admin() || (defined('WP_CLI') && WP_CLI) || !isset($_SERVER['REQUEST_METHOD']) || 'GET' != $_SERVER['REQUEST_METHOD']) return;
 
 		$this->output_status_page();
 	}
@@ -360,8 +360,6 @@ class UpdraftPlus_Temporary_Clone_Status {
 	 * @return string - the clone status description
 	 */
 	public function get_status_description() {
-		global $updraftplus;
-
 		$description = "";
 
 		switch ($this->current_status) {
@@ -399,7 +397,7 @@ class UpdraftPlus_Temporary_Clone_Status {
 		$uploaded = 0;
 		
 		foreach ($backupable_entities as $key => $info) {
-			foreach ($backup_history as $timestamp => $backup) {
+			foreach ($backup_history as $backup) {
 				if (isset($backup[$key]) && isset($backup[$key.'-size'])) {
 					$sets += count($backup[$key]);
 					$uploaded += $backup[$key.'-size'];
@@ -418,8 +416,8 @@ class UpdraftPlus_Temporary_Clone_Status {
 	 * @return string - the clone content
 	 */
 	public function get_content() {
-		$content = '<p>'.__('Your UpdraftClone is still setting up.', 'updraftplus').' '.sprintf(__('You can check the progress here or in %s', 'updraftplus'), '<a href="https://updraftplus.com/my-account/clones/">'.__('your UpdraftPlus.com account', 'updraftplus')).'</a></p>';
-		$content .= '<p><a href="https://updraftplus.com/faq-category/updraftclone/">'.__('To read FAQs/documentation about UpdraftClone, go here.', 'updraftplus').'</a></p>';
+		$content = '<p>'.__('Your UpdraftClone is still setting up.', 'updraftplus').' '.sprintf(__('You can check the progress here or in %s', 'updraftplus'), '<a href="https://updraftplus.com/my-account/clones/" target="_blank">'.__('your UpdraftPlus.com account', 'updraftplus')).'</a></p>';
+		$content .= '<p><a href="https://updraftplus.com/faq-category/updraftclone/" target="_blank">'.__('To read FAQs/documentation about UpdraftClone, go here.', 'updraftplus').'</a></p>';
 		return $content;
 	}
 
@@ -467,5 +465,5 @@ class UpdraftPlus_Temporary_Clone_Status {
 }
 
 if (defined('UPDRAFTPLUS_THIS_IS_CLONE') && 1 == UPDRAFTPLUS_THIS_IS_CLONE) {
-	$updraftplus_temporary_clone_status = new UpdraftPlus_Temporary_Clone_Status();
+	new UpdraftPlus_Temporary_Clone_Status();
 }

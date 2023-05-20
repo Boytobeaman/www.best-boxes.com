@@ -198,20 +198,20 @@ class Cdn_Core_Admin {
 
 		if ( $upload_info ) {
 			$sql = sprintf( 'SELECT
-        		pm.meta_value AS file,
-                pm2.meta_value AS metadata
-            FROM
-                %sposts AS p
-            LEFT JOIN
-                %spostmeta AS pm ON p.ID = pm.post_ID AND pm.meta_key = "_wp_attached_file"
-            LEFT JOIN
-            	%spostmeta AS pm2 ON p.ID = pm2.post_ID AND pm2.meta_key = "_wp_attachment_metadata"
-            WHERE
-                p.post_type = "attachment"  AND (pm.meta_value IS NOT NULL OR pm2.meta_value IS NOT NULL)
-            GROUP BY
-            	p.ID
- 			ORDER BY
- 				p.ID', $wpdb->prefix, $wpdb->prefix, $wpdb->prefix );
+				pm.meta_value AS file,
+				pm2.meta_value AS metadata
+			FROM
+				%sposts AS p
+			LEFT JOIN
+				%spostmeta AS pm ON p.ID = pm.post_ID AND pm.meta_key = "_wp_attached_file"
+			LEFT JOIN
+				%spostmeta AS pm2 ON p.ID = pm2.post_ID AND pm2.meta_key = "_wp_attachment_metadata"
+			WHERE
+				p.post_type = "attachment"  AND (pm.meta_value IS NOT NULL OR pm2.meta_value IS NOT NULL)
+			GROUP BY
+				p.ID
+			 ORDER BY
+				 p.ID', $wpdb->prefix, $wpdb->prefix, $wpdb->prefix );
 
 			if ( $limit ) {
 				$sql .= sprintf( ' LIMIT %d', $limit );
@@ -287,17 +287,17 @@ class Cdn_Core_Admin {
 			 * Search for posts with links or images
 			 */
 			$sql = sprintf( 'SELECT
-        		ID,
-        		post_content,
-        		post_date
-            FROM
-                %sposts
-            WHERE
-                post_status = "publish"
-                AND (post_type = "post" OR post_type = "page")
-                AND (post_content LIKE "%%src=%%"
-                	OR post_content LIKE "%%href=%%")
-       		', $wpdb->prefix );
+				ID,
+				post_content,
+				post_date
+			FROM
+				%sposts
+			WHERE
+				post_status = "publish"
+				AND (post_type = "post" OR post_type = "page")
+				AND (post_content LIKE "%%src=%%"
+					OR post_content LIKE "%%href=%%")
+			   ', $wpdb->prefix );
 
 			if ( $limit ) {
 				$sql .= sprintf( ' LIMIT %d', $limit );
@@ -550,17 +550,17 @@ class Cdn_Core_Admin {
 
 		if ( $upload_info ) {
 			$sql = sprintf( 'SELECT
-        		ID,
-        		post_content,
-        		post_date
-            FROM
-                %sposts
-            WHERE
-                post_status = "publish"
-                AND (post_type = "post" OR post_type = "page")
-                AND (post_content LIKE "%%src=%%"
-                	OR post_content LIKE "%%href=%%")
-       		', $wpdb->prefix );
+				ID,
+				post_content,
+				post_date
+			FROM
+				%sposts
+			WHERE
+				post_status = "publish"
+				AND (post_type = "post" OR post_type = "page")
+				AND (post_content LIKE "%%src=%%"
+					OR post_content LIKE "%%href=%%")
+			   ', $wpdb->prefix );
 
 			if ( $limit ) {
 				$sql .= sprintf( ' LIMIT %d', $limit );
@@ -636,15 +636,15 @@ WHERE p.post_type = "attachment" AND (pm.meta_value IS NOT NULL OR pm2.meta_valu
 		global $wpdb;
 
 		$sql = sprintf( 'SELECT
-        		COUNT(*)
-            FROM
-                %sposts
-            WHERE
-                post_status = "publish"
-                AND (post_type = "post" OR post_type = "page")
-                AND (post_content LIKE "%%src=%%"
-                	OR post_content LIKE "%%href=%%")
-                ', $wpdb->prefix );
+				COUNT(*)
+			FROM
+				%sposts
+			WHERE
+				post_status = "publish"
+				AND (post_type = "post" OR post_type = "page")
+				AND (post_content LIKE "%%src=%%"
+					OR post_content LIKE "%%href=%%")
+				', $wpdb->prefix );
 
 		return $wpdb->get_var( $sql );
 	}
@@ -690,18 +690,6 @@ WHERE p.post_type = "attachment" AND (pm.meta_value IS NOT NULL OR pm2.meta_valu
 	}
 
 	/**
-	 *
-	 *
-	 * @param unknown $error
-	 */
-	function update_cnames( &$error ) {
-		$common = Dispatcher::component( 'Cdn_Core' );
-		$cdn = $common->get_cdn();
-		$cdn->update_cnames( $error );
-	}
-
-
-	/**
 	 * media_row_actions filter
 	 *
 	 * @param array   $actions
@@ -714,31 +702,6 @@ WHERE p.post_type = "attachment" AND (pm.meta_value IS NOT NULL OR pm2.meta_valu
 			) );
 
 		return $actions;
-	}
-
-	/**
-	 * Changes settings on MaxCDN site
-	 */
-	function change_canonical_header() {
-		$cdn_engine = $this->_config->get_string( 'cdn.engine' );
-
-		if ( $cdn_engine == 'maxcdn' ) {
-			require_once W3TC_LIB_NETDNA_DIR . '/NetDNA.php';
-			$authorization_key = $this->_config->get_string( "cdn.$cdn_engine.authorization_key" );
-			if ( $authorization_key ) {
-				$keys = explode( '+', $authorization_key );
-				if ( sizeof( $keys ) == 3 ) {
-					list( $alias, $consumer_key, $consumer_secret ) =  $keys;
-					$api = new \NetDNA( $alias, $consumer_key, $consumer_secret );
-					$zone = array();
-					$zone_id = $this->_config->get_string( "cdn.$cdn_engine.zone_id" );
-					$zone['canonical_link_headers'] = $this->_config->get_boolean( 'cdn.canonical_header' ) ? 1 : 0;
-					try {
-						$api->update_pull_zone( $zone_id, $zone );
-					} catch ( \Exception $ex ) {}
-				}
-			}
-		}
 	}
 
 	function is_running() {
@@ -777,10 +740,6 @@ WHERE p.post_type = "attachment" AND (pm.meta_value IS NOT NULL OR pm2.meta_valu
 			break;
 
 		case ( $cdn_engine == 'mirror' && !count( $this->_config->get_array( 'cdn.mirror.domain' ) ) ):
-			$running = false;
-			break;
-
-		case ( $cdn_engine == 'maxcdn' ):
 			$running = false;
 			break;
 

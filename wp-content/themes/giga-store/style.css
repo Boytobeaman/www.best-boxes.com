@@ -4,7 +4,9 @@ Theme URI: http://themes4wp.com/theme/giga-store/
 Author: Themes4WP
 Author URI: http://themes4wp.com/
 Description: Giga Store is an elegant free WooCommerce theme for WordPress. Theme is fully responsive. So the layout will adapt to different screen sizes which will make your website be compatible with any device such as smart phones, tablets or desktop computers. Giga Store is easy to Customize, Search Engine ( SEO ) Friendly WordPress Theme using Twitter Bootstrap 3, Font Awesome icons. Theme includes unlimited homepage color options, social links, custom background, off canvas menu, left or/and right sidebars with 4 size options, awesome slider, section carousel, testimonials carousel, blog section and much more. Theme is translation ready. Check the demo at http://demo.themes4wp.com/giga-store/
-Version: 1.1.2
+Version: 1.1.4
+Tested up to: 5.6
+Requires PHP: 5.2.4
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags:  custom-colors, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-background, custom-menu, featured-images, theme-options, translation-ready, custom-logo, e-commerce
@@ -527,31 +529,39 @@ h2.site-title a {
     color: #fff;
 }
 /* Text meant only for screen readers */
-
 .screen-reader-text {
+    border: 0;
     clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
     position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
 }
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
     background-color: #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* Above WP toolbar */
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 10px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
 }
 /* Navigation */
 

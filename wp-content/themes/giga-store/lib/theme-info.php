@@ -83,7 +83,7 @@ function giga_store_display_theme_info_page() {
 
 				<div class="column column-half clearfix">
 
-					<img src="<?php echo get_template_directory_uri(); ?>/screenshot.png" />
+					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/screenshot.png" />
 
 				</div>
 

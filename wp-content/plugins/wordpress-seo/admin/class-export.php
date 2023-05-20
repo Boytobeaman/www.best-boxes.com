@@ -6,25 +6,30 @@
  */
 
 /**
- * Class WPSEO_Export
+ * Class WPSEO_Export.
  *
- * Class with functionality to export the WP SEO settings
+ * Class with functionality to export the WP SEO settings.
  */
 class WPSEO_Export {
+
+	/**
+	 * Holds the nonce action.
+	 *
+	 * @var string
+	 */
 	const NONCE_ACTION = 'wpseo_export';
 
 	/**
+	 * Holds the export data.
+	 *
 	 * @var string
 	 */
 	private $export = '';
 
 	/**
-	 * @var string
-	 */
-	private $error = '';
-
-	/**
-	 * @var boolean
+	 * Holds whether the export was a success.
+	 *
+	 * @var bool
 	 */
 	public $success;
 
@@ -46,33 +51,22 @@ class WPSEO_Export {
 			return;
 		}
 
-		echo '<p>';
-		/* translators: %1$s expands to Import settings */
-		printf( esc_html__( 'Copy all these settings to another site\'s %1$s tab and click "%1$s" there.', 'wordpress-seo' ), __( 'Import settings', 'wordpress-seo' ) );
-		echo '</p>';
-		echo '<textarea id="wpseo-export" rows="20" cols="100">' . $this->export . '</textarea>';
-	}
-
-	/**
-	 * Returns true when the property error has a value.
-	 *
-	 * @return bool
-	 */
-	public function has_error() {
-		return ( $this->error !== '' );
-	}
-
-	/**
-	 * Sets the error hook, to display the error to the user.
-	 */
-	public function set_error_hook() {
-		/* translators: %1$s expands to Yoast SEO */
-		$message = sprintf( __( 'Error creating %1$s export: ', 'wordpress-seo' ), 'Yoast SEO' ) . $this->error;
-
+		echo '<p id="wpseo-settings-export-desc">';
 		printf(
-			'<div class="notice notice-error"><p>%1$s</p></div>',
-			$message
+			/* translators: %1$s expands to Import settings */
+			esc_html__(
+				'Copy all these settings to another site\'s %1$s tab and click "%1$s" there.',
+				'wordpress-seo'
+			),
+			esc_html__(
+				'Import settings',
+				'wordpress-seo'
+			)
 		);
+		echo '</p>';
+		/* translators: %1$s expands to Yoast SEO */
+		echo '<label for="wpseo-settings-export" class="yoast-inline-label">' . sprintf( __( 'Your %1$s settings:', 'wordpress-seo' ), 'Yoast SEO' ) . '</label><br />';
+		echo '<textarea id="wpseo-settings-export" rows="20" cols="100" aria-describedby="wpseo-settings-export-desc">' . esc_textarea( $this->export ) . '</textarea>';
 	}
 
 	/**
@@ -100,10 +94,10 @@ class WPSEO_Export {
 	}
 
 	/**
-	 * Writes a line to the export
+	 * Writes a line to the export.
 	 *
-	 * @param string  $line          Line string.
-	 * @param boolean $newline_first Boolean flag whether to prepend with new line.
+	 * @param string $line          Line string.
+	 * @param bool   $newline_first Boolean flag whether to prepend with new line.
 	 */
 	private function write_line( $line, $newline_first = false ) {
 		if ( $newline_first ) {
@@ -113,7 +107,7 @@ class WPSEO_Export {
 	}
 
 	/**
-	 * Writes an entire option group to the export
+	 * Writes an entire option group to the export.
 	 *
 	 * @param string $opt_group Option group name.
 	 */
@@ -130,8 +124,9 @@ class WPSEO_Export {
 		foreach ( $options as $key => $elem ) {
 			if ( is_array( $elem ) ) {
 				$count = count( $elem );
-				for ( $i = 0; $i < $count; $i ++ ) {
-					$this->write_setting( $key . '[]', $elem[ $i ] );
+				for ( $i = 0; $i < $count; $i++ ) {
+					$elem_check = isset( $elem[ $i ] ) ? $elem[ $i ] : null;
+					$this->write_setting( $key . '[]', $elem_check );
 				}
 			}
 			else {
@@ -141,7 +136,7 @@ class WPSEO_Export {
 	}
 
 	/**
-	 * Writes a settings line to the export
+	 * Writes a settings line to the export.
 	 *
 	 * @param string $key Key string.
 	 * @param string $val Value string.
