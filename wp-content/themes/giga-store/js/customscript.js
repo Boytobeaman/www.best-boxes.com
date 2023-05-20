@@ -33,7 +33,7 @@ jQuery.noConflict()( function ( $ ) {
         } )
 
         // FlexSlider
-        $( window ).load( function () {
+        // $( window ).load( function () {
             $( '.homepage-slider' ).flexslider( {
                 animation: "fade",
                 slideshow: true,
@@ -58,7 +58,7 @@ jQuery.noConflict()( function ( $ ) {
                     $( slider ).find( ".flex-active-slide" ).find( '.flexslider-button' ).addClass( "animated fadeInUp" );
                 },
             } );
-        } );
+        // } );
 
 
         // Wishlist count ajax update
